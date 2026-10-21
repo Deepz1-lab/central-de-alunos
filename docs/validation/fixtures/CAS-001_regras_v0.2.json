@@ -1,0 +1,499 @@
+{
+  "id": "CAS-001-REGRAS",
+  "version": "0.2",
+  "entirelySynthetic": true,
+  "scope": "Fixtures e oráculos candidatos; nenhum motor executado",
+  "cases": [
+    {
+      "id": "TC-70",
+      "rule": "R-OP-01",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "records": [],
+        "requiredRecordsForFixture": 2,
+        "thresholdForFixtureOnly": 3
+      },
+      "expected": {
+        "quality": "CONTEXTO_INSUFICIENTE",
+        "rawAbsent": "SEM_DADO",
+        "clinicalLowRecoveryAlert": false,
+        "verified": false
+      },
+      "forbidden": "Vazio convertido em zero, vermelho de baixa recuperação ou verde de aprovação",
+      "summary": "Nenhuma observação para indicador de recuperação",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-71",
+      "rule": "R-OP-01",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "variable": "desconforto_relato",
+        "scale": "0–10, zero admitido nesta fixture",
+        "value": 0,
+        "source": "relato sintético identificado",
+        "date": "2026-10-20"
+      },
+      "expected": {
+        "preserveValue": 0,
+        "treatAsMissing": false,
+        "automaticProfessionalValidation": false
+      },
+      "forbidden": "Apagar o zero legítimo ou promovê-lo a aprovação geral",
+      "summary": "Controle positivo: zero com significado e origem",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-72",
+      "rule": "R-OP-01",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "records": [
+          {
+            "value": 2,
+            "date": "2026-10-19"
+          },
+          {
+            "value": 2,
+            "date": "2026-10-20"
+          }
+        ],
+        "requiredRecordsForFixture": 2,
+        "formulaForFixture": "média simples",
+        "thresholdForFixtureOnly": 3,
+        "windowComplete": true
+      },
+      "expected": {
+        "comparisonToFixtureParameter": "ABAIXO",
+        "clinicalDiagnosis": false,
+        "showCoverage": "2/2"
+      },
+      "forbidden": "Diagnosticar risco ou transportar o corte de demonstração para a operação",
+      "summary": "Controle positivo de comparação numérica com critério explicitamente fictício",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-73",
+      "rule": "R-OP-01",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "recordsInRequiredWindow": 2,
+        "requiredRecordsForFixture": 4,
+        "olderRecordsOutsideWindow": 8,
+        "formulaApproved": false
+      },
+      "expected": {
+        "quality": "CONTEXTO_INSUFICIENTE",
+        "fillMissingWithZero": false,
+        "interpretWorkload": false
+      },
+      "forbidden": "Completar janela com zeros ou registros de outra ocasião",
+      "summary": "Cobertura parcial e fórmula não aprovada",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-74",
+      "rule": "R-OP-02",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "label": "funcional",
+        "goal": "levantar da cadeira",
+        "capacity": null,
+        "method": null
+      },
+      "expected": {
+        "require": [
+          "capacidade",
+          "método",
+          "dose"
+        ],
+        "inferMaxStrength": false
+      },
+      "forbidden": "Classificar força máxima ou intensidade pelo rótulo funcional",
+      "summary": "Objetivo/tarefa sem capacidade e dose identificadas",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-75",
+      "rule": "R-OP-02",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "sessionTasks": [
+          {
+            "capacity": "FORCA_MUSCULAR",
+            "exercise": "tarefa resistida",
+            "sets": 2
+          }
+        ],
+        "macroStrengthFields": [
+          0,
+          0,
+          0
+        ],
+        "legacyFunctionalLabel": true,
+        "legacyMapping": null
+      },
+      "expected": {
+        "reconcileMapping": true,
+        "eraseSession": false,
+        "autoFillMaxStrength": false
+      },
+      "forbidden": "Tratar todas as linhas zeradas como prova de ausência de força ou preenchê-las automaticamente",
+      "summary": "Incompatibilidade de representação entre sessão e macro",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-76",
+      "rule": "R-OP-03",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "blockMin": [
+          4,
+          30,
+          8,
+          3,
+          2,
+          2
+        ],
+        "blockMax": [
+          5,
+          33,
+          10,
+          4,
+          2,
+          2
+        ],
+        "extraReserve": 4,
+        "limitMinutes": 60,
+        "reserveAlreadyIncluded": false
+      },
+      "expected": {
+        "minMinutes": 53,
+        "maxMinutes": 60,
+        "budgetFits": true,
+        "actualDurationKnown": false
+      },
+      "forbidden": "Chamar orçamento de tempo realizado ou aprovação profissional",
+      "summary": "Controle positivo: limite superior cabe exatamente",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-77",
+      "rule": "R-OP-03",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "blockMin": [
+          5,
+          4,
+          4,
+          6,
+          4,
+          3,
+          3,
+          3,
+          2,
+          3,
+          3,
+          2
+        ],
+        "blockMax": [
+          6,
+          5,
+          5,
+          8,
+          5,
+          4,
+          4,
+          4,
+          3,
+          4,
+          5,
+          3
+        ],
+        "extraReserve": 10,
+        "limitMinutes": 60,
+        "reserveAlreadyIncluded": false
+      },
+      "expected": {
+        "minMinutes": 52,
+        "maxMinutes": 66,
+        "budgetFits": false,
+        "reviseDependentPlan": true
+      },
+      "forbidden": "Fixar célula em 60 ou reduzir descanso para esconder excesso",
+      "summary": "Intervalo de tempos excede o teto disponível",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-78",
+      "rule": "R-OP-03",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "setsPerSide": 2,
+        "sides": 2,
+        "reps": 10,
+        "secondsPerRepForBudgetOnly": 3,
+        "performedSimultaneously": false,
+        "restSeconds": 60,
+        "restIntervalsPerSide": 1,
+        "extraTransitionsSeconds": 0
+      },
+      "expected": {
+        "workSeconds": 120,
+        "restSeconds": 120,
+        "totalSeconds": 240
+      },
+      "forbidden": "Contar o trabalho unilateral como se os dois lados fossem simultâneos",
+      "summary": "Contagem explícita por lado e intervalos",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-79",
+      "rule": "R-OP-03",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "plannedMinutes": 60,
+        "observedMinutes": 64,
+        "source": "cronometro fictício"
+      },
+      "expected": {
+        "preserveObservedMinutes": 64,
+        "reviewNextPlan": true
+      },
+      "forbidden": "Registrar 60 como realizado ou apagar a diferença",
+      "summary": "Tempo observado diverge do orçamento",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-80",
+      "rule": "R-OP-04",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "rirTarget": 3,
+        "rirObserved": null,
+        "validObservedExposures": 0,
+        "completedReps": null
+      },
+      "expected": {
+        "doNotInventObservedRir": true,
+        "loadIncreaseApproved": false
+      },
+      "forbidden": "Copiar RIR-alvo para esforço observado ou assumir execução",
+      "summary": "Alvo de esforço não é registro de execução",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-81",
+      "rule": "R-OP-04",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "requiredExposuresForFixture": 2,
+        "observedExposures": [
+          {
+            "repsAtTarget": true,
+            "control": true,
+            "responseAcceptable": true
+          },
+          {
+            "repsAtTarget": true,
+            "control": true,
+            "responseAcceptable": true
+          }
+        ],
+        "contextUnchanged": true
+      },
+      "expected": {
+        "proposeSingleVariableChange": true,
+        "trainerDecisionRequired": true,
+        "automaticallyPublish": false
+      },
+      "forbidden": "Aprovar/publicar aumento sem treinador",
+      "summary": "Controle positivo: evidência suficiente para propor, não aprovar",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-82",
+      "rule": "R-OP-04",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "repsAtTarget": true,
+        "executionCompromised": true,
+        "newSymptomDuringTask": true
+      },
+      "expected": {
+        "progressionProposalHeld": true,
+        "reviewAffectedTask": true,
+        "eraseIndependentData": false
+      },
+      "forbidden": "Aumentar carga porque o alvo de reps foi atingido",
+      "summary": "Critério numérico atingido com piora de execução",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-83",
+      "rule": "R-OP-04",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "calendarWeek": 5,
+        "plannedPhase": "M2",
+        "observedExposures": [],
+        "availabilityChanged": true
+      },
+      "expected": {
+        "automaticProgression": false,
+        "reopenDependentDecisions": true,
+        "preservePreviousPlan": true
+      },
+      "forbidden": "Declarar adaptação ou dose executada pela passagem do calendário",
+      "summary": "Mudança de etapa sem dados de resposta",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-84",
+      "rule": "R-OP-05",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "equipment": "luzes de reação",
+        "description": "tocar o alvo aceso",
+        "independentMotorDemand": null,
+        "cognitiveDemand": null,
+        "simultaneitySpecified": false
+      },
+      "expected": {
+        "dualTaskAutomaticallyConfirmed": false,
+        "requireTaskDescription": true
+      },
+      "forbidden": "Usar o nome do aparelho como confirmação de dupla tarefa",
+      "summary": "Familiarização visual–motora não basta para classificação automática",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-85",
+      "rule": "R-OP-05",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "motor": "transferência apoiada de peso",
+        "cognitive": "nomear animais",
+        "simultaneous": true,
+        "windowSeconds": 30,
+        "priorityInstruction": "preservar controle motor",
+        "supportUnchanged": true,
+        "motorCycles": 8,
+        "cognitiveCorrect": 5,
+        "cognitiveErrors": 1,
+        "singleTaskComparator": null
+      },
+      "expected": {
+        "recordBothPerformances": true,
+        "dualTaskCost": null,
+        "automaticImprovementClaim": false
+      },
+      "forbidden": "Calcular custo sem comparador ou juntar desempenho motor e cognitivo num único sucesso",
+      "summary": "Duas demandas descritas, sem comparador equivalente",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-86",
+      "rule": "R-OP-05",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "cognitiveResponsesFaster": true,
+        "lossOfBalance": true,
+        "motorCriterionForFixture": "sem perda de equilíbrio com apoio previsto"
+      },
+      "expected": {
+        "doNotDeclareOverallSuccess": true,
+        "proposeSimplificationAndReview": true
+      },
+      "forbidden": "Progredir por velocidade/acertos ignorando perda de controle motor",
+      "summary": "Resposta cognitiva melhora e tarefa motora deteriora",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-87",
+      "rule": "R-OP-06",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "wellsCm": 28,
+        "specificMovementTest": null,
+        "functionalQuestion": null,
+        "requestedRegion": "isquiotibiais por padrão"
+      },
+      "expected": {
+        "specificFlexibilityDecision": "EM_REVISAO",
+        "inferGeneralizedShortening": false,
+        "preserveWellsForOwnPurpose": true
+      },
+      "forbidden": "Diagnosticar encurtamento generalizado ou prescrever região automaticamente",
+      "summary": "Wells isolado sem pergunta/movimento específico",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-88",
+      "rule": "R-OP-06",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "specificFlexibilityIndication": false,
+        "reasonRecorded": "nenhuma pergunta de amplitude identificada neste recorte",
+        "independentStrengthDecisionSupported": true
+      },
+      "expected": {
+        "blockWholeSession": false,
+        "requireUniversalStretching": false
+      },
+      "forbidden": "Exigir alongamento de todos para liberar qualquer treino",
+      "summary": "Controle de uso independente sem indicação de alongamento",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    },
+    {
+      "id": "TC-89",
+      "rule": "R-OP-06",
+      "origin": "PROPOSTA_CENTRAL",
+      "input": {
+        "entirelySynthetic": true,
+        "indication": "pergunta e teste específico da variante CAS",
+        "movement": "extensão do joelho com quadril apoiado",
+        "method": "estático ativo-assistido",
+        "position": "decúbito dorsal apoiado",
+        "setsPerSide": 2,
+        "sides": 2,
+        "holdSeconds": 30,
+        "restIntervals": 4,
+        "restSeconds": 15,
+        "setupSeconds": 60,
+        "frequencyPerWeek": 3,
+        "blockBudgetMinutes": 4,
+        "toleranceInstruction": "tensão confortável; rever se sintomas",
+        "followUp": "mesmo teste ativo e tarefa pertinente"
+      },
+      "expected": {
+        "totalSeconds": 240,
+        "withinBlockBudget": true,
+        "professionalApproval": "PENDENTE"
+      },
+      "forbidden": "Omitir lado/posição/tempo ou atribuir a dose a protocolo ACESSO não conferido",
+      "summary": "Controle positivo de completude e tempo, sem aprovação da dose",
+      "engineStatus": "NAO_EXECUTADO",
+      "professionalApproval": "PENDENTE"
+    }
+  ]
+}

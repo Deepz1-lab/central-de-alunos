@@ -1,0 +1,7 @@
+export function el<K extends keyof HTMLElementTagNameMap>(tag:K,text='',className=''):HTMLElementTagNameMap[K]{const node=document.createElement(tag);node.textContent=text;if(className)node.className=className;return node;}
+export function button(text:string,action:()=>void,className=''):HTMLButtonElement{const b=el('button',text,className);b.type='button';b.addEventListener('click',action);return b;}
+export function field(label:string,name:string,kind:'text'|'email'|'password'|'textarea'='text',value='',required=true){const wrap=el('label',label);const input=kind==='textarea'?el('textarea'):el('input');input.name=name;input.value=value;input.required=required;if(input instanceof HTMLInputElement){input.type=kind;input.autocomplete=kind==='password'?'current-password':kind==='email'?'email':'off';}wrap.append(input);return wrap;}
+export function form(submitText:string,fields:HTMLElement[],submit:(data:FormData)=>Promise<void>){const f=el('form');f.append(...fields);const b=el('button',submitText);b.type='submit';f.append(b);f.addEventListener('submit',async e=>{e.preventDefault();b.disabled=true;try{await submit(new FormData(f));}finally{b.disabled=false;}});return f;}
+export function card(title:string,...children:HTMLElement[]){const c=el('section','','card');c.append(el('h3',title),...children);return c;}
+export const value=(d:FormData,key:string)=>String(d.get(key)??'').trim();
+export type Run=(fn:()=>Promise<unknown>,message?:string)=>Promise<void>;

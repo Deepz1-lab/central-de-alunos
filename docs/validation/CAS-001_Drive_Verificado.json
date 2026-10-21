@@ -1,0 +1,78 @@
+{
+  "verifiedAt": "2026-10-20T18:18:37.550Z",
+  "scope": "Conteúdo local comparado ao conteúdo relido do Drive; apenas normalização de fim de linha/espaço final",
+  "files": [
+    {
+      "id": "1U_ylnB-oOOoK89lCw5p3aSkYnaWWDbMJ",
+      "path": "docs/methodology/AV-003_Contrato_Avaliacao_Prescricao_v0.5.md",
+      "url": "https://drive.google.com/file/d/1U_ylnB-oOOoK89lCw5p3aSkYnaWWDbMJ/view",
+      "title": "AV-003_Contrato_Avaliacao_Prescricao_v0.5.md",
+      "sameContent": true,
+      "localSha256": "c0a353f4af95c9b10103384a34b66913affdd18e668bf9fee92338d41aedcdf1"
+    },
+    {
+      "id": "1Y9JXywjBewjfR-14Q4n6gkiCILun_88D",
+      "path": "docs/methodology/DIC-001_Indicadores_Protocolos_v0.4.md",
+      "url": "https://drive.google.com/file/d/1Y9JXywjBewjfR-14Q4n6gkiCILun_88D/view",
+      "title": "DIC-001_Indicadores_Protocolos_v0.4.md",
+      "sameContent": true,
+      "localSha256": "ba1a5ab864d3c9d5026dd75419af78e415ee486a900cd8a89f047b2596726967"
+    },
+    {
+      "id": "1zUzIXK5lm4X09z6tNNCZvHo6AFfKMgLL",
+      "path": "docs/validation/TEST-001_Casos_de_Validacao_v0.6.md",
+      "url": "https://drive.google.com/file/d/1zUzIXK5lm4X09z6tNNCZvHo6AFfKMgLL/view",
+      "title": "TEST-001_Casos_de_Validacao_v0.6.md",
+      "sameContent": true,
+      "localSha256": "150ff525f5f34ada77e5871728f331325cf9537c408fcc0ab37220c6ad5bfe0e"
+    },
+    {
+      "id": "1B5MFqXAGzlGZXoXED8JD5WH2XBZW6GaY",
+      "path": "docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.1.md",
+      "url": "https://drive.google.com/file/d/1B5MFqXAGzlGZXoXED8JD5WH2XBZW6GaY/view",
+      "title": "CAS-001_Cascata_Sintetica_Integrada_v0.1.md",
+      "sameContent": true,
+      "localSha256": "d2799b29548c2688907c716a9e549b3dd06a66c63eba66769d20f49dcb0a8bb8"
+    },
+    {
+      "id": "1uLlnqeZaaLEpGg2Dvc2Rk024Wdh-_J4L",
+      "path": "docs/validation/CAS-001_Conferencia_v0.1.md",
+      "url": "https://drive.google.com/file/d/1uLlnqeZaaLEpGg2Dvc2Rk024Wdh-_J4L/view",
+      "title": "CAS-001_Conferencia_v0.1.md",
+      "sameContent": true,
+      "localSha256": "f84159ef66a6613827579cbc1401797b4b8c21a9526d8a19705caf43a8b76426"
+    },
+    {
+      "id": "10Rg-QTmqP7aW41QlaEQ1RudwclLvoWGm",
+      "path": "docs/decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.4.md",
+      "url": "https://drive.google.com/file/d/10Rg-QTmqP7aW41QlaEQ1RudwclLvoWGm/view",
+      "title": "00-LEIA-ME_Governanca_da_Documentacao_v0.4.md",
+      "sameContent": true,
+      "localSha256": "7b0a59e342a18b33f7c9899096952267997e9e8d83fd0e8c200b54530f3d5eff"
+    },
+    {
+      "id": "1j8Gnd6-ii-zkcQT4gXauXPCtuk4v1zwM",
+      "path": "docs/analyses/MET-002_Logistica_Treinamento_Combinado_v0.1.md",
+      "url": "https://drive.google.com/file/d/1j8Gnd6-ii-zkcQT4gXauXPCtuk4v1zwM/view",
+      "title": "MET-002_Logistica_Treinamento_Combinado_v0.1.md",
+      "sameContent": true,
+      "localSha256": "8f6b6f0adf7cc6e87f82173cd2e54c6e4ea9832e9989f51fecc75c126aafc58d"
+    },
+    {
+      "id": "1PrtD4suQmXf5dS6CfTnWqvl7erOhoRkB",
+      "path": "docs/decisions/DEC-OP-001_Atualizacao_Manual_e_Backup_v0.1.md",
+      "url": "https://drive.google.com/file/d/1PrtD4suQmXf5dS6CfTnWqvl7erOhoRkB/view",
+      "title": "DEC-OP-001_Atualizacao_Manual_e_Backup_v0.1.md",
+      "sameContent": true,
+      "localSha256": "f5830bae4a036efcbc3137b58de63a7881f5a86ce09cab9954687d2c1e7f115c"
+    },
+    {
+      "id": "1Go4FGIDzHU_nguaYq5ntkQmttVRfvADp",
+      "path": "docs/analyses/MET-003_Avaliacao_Dados_Base_Treino_Ciclico_v0.1.md",
+      "url": "https://drive.google.com/file/d/1Go4FGIDzHU_nguaYq5ntkQmttVRfvADp/view",
+      "title": "MET-003_Avaliacao_Dados_Base_Treino_Ciclico_v0.1.md",
+      "sameContent": true,
+      "localSha256": "2268d07e2a634cb743197cc17894735cf91f666c66f61a8311369bc8052301b4"
+    }
+  ]
+}

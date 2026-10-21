@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-20T20:42:44.289Z",
+  "scope": "Conteúdo integral recuperado e comparado após salvar; normalização CRLF/LF e fim do arquivo",
+  "files": [
+    {
+      "id": "1U_ylnB-oOOoK89lCw5p3aSkYnaWWDbMJ",
+      "path": "docs/methodology/AV-003_Contrato_Avaliacao_Prescricao_v0.6.md",
+      "title": "AV-003_Contrato_Avaliacao_Prescricao_v0.6.md",
+      "contentMatches": true,
+      "sha256Normalized": "40043ef739a90318e0d6d6178c5202bc0ea1bf04d5802d8e6c7cf109303da101"
+    },
+    {
+      "id": "1Y9JXywjBewjfR-14Q4n6gkiCILun_88D",
+      "path": "docs/methodology/DIC-001_Indicadores_Protocolos_v0.5.md",
+      "title": "DIC-001_Indicadores_Protocolos_v0.5.md",
+      "contentMatches": true,
+      "sha256Normalized": "3aa4f239963c43ddbd3272aec3d9f76895ffcd7912bde0500d69609862f937c4"
+    },
+    {
+      "id": "1zUzIXK5lm4X09z6tNNCZvHo6AFfKMgLL",
+      "path": "docs/validation/TEST-001_Casos_de_Validacao_v0.7.md",
+      "title": "TEST-001_Casos_de_Validacao_v0.7.md",
+      "contentMatches": true,
+      "sha256Normalized": "27d252fbb1180e76c535ce077b25fa49d237fea80070db553fc771e35033457d"
+    },
+    {
+      "id": "1B5MFqXAGzlGZXoXED8JD5WH2XBZW6GaY",
+      "path": "docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.2.md",
+      "title": "CAS-001_Cascata_Sintetica_Integrada_v0.2.md",
+      "contentMatches": true,
+      "sha256Normalized": "1c15434dc853e45c83b856b1f504a5351c66e339c518f0a532e4b759c8b8e01e"
+    },
+    {
+      "id": "1uLlnqeZaaLEpGg2Dvc2Rk024Wdh-_J4L",
+      "path": "docs/validation/CAS-001_Conferencia_v0.2.md",
+      "title": "CAS-001_Conferencia_v0.2.md",
+      "contentMatches": true,
+      "sha256Normalized": "c0347631e3d9c42e579e51fee54673fd6b3b78bd707a57a69ce99096a760e8b2"
+    },
+    {
+      "id": "10Rg-QTmqP7aW41QlaEQ1RudwclLvoWGm",
+      "path": "docs/decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.5.md",
+      "title": "00-LEIA-ME_Governanca_da_Documentacao_v0.5.md",
+      "contentMatches": true,
+      "sha256Normalized": "27844529c73493cf90ab3f0442e9f5c28915f2f79b03a2242c82faf83c840931"
+    }
+  ]
+}

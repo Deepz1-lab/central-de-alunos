@@ -1,0 +1,180 @@
+{
+  "id": "CONF-CAS-001",
+  "version": "0.2",
+  "timestamp": "2026-10-20T20:41:48.201Z",
+  "scope": "Conferência aritmética e integridade dos artefatos; não é motor de prescrição nem revisão independente",
+  "arithmeticChecks": [
+    {
+      "id": "Assimetria candidata %",
+      "actual": 16.666666666666664,
+      "expected": 16.666666666666668,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Normalização incorreta",
+      "actual": 0.5,
+      "expected": 0.5,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Normalização revisada",
+      "actual": 0.375,
+      "expected": 0.375,
+      "result": "CONFERE"
+    },
+    {
+      "id": "60% reserva com pico",
+      "actual": 132,
+      "expected": 132,
+      "result": "CONFERE"
+    },
+    {
+      "id": "60% pico",
+      "actual": 108,
+      "expected": 108,
+      "result": "CONFERE"
+    },
+    {
+      "id": "85% reserva com pico",
+      "actual": 162,
+      "expected": 162,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Pace min/km",
+      "actual": 10,
+      "expected": 10,
+      "result": "CONFERE"
+    },
+    {
+      "id": "FC em 15s",
+      "actual": 33,
+      "expected": 33,
+      "result": "CONFERE"
+    },
+    {
+      "id": "ICP média simples",
+      "actual": 90,
+      "expected": 90,
+      "result": "CONFERE"
+    },
+    {
+      "id": "ICP ponderado",
+      "actual": 86.66666666666667,
+      "expected": 86.66666666666667,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Séries semanais",
+      "actual": 36,
+      "expected": 36,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Execução resistida min",
+      "actual": 9.6,
+      "expected": 9.6,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Intervalos resistidos min",
+      "actual": 12,
+      "expected": 12,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Transições resistidas disponíveis min",
+      "actual": 11.4,
+      "expected": 11.4,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Blocos mínimo",
+      "actual": 49,
+      "expected": 49,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Blocos máximo",
+      "actual": 56,
+      "expected": 56,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Total mínimo com reserva",
+      "actual": 53,
+      "expected": 53,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Total máximo com reserva",
+      "actual": 60,
+      "expected": 60,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Exemplo incompatível máximo",
+      "actual": 66,
+      "expected": 66,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Dose unilateral segundos",
+      "actual": 240,
+      "expected": 240,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Flexibilidade total máximo segundos",
+      "actual": 240,
+      "expected": 240,
+      "result": "CONFERE"
+    }
+  ],
+  "newFixtureCount": 20,
+  "totalCatalogCases": 89,
+  "variantEngineStatus": "NAO_EXECUTADO",
+  "professionalApproval": "PENDENTE",
+  "manifest": [
+    {
+      "path": "docs/methodology/AV-003_Contrato_Avaliacao_Prescricao_v0.6.md",
+      "bytes": 56176,
+      "sha256": "75346a26056d4657027fc2279c2097142a639f065d44078dfdf2907427e3e112"
+    },
+    {
+      "path": "docs/methodology/DIC-001_Indicadores_Protocolos_v0.5.md",
+      "bytes": 53988,
+      "sha256": "9e35aa130ecae29d9939c2a74749ff47d6cfbc2cfe08915eb24c79bed7b86b66"
+    },
+    {
+      "path": "docs/validation/TEST-001_Casos_de_Validacao_v0.7.md",
+      "bytes": 53970,
+      "sha256": "505746e654113f90154d35b4a603f7aece71f75ba849a747691a187ba8d28cc7"
+    },
+    {
+      "path": "docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.2.md",
+      "bytes": 24720,
+      "sha256": "bd58f3e2c0796f0624cbbe04b7ba10c21d698783c172c80f66eb01f841b66297"
+    },
+    {
+      "path": "docs/decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.5.md",
+      "bytes": 11987,
+      "sha256": "916d3fba84bfa35ac5aef454f44e55897e0eee4c796503a8afd7abd839ee1d42"
+    },
+    {
+      "path": "docs/validation/CAS-001_Conferencia_v0.2.md",
+      "bytes": 1787,
+      "sha256": "be2dbc4cdfa004bcdc3e825894d19d725163388e3a31be807fdc43aba4037fdb"
+    },
+    {
+      "path": "docs/validation/fixtures/CAS-001_v0.2.json",
+      "bytes": 1924,
+      "sha256": "69d9acf6e46cdabc3c8a587b91261c6312cfd6c26a0dba8ea5c8e4db83d62788"
+    },
+    {
+      "path": "docs/validation/fixtures/CAS-001_regras_v0.2.json",
+      "bytes": 14961,
+      "sha256": "f1ae7162448bcb862678c165ac3d2a8dcdd2390eb30e5bab61462f5d11e47615"
+    }
+  ]
+}

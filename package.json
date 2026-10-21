@@ -1,0 +1,29 @@
+{
+  "name": "central-alunos-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest",
+    "test:e2e": "playwright test",
+    "test:db": "supabase test db --local",
+    "seed:auth": "node scripts/seed-auth.mjs",
+    "test:live": "node scripts/verify-live.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.118.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "26.6.5",
+    "supabase": "2.121.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.5"
+  }
+}

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env*
+!.env.example
+.superpowers/
+test-results/
+playwright-report/
+supabase/.temp/
+supabase/.branches/
+sources/
+private/
+operational-data/
+*.pdf
+*.xlsx
+*.xls
+*.pem
+*.key

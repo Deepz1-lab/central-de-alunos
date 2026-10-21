@@ -1,0 +1,78 @@
+import {test,expect} from '@playwright/test';
+import {createClient} from '@supabase/supabase-js';
+const live=process.env.CENTRAL_E2E_LIVE==='1';
+const configured=process.env.CENTRAL_E2E_CONFIGURED==='1';
+test('sem configuração o protótipo falha fechado',async({page})=>{
+ test.skip(live||configured,'Ambiente configurado.');await page.goto('/');
+ await expect(page.getByRole('heading',{name:'Preparar ambiente local'})).toBeVisible();
+ await expect(page.getByRole('button',{name:'Entrar',exact:true})).toHaveCount(0);
+});
+test('configuração pública local abre entrada sem expor dados',async({page})=>{
+ test.skip(!configured||live,'Prévia configurada isolada.');const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/');
+ await expect(page.getByRole('button',{name:'Entrar',exact:true})).toBeVisible();expect(errors).toEqual([]);
+ await expect(page.getByText('Aluno fictício B',{exact:true})).toHaveCount(0);
+ await page.screenshot({path:'test-results/entrada-local.png',fullPage:true});
+});
+test.describe('backend local real',()=>{
+ test.skip(!live,'Docker/Supabase local ainda não disponível: não é prova de autorização.');
+ test('TC51 consulta direta e pesquisa não expõem outro aluno',async()=>{
+  const c=createClient(process.env.VITE_SUPABASE_URL!,process.env.VITE_SUPABASE_PUBLISHABLE_KEY!,{auth:{persistSession:false}});
+  const {error}=await c.auth.signInWithPassword({email:'aluno-a@central.test',password:'CentralLocal!2026'});expect(error).toBeNull();
+  const {data,error:queryError}=await c.from('student_records').select('*').eq('id','10000000-0000-4000-8000-000000000002');
+  expect(queryError).toBeNull();expect(data).toEqual([]);
+  const {data:list}=await c.from('student_records').select('*');expect(list?.every(r=>r.display_name!=='Aluno fictício B')).toBe(true);
+  await c.auth.signOut();
+ });
+ test('TC56 cadastro, objetivo, revisão, publicação e correção preservam as decisões',async({page})=>{
+  test.setTimeout(60000);
+  const login=async(email:string)=>{await page.goto('/');await page.getByLabel('E-mail').fill(email);await page.getByLabel('Senha').fill('CentralLocal!2026');await page.getByRole('button',{name:'Entrar',exact:true}).click();await expect(page.getByRole('button',{name:'Sair',exact:true})).toBeVisible();};
+  const logout=async()=>{await page.getByRole('button',{name:'Sair',exact:true}).click();await expect(page.getByRole('button',{name:'Entrar',exact:true})).toBeVisible();};
+  await login('treinador@central.test');
+  const studentEmail=process.env.CENTRAL_TEST_STUDENT_EMAIL??'aluno-c@central.test';
+  const studentName='Aluno fictício C '+studentEmail.split('@')[0];
+  await page.getByLabel('Nome do aluno').fill(studentName);await page.getByLabel('E-mail da conta de teste').fill(studentEmail);await page.getByRole('button',{name:'Criar cadastro'}).click();
+  await expect(page.getByRole('heading',{name:studentName,exact:true})).toBeVisible();await logout();
+  await login(studentEmail);await page.getByLabel('O que você deseja alcançar?').fill('Criar uma rotina de prática');await page.getByLabel('Sua disponibilidade').fill('Duas tardes por semana');await page.getByRole('button',{name:'Enviar objetivo'}).click();await expect(page.getByText('Criar uma rotina de prática',{exact:true})).toBeVisible();await logout();
+  await login('treinador@central.test');await page.getByRole('button',{name:studentName+' Em acompanhamento',exact:true}).click();await page.getByLabel('Objetivo confirmado em conversa').fill('Praticar duas vezes por semana');
+  const otherSession=createClient(process.env.VITE_SUPABASE_URL!,process.env.VITE_SUPABASE_PUBLISHABLE_KEY!,{auth:{persistSession:false}});
+  expect((await otherSession.auth.signInWithPassword({email:studentEmail,password:'CentralLocal!2026'})).error).toBeNull();
+  const own=await otherSession.from('student_records').select('id').single();expect(own.error).toBeNull();
+  expect((await otherSession.rpc('submit_intake',{p_student_id:own.data!.id,p_objective:'Relato atualizado em outra sessão',p_availability:'Duas tardes'})).error).toBeNull();await otherSession.auth.signOut();
+  await page.getByRole('button',{name:'Salvar rascunho'}).click();
+  await expect.soft(page.getByRole('status')).toHaveText('O relato do aluno mudou. Atualize a página e confira antes de salvar.');
+  await page.reload();await expect(page.getByText('Relato atualizado em outra sessão',{exact:true})).toBeVisible();
+  await page.getByLabel('Objetivo confirmado em conversa').fill('Praticar duas vezes por semana');await page.getByRole('button',{name:'Salvar rascunho'}).click();await page.getByRole('button',{name:'Aprovar versão'}).click();await expect(page.getByText('Aprovado · interno',{exact:true})).toBeVisible();await logout();
+  await login(studentEmail);await expect(page.getByText('Ainda não há resumo liberado.')).toBeVisible();await expect(page.getByText('Praticar duas vezes por semana',{exact:true})).toHaveCount(0);await logout();
+  await login('treinador@central.test');await page.getByRole('button',{name:studentName+' Em acompanhamento',exact:true}).click();await page.getByRole('button',{name:'Liberar ao aluno'}).click();await logout();
+  await login(studentEmail);await expect(page.getByText('Praticar duas vezes por semana',{exact:true})).toBeVisible();await page.getByLabel('Qual ajuste você solicita?').fill('Praticar três vezes por semana');await page.getByLabel('Motivo do pedido').fill('Nova disponibilidade');await page.getByRole('button',{name:'Solicitar correção'}).click();await expect(page.getByText('Praticar duas vezes por semana',{exact:true})).toBeVisible();
+  await expect(page.getByText('Em revisão pelo treinador',{exact:true})).toBeVisible();
+  await expect.soft(page.getByRole('button',{name:'Solicitar correção'})).toHaveCount(0);await logout();
+  await login('treinador@central.test');await page.getByRole('button',{name:studentName+' Em acompanhamento',exact:true}).click();await page.getByLabel('Motivo da decisão').fill('Conferido com o aluno');await page.getByRole('button',{name:'Aceitar como novo rascunho'}).click();await expect(page.getByText('Rascunho · interno',{exact:true})).toBeVisible();await expect(page.getByText('Praticar duas vezes por semana',{exact:true})).toBeVisible();
+  await page.screenshot({path:'test-results/treinador-local.png',fullPage:true});await logout();
+  await login(studentEmail);await expect(page.getByText('Praticar duas vezes por semana',{exact:true})).toBeVisible();
+  await expect(page.getByRole('heading',{name:'Resumo · versão 2'})).toHaveCount(0);
+  await page.screenshot({path:'test-results/aluno-local.png',fullPage:true});
+  await page.goto('/?aluno=10000000-0000-4000-8000-000000000002');
+  await expect(page.getByRole('heading',{name:'Registro indisponível'})).toBeVisible();
+  await expect(page.getByText('Aluno fictício B',{exact:true})).toHaveCount(0);await logout();
+  await login('treinador@central.test');await page.getByRole('button',{name:studentName+' Em acompanhamento',exact:true}).click();
+  await page.getByRole('button',{name:'Aprovar versão'}).click();await page.getByRole('button',{name:'Liberar ao aluno'}).click();await logout();
+  await login(studentEmail);await expect.soft(page.getByText('Aceito · versão liberada',{exact:true})).toBeVisible();await logout();
+  await login('treinador@central.test');await page.getByRole('button',{name:studentName+' Em acompanhamento',exact:true}).click();
+  await page.getByLabel('Situação do vínculo').selectOption('suspended');await page.getByLabel('Motivo da alteração').fill('Pausa combinada no teste');
+  await page.getByRole('button',{name:'Registrar situação'}).click();await expect(page.getByText('Situação do vínculo alterada',{exact:true})).toBeVisible();
+  await expect(page.getByText('Praticar duas vezes por semana',{exact:true})).toBeVisible();await logout();
+  await login(studentEmail);await expect(page.getByRole('heading',{name:'Registro indisponível'})).toBeVisible();
+  await expect(page.getByText('Praticar duas vezes por semana',{exact:true})).toHaveCount(0);
+ });
+ test('treinador só recebe ação de aprovação na versão mais recente',async({page})=>{
+  const c=createClient(process.env.VITE_SUPABASE_URL!,process.env.VITE_SUPABASE_PUBLISHABLE_KEY!,{auth:{persistSession:false}});
+  expect((await c.auth.signInWithPassword({email:'treinador@central.test',password:'CentralLocal!2026'})).error).toBeNull();
+  const id='10000000-0000-4000-8000-000000000001';
+  const intakes=await c.from('intake_submissions').select('id').eq('student_id',id).order('created_at',{ascending:false}).limit(1);expect(intakes.error).toBeNull();
+  for(const goal of ['Primeiro rascunho sintético','Segundo rascunho sintético'])expect((await c.rpc('save_summary',{p_student_id:id,p_objective:goal,p_expected_intake_id:intakes.data?.[0]?.id??null})).error).toBeNull();
+  await c.auth.signOut();await page.goto('/');await page.getByLabel('E-mail').fill('treinador@central.test');await page.getByLabel('Senha').fill('CentralLocal!2026');await page.getByRole('button',{name:'Entrar',exact:true}).click();
+  await expect(page.getByText('Segundo rascunho sintético',{exact:true})).toBeVisible();
+  await expect(page.getByRole('button',{name:'Aprovar versão'})).toHaveCount(1);
+ });
+});

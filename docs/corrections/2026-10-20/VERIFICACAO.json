@@ -1,0 +1,282 @@
+{
+  "date": "2026-10-20",
+  "type": "documental-textual-readback-not-prescription-tests",
+  "updated": [
+    {
+      "id": "1yRUZRBgpXiwAd0XCvGusrJ1QCqJ8Z4h4",
+      "title": "CENTRAL-001_Visao_Produto_Arquitetura_Funcional_v0.5.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1WbAhRFbk5RtgVrkhzvX5s60gXnfKP9Z9",
+      "title": "ACESSO-INDEX_Gatilhos_Metodologicos_v0.2.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1zx1tiqjgI56zwWXif82ZuCy1WdZrNHhx",
+      "title": "VAL-001_Auditoria_de_Laudos_v0.3.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1zUzIXK5lm4X09z6tNNCZvHo6AFfKMgLL",
+      "title": "TEST-001_Casos_de_Validacao_v0.5.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1lEcRHPTYyP6OAAdQhlELRH5cd6wa4a9X",
+      "title": "AV-001_Modelo_de_Avaliacao_Integrada_e_TUG_v0.2.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1ypH6-sNbnr5P3EXZUH-0fhOrklmU_2eM",
+      "title": "AV-002_Ultrassonografia_Composicao_Corporal_v0.2.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1SmA-UkuDtqr3vfGO0PqZDHDKpkpD5ZQn",
+      "title": "ACESSO-001_Especificacao_Funcional_Central_de_Alunos_v0.3.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "19LuNOtoK7wJ9h613X4ZzjepGrsoucHrl",
+      "title": "FLX-001_Jornada_Fluxo_Operacional_v0.4.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1Y9JXywjBewjfR-14Q4n6gkiCILun_88D",
+      "title": "DIC-001_Indicadores_Protocolos_v0.3.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "19yjfajdTdlteedRnZWDaccNp6_hrth8_",
+      "title": "NUC-001_Nucleo_Avaliacao_Prescricao_v0.2.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1gu-cQ3dlRQrexIXEHS5JFcIvgQSg_2Ic",
+      "title": "README_Biblioteca_Metodologica_ACESSO_v0.2.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1uiJyfdk4EWgcBfOl1V6dp0W-U-SAnik7",
+      "title": "EVID-INDEX_Evidencias_PubMed_ACESSO_28-33_v0.2.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1Gy1mj99k37Ook7gXiDjb48cUbT_uUW0E",
+      "title": "Central_de_Alunos_Caderno_Tecnico_Cientifico_v0.2.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "15JGlRYYpwlgfUbosju0fZpgqyONf5Xwc",
+      "title": "MAP-AV-001_Matriz_Decisao_Profissional_v0.2.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1eG-YKIHCIyBroA2kvan-YVjBksbmxLpK",
+      "title": "MAP-AV-002_Matriz_Aplicacao_Aulas_Planejamento_v0.2.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "16cJe8Inzyxzq9Hr6mzrS4Qe8j7rH3AfK",
+      "title": "IMP-001_Plano_Tecnico_Fluxo_Inicial_v0.2.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "123OuJX6MYCRiHHOgkYf6Hs1NpMEVwBsP",
+      "title": "AUD-001_Auditoria_Preliminar_Automacoes_Leitura.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1grVpAwitNxKc0nQjfcIbXDH7uA6nxeky",
+      "title": "AUD-002_Acionadores_Ativos_18-10-2026.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1IgMDL87G1swf4FPjhETFFYk3xJMg1_Di",
+      "title": "AUD-003_Execucoes_Com_Falha_18-10-2026.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1jmywJ5KafptJdvDO_xkPkP98ruc8G-Zw",
+      "title": "AUD-003A_Detalhe_Falha_Monitor_18-10-2026.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "11qhbQrHTCgItpJsRykzg-DyZ6_zfTxwt",
+      "title": "AUD-004_Confirmacao_Pausa_Acionadores_18-10-2026.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "17p3fawoZw3hFhfEuwvDWzNMJ9krzn_CT",
+      "title": "CAD-001_Inventario_Carteira_Historico_Sanitizado_19-10-2026.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "1JqSYswowDwgZ1sjvrkfL79z1eIrbJ9_t",
+      "title": "CAD-002_Resumo_Agregado_Carteira_Sanitizado_19-10-2026.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "19xbj_VJupAfs6fDszzVbuPTXm3f-A8wt",
+      "title": "AUD-005_Auditoria_Coerencia_Central_v0.2.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    },
+    {
+      "id": "10Rg-QTmqP7aW41QlaEQ1RudwclLvoWGm",
+      "title": "00-LEIA-ME_Governanca_da_Documentacao.md",
+      "contentEqual": true,
+      "nameEqual": true,
+      "parentsEqual": true,
+      "sharedEqual": true,
+      "missingContent": false
+    }
+  ],
+  "created": {
+    "id": "1U_ylnB-oOOoK89lCw5p3aSkYnaWWDbMJ",
+    "title": "AV-003_Contrato_Avaliacao_Prescricao_v0.1.md",
+    "url": "https://drive.google.com/file/d/1U_ylnB-oOOoK89lCw5p3aSkYnaWWDbMJ/view?usp=drivesdk",
+    "verified": true
+  },
+  "unchangedLessons": [
+    {
+      "id": "1tu0LZ5zOnw1D8g7ybJW-8fVeGeRKGnJ2",
+      "title": "ACESSO-033_Planejamento_Periodizacao_Parte_1_v0.1.md",
+      "unchanged": true
+    },
+    {
+      "id": "19VVOdf2iDOZOAeKTaUJGek_5T5ZH29UK",
+      "title": "ACESSO-032_Laudo_Parte_5_v0.1.md",
+      "unchanged": true
+    },
+    {
+      "id": "1Myeo-96WhM93MR99Yljb5iAOaZAKaNDw",
+      "title": "ACESSO-031_Laudo_Parte_4_v0.1.md",
+      "unchanged": true
+    },
+    {
+      "id": "1YszVUQy3Vzt3uZugSkpTol8K_2IIKRK3",
+      "title": "ACESSO-030_Laudo_Parte_3_v0.1.md",
+      "unchanged": true
+    },
+    {
+      "id": "1Sjv1KmZlFTdRll8YpiSR4LeNTRCWlYQd",
+      "title": "ACESSO-029_Laudo_Parte_2_v0.1.md",
+      "unchanged": true
+    },
+    {
+      "id": "1FhWISXVVOQgnUP8jso5p7cRPgT8RfR0C",
+      "title": "ACESSO-028_Laudo_Parte_1_v0.1.md",
+      "unchanged": true
+    }
+  ],
+  "checks": {
+    "passed": true,
+    "errors": [],
+    "testDefinitions": 57
+  },
+  "limits": [
+    "No new video or full academic review",
+    "No actual equipment formula mapping",
+    "No exercise or periodization motor test",
+    "No operational sources or automations changed"
+  ],
+  "auditUrl": "https://drive.google.com/file/d/19xbj_VJupAfs6fDszzVbuPTXm3f-A8wt/view?usp=drivesdk",
+  "indexUrl": "https://drive.google.com/file/d/10Rg-QTmqP7aW41QlaEQ1RudwclLvoWGm/view?usp=drivesdk"
+}

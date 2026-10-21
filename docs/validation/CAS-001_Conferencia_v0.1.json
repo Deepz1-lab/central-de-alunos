@@ -1,0 +1,136 @@
+{
+  "id": "CONF-CAS-001",
+  "timestamp": "2026-10-20T18:18:13.454Z",
+  "scope": "Conferência aritmética e integridade documental; nenhum teste de motor ou aprovação profissional",
+  "arithmeticChecks": [
+    {
+      "id": "Assimetria candidata %",
+      "actual": 16.666666666666664,
+      "expected": 16.666666666666668,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Normalização com entrada incorreta kgf/kg",
+      "actual": 0.5,
+      "expected": 0.5,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Normalização com entrada revisada kgf/kg",
+      "actual": 0.375,
+      "expected": 0.375,
+      "result": "CONFERE"
+    },
+    {
+      "id": "60% reserva usando pico, bpm",
+      "actual": 132,
+      "expected": 132,
+      "result": "CONFERE"
+    },
+    {
+      "id": "60% do pico, bpm",
+      "actual": 108,
+      "expected": 108,
+      "result": "CONFERE"
+    },
+    {
+      "id": "85% reserva usando pico, bpm",
+      "actual": 162,
+      "expected": 162,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Pace exemplo, min/km",
+      "actual": 10,
+      "expected": 10,
+      "result": "CONFERE"
+    },
+    {
+      "id": "FC por 15 s, conversão aritmética",
+      "actual": 33,
+      "expected": 33,
+      "result": "CONFERE"
+    },
+    {
+      "id": "ICP média simples regional %",
+      "actual": 90,
+      "expected": 90,
+      "result": "CONFERE"
+    },
+    {
+      "id": "ICP total ponderado %",
+      "actual": 86.66666666666667,
+      "expected": 86.66666666666667,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Orçamento da sessão, min",
+      "actual": 58,
+      "expected": 58,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Margem de tempo, min",
+      "actual": 2,
+      "expected": 2,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Séries de exercícios semanais",
+      "actual": 36,
+      "expected": 36,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Tempo restante para ajustes/transições, min",
+      "actual": 15.399999999999999,
+      "expected": 15.4,
+      "result": "CONFERE"
+    }
+  ],
+  "variantCount": 12,
+  "variantEngineStatus": "NAO_EXECUTADO",
+  "professionalApproval": "PENDENTE",
+  "manifest": [
+    {
+      "path": "docs/analyses/MET-002_Logistica_Treinamento_Combinado_v0.1.md",
+      "bytes": 15415,
+      "sha256": "8f6b6f0adf7cc6e87f82173cd2e54c6e4ea9832e9989f51fecc75c126aafc58d"
+    },
+    {
+      "path": "docs/decisions/DEC-OP-001_Atualizacao_Manual_e_Backup_v0.1.md",
+      "bytes": 4265,
+      "sha256": "f5830bae4a036efcbc3137b58de63a7881f5a86ce09cab9954687d2c1e7f115c"
+    },
+    {
+      "path": "docs/analyses/MET-003_Avaliacao_Dados_Base_Treino_Ciclico_v0.1.md",
+      "bytes": 8649,
+      "sha256": "2268d07e2a634cb743197cc17894735cf91f666c66f61a8311369bc8052301b4"
+    },
+    {
+      "path": "docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.1.md",
+      "bytes": 19417,
+      "sha256": "d2799b29548c2688907c716a9e549b3dd06a66c63eba66769d20f49dcb0a8bb8"
+    },
+    {
+      "path": "docs/methodology/AV-003_Contrato_Avaliacao_Prescricao_v0.5.md",
+      "bytes": 45528,
+      "sha256": "c0a353f4af95c9b10103384a34b66913affdd18e668bf9fee92338d41aedcdf1"
+    },
+    {
+      "path": "docs/methodology/DIC-001_Indicadores_Protocolos_v0.4.md",
+      "bytes": 51043,
+      "sha256": "ba1a5ab864d3c9d5026dd75419af78e415ee486a900cd8a89f047b2596726967"
+    },
+    {
+      "path": "docs/validation/TEST-001_Casos_de_Validacao_v0.6.md",
+      "bytes": 44029,
+      "sha256": "150ff525f5f34ada77e5871728f331325cf9537c408fcc0ab37220c6ad5bfe0e"
+    },
+    {
+      "path": "docs/decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.4.md",
+      "bytes": 10936,
+      "sha256": "7b0a59e342a18b33f7c9899096952267997e9e8d83fd0e8c200b54530f3d5eff"
+    }
+  ]
+}
