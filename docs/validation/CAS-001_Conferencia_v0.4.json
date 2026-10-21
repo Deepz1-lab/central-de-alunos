@@ -1,0 +1,52 @@
+{
+  "id": "CONF-CAS-001",
+  "version": "0.4",
+  "date": "2026-10-21",
+  "scope": "Conferência de representação documental; não são testes de motor ou eficácia do treino",
+  "checks": [
+    {
+      "name": "Entradas numéricas anteriores preservadas",
+      "result": "CONFERE"
+    },
+    {
+      "name": "Dose anterior preservada somente como cenário histórico",
+      "result": "CONFERE"
+    },
+    {
+      "name": "Trabalho desconhecido não preenchido",
+      "result": "CONFERE"
+    },
+    {
+      "name": "Rotina desconhecida não preenchida",
+      "result": "CONFERE"
+    },
+    {
+      "name": "Resposta não observada permanece ausente",
+      "result": "CONFERE"
+    },
+    {
+      "name": "Séries e divisão atuais não inventadas",
+      "result": "CONFERE"
+    },
+    {
+      "name": "D-01 registra ajuste real de direção",
+      "result": "CONFERE"
+    },
+    {
+      "name": "Demais decisões não promovidas a aprovação",
+      "result": "CONFERE"
+    },
+    {
+      "name": "Nenhuma fase recebeu duração automática",
+      "result": "CONFERE"
+    },
+    {
+      "name": "Plano e motor não aprovados/executados",
+      "result": "CONFERE"
+    }
+  ],
+  "arithmeticStatus": "Não há nova dose numérica selecionada; contas anteriores permanecem históricas",
+  "catalogCases": 89,
+  "engineExecution": "NAO_EXECUTADO",
+  "professionalPlanApproval": "PENDENTE"
+}

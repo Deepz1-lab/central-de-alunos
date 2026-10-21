@@ -1,0 +1,209 @@
+{
+  "id": "F-CAS-001",
+  "version": "0.4",
+  "entirelySynthetic": true,
+  "professionalApproval": "PENDENTE",
+  "engineExecution": "NAO_EXECUTADO",
+  "inputs": {
+    "massReviewedKg": 80,
+    "massIncorrectKg": 60,
+    "extensionRightKgf": 30,
+    "extensionLeftKgf": 25,
+    "flexionKgf": null,
+    "restingHrBpm": 60,
+    "testPeakHrBpm": 180,
+    "testPeakIsProvenPhysiologicalMax": false,
+    "externalThresholdBpmUnreviewed": 158,
+    "speedForPaceExampleKmh": 6,
+    "icpRegionsPercent": [
+      60,
+      100,
+      100,
+      100
+    ],
+    "icpRegionMaxScores": [
+      25,
+      15,
+      15,
+      20
+    ],
+    "activeKneeExtensionDeficitDegrees": {
+      "right": 35,
+      "left": 30,
+      "entirelyInventedForVariant": true
+    }
+  },
+  "variants": [
+    "TC-58",
+    "TC-59",
+    "TC-60",
+    "TC-61",
+    "TC-62",
+    "TC-63",
+    "TC-64",
+    "TC-65",
+    "TC-66",
+    "TC-67",
+    "TC-68",
+    "TC-69",
+    "TC-70",
+    "TC-71",
+    "TC-72",
+    "TC-73",
+    "TC-74",
+    "TC-75",
+    "TC-76",
+    "TC-77",
+    "TC-78",
+    "TC-79",
+    "TC-80",
+    "TC-81",
+    "TC-82",
+    "TC-83",
+    "TC-84",
+    "TC-85",
+    "TC-86",
+    "TC-87",
+    "TC-88",
+    "TC-89"
+  ],
+  "outcomeCoverage": {
+    "hypertrophyBaseline": null,
+    "dispositionStructuredBaseline": null,
+    "shoeTaskFunctionalBaseline": null,
+    "source": "Dado não coletado; não preencher com resultado fictício de execução"
+  },
+  "professionalDecisions": [
+    {
+      "id": "D-01",
+      "status": "AJUSTAR",
+      "decision": "Completar contexto e iniciar proposta de readaptação para observar resposta antes de selecionar divisão/volume",
+      "reason": "Treinador condicionou a escolha a dor, assimetria, trabalho e rotina",
+      "approvedBy": null,
+      "approvedAt": null,
+      "scope": "F-CAS-001 v0.4; direção e dose separadas",
+      "decisionSource": "Resposta direta do treinador em 21/10/2026"
+    },
+    {
+      "id": "D-02",
+      "status": "PENDENTE",
+      "decision": null,
+      "reason": null,
+      "approvedBy": null,
+      "approvedAt": null,
+      "scope": "F-CAS-001 v0.4; direção e dose separadas"
+    },
+    {
+      "id": "D-03",
+      "status": "PENDENTE",
+      "decision": null,
+      "reason": null,
+      "approvedBy": null,
+      "approvedAt": null,
+      "scope": "F-CAS-001 v0.4; direção e dose separadas",
+      "confirmedPrinciple": "Observar resposta e progredir conforme objetivo; parâmetros concretos continuam pendentes"
+    },
+    {
+      "id": "D-04",
+      "status": "PENDENTE",
+      "decision": null,
+      "reason": null,
+      "approvedBy": null,
+      "approvedAt": null,
+      "scope": "F-CAS-001 v0.4; direção e dose separadas"
+    },
+    {
+      "id": "D-05",
+      "status": "PENDENTE",
+      "decision": null,
+      "reason": null,
+      "approvedBy": null,
+      "approvedAt": null,
+      "scope": "F-CAS-001 v0.4; direção e dose separadas"
+    },
+    {
+      "id": "D-06",
+      "status": "PENDENTE",
+      "decision": null,
+      "reason": null,
+      "approvedBy": null,
+      "approvedAt": null,
+      "scope": "F-CAS-001 v0.4; direção e dose separadas"
+    }
+  ],
+  "assessmentSourceVersion": "F-CAS-001 v0.3, dados sintéticos históricos",
+  "historicalScenario": {
+    "sourceVersion": "0.3",
+    "status": "CENARIO_DE_CALCULO_NAO_SELECIONADO_COMO_DOSE_ATUAL",
+    "proposedBudget": {
+      "blockMinMinutes": [
+        4,
+        30,
+        8,
+        3,
+        2,
+        2
+      ],
+      "blockMaxMinutes": [
+        5,
+        33,
+        10,
+        4,
+        2,
+        2
+      ],
+      "reserveMinutes": 4,
+      "sessionLimitMinutes": 60,
+      "setsPerSession": 12,
+      "assumedSecondsPerSetForBudgetOnly": 48,
+      "betweenSetRests": 6,
+      "betweenSetRestSeconds": 120,
+      "weeklySetsByExercise": [
+        6,
+        4,
+        2,
+        4,
+        4,
+        2,
+        2,
+        6,
+        6
+      ],
+      "weeklyCyclicMinutesRange": [
+        24,
+        30
+      ]
+    },
+    "flexibilityProposal": {
+      "sets": 2,
+      "sides": 2,
+      "holdSeconds": 30,
+      "relaxationIntervals": 4,
+      "relaxationSeconds": 15,
+      "setupMaxSeconds": 60,
+      "daysPerWeek": 3,
+      "professionalApproval": "PENDENTE",
+      "relaxationPlacement": "Após cada exposição, incluindo retorno após a última"
+    }
+  },
+  "currentPlanning": {
+    "phaseDirection": "READAPTACAO_PARA_OBSERVAR_RESPOSTA_NESTE_CASO",
+    "directionSource": "Treinador, conversa em 21/10/2026",
+    "occupation": null,
+    "occupationalDemands": null,
+    "routine": null,
+    "currentPainContext": null,
+    "recentTrainingHistory": null,
+    "observedReadaptationResponse": null,
+    "availableSessionsPerWeek": 3,
+    "availableMinutesPerSession": 60,
+    "prescribedSessionsPerWeek": null,
+    "exercisesPerSession": null,
+    "setsPerMuscleGroup": null,
+    "repetitions": null,
+    "targetEffort": null,
+    "restSeconds": null,
+    "readaptationDuration": null,
+    "cycleDuration": null
+  }
+}
