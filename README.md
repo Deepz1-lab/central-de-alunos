@@ -12,7 +12,8 @@ O desenvolvimento parte da prática relatada pelo treinador na ACESSO, de refer�
 - **Para saber que dados já existem antes da readaptação:** [MAP-CTX-001](docs/methodology/MAP-CTX-001_Mapa_Entradas_Readaptacao_v0.1.md).
 - **Para entender a base e suas fontes:** [guia dos documentos](docs/README.md).
 - **Para usar o resumo antes da proposta de readaptação:** [RES-CTX-001 aplicado ao caso fictício](docs/validation/RES-CTX-001_Resumo_Contexto_Readaptacao_v0.1.md).
-- **Para acompanhar um exemplo completo:** [CAS-001 v0.4 — pessoa inteiramente fictícia](docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.4.md).
+- **Para auditar contexto, treino e progressão concretos:** [CAS-002 v0.1 — novo caso inteiramente fictício](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.1.md).
+- **Para acompanhar a evolução do primeiro exemplo:** [CAS-001 v0.4](docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.4.md).
 - **Para revisar como treinador e programador:** [revisão do caso e decisões pendentes](docs/reviews/REV-CAS-001_Revisao_Treinador_Programador_v0.3.md).
 - **Para acompanhar os próximos passos:** [roteiro de evolução](ROADMAP.md).
 - **Para executar o piloto no Windows:** [instruções locais](LEIA-ME.md).
@@ -73,4 +74,4 @@ O conteúdo público usa exemplos fictícios e documentação revisada. Laudos o
 
 ## Próxima entrega
 
-Revisar o RES-CTX-001 aplicado ao caso: aproveitar as informações já conhecidas, localizar respostas existentes e completar somente lacunas pertinentes. Então selecionar tarefas/dose e combinar a observação da resposta. Registrar as decisões do treinador por escopo antes de especificar regras executáveis. A proposta de treino continua dependendo de aprovação antes de execução.
+Auditar o CAS-002: novo contexto fictício completo, duas sessões propostas, contagem de volume, orçamento de tempo e ramos simulados de resposta. A conferência reproduziu 33 contas; seis variantes documentais continuam sem execução contra motor. O caso não preenche lacunas do CAS-001. Registrar ajustes e aprovação do treinador por escopo antes de especificar regras executáveis ou executar o plano.

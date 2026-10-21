@@ -1,0 +1,224 @@
+{
+  "id": "CONF-CAS-002",
+  "version": "0.1",
+  "date": "2026-10-21T21:40:17.051Z",
+  "scope": "Conferência de contas e integridade da documentação; não executa motor nem valida resposta biológica",
+  "arithmeticChecks": [
+    {
+      "id": "Assimetria candidata %",
+      "actual": 6.25,
+      "expected": 6.25,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Sessões semanais propostas",
+      "actual": 2,
+      "expected": 2,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Séries resistidas por sessão",
+      "actual": 12,
+      "expected": 12,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Séries de exercícios semanais",
+      "actual": 24,
+      "expected": 24,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Séries dirigidas semanais: Quadríceps",
+      "actual": 4,
+      "expected": 4,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Séries dirigidas semanais: Isquiotibiais",
+      "actual": 4,
+      "expected": 4,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Séries dirigidas semanais: Peitoral",
+      "actual": 4,
+      "expected": 4,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Séries dirigidas semanais: Costas — categoria ampla da tarefa",
+      "actual": 4,
+      "expected": 4,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Séries dirigidas semanais: Glúteos",
+      "actual": 4,
+      "expected": 4,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Séries dirigidas semanais: Flexores plantares",
+      "actual": 4,
+      "expected": 4,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Controle de tronco exposições semanais",
+      "actual": 4,
+      "expected": 4,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Cíclico semanal mínimo",
+      "actual": 12,
+      "expected": 12,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Cíclico semanal máximo",
+      "actual": 16,
+      "expected": 16,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Caminhada de deslocamento relatada min",
+      "actual": 100,
+      "expected": 100,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Blocos mínimos min",
+      "actual": 46,
+      "expected": 46,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Blocos máximos min",
+      "actual": 54,
+      "expected": 54,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Total mínimo com reserva min",
+      "actual": 50,
+      "expected": 50,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Total máximo com reserva min",
+      "actual": 58,
+      "expected": 58,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Execução resistida hipótese segundos",
+      "actual": 480,
+      "expected": 480,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Intervalos resistidos segundos",
+      "actual": 720,
+      "expected": 720,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Margem interna no bloco resistido teto segundos",
+      "actual": 600,
+      "expected": 600,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Alongamento: exposição segundos",
+      "actual": 120,
+      "expected": 120,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Alongamento: soltura segundos",
+      "actual": 60,
+      "expected": 60,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Alongamento: total teto segundos",
+      "actual": 240,
+      "expected": 240,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Equilíbrio: total orçado segundos",
+      "actual": 120,
+      "expected": 120,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Tronco: total mínimo orçado segundos",
+      "actual": 120,
+      "expected": 120,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Série adicional e intervalo segundos",
+      "actual": 160,
+      "expected": 160,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Teto após série adicional segundos",
+      "actual": 3640,
+      "expected": 3640,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Excesso diante do teto segundos",
+      "actual": 40,
+      "expected": 40,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Teto revisado com menos 1 min cíclico segundos",
+      "actual": 3580,
+      "expected": 3580,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Séries semanais no ramo candidato",
+      "actual": 25,
+      "expected": 25,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Quadríceps no ramo candidato",
+      "actual": 5,
+      "expected": 5,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Teto cíclico semanal no ramo revisado",
+      "actual": 15,
+      "expected": 15,
+      "result": "CONFERE"
+    }
+  ],
+  "professionalApproval": "PENDENTE",
+  "engineExecution": "NAO_EXECUTADO",
+  "syntheticVariants": 6,
+  "catalogCountUnchanged": 89,
+  "manifest": [
+    {
+      "path": "docs/validation/CAS-002_Readaptacao_Contextualizada_v0.1.md",
+      "sha256": "75055a0d1ccea7ade51ce863ccf76985ba881883e5476e0e89241024e0df32e1"
+    },
+    {
+      "path": "docs/validation/fixtures/CAS-002_v0.1.json",
+      "sha256": "ee35b947caa73a5419ff7581846d88071cab1e2b8bc213b3793c39b9e6302c45"
+    },
+    {
+      "path": "docs/validation/CAS-002_Conferencia_v0.1.md",
+      "sha256": "7ed59d26beafe6a922c8ac8fd92a7b3b7774951d17099f675699b549a525f87d"
+    }
+  ]
+}
