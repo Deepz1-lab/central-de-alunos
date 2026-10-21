@@ -1,0 +1,190 @@
+{
+  "id": "RES-CTX-001",
+  "version": "0.1",
+  "date": "2026-10-21",
+  "caseId": "F-CAS-001",
+  "sourceCaseVersion": "0.4",
+  "dataNature": "INTEIRAMENTE_SINTETICO",
+  "documentState": "PARA_REVISAO",
+  "sourceMode": "APLICACAO_DOCUMENTAL_SEM_NOVA_COLETA",
+  "profile": {
+    "age": 35,
+    "experienceNarrative": "Seis meses de treino intermitente; histórico recente insuficiente",
+    "objective": "Hipertrofia e disposição",
+    "availability": {
+      "sessionsPerWeekMaximum": 3,
+      "minutesPerSessionMaximum": 60,
+      "isPrescribedFrequency": false
+    }
+  },
+  "context": {
+    "currentPain": null,
+    "occupation": null,
+    "workTasks": null,
+    "workSchedule": null,
+    "routine": null,
+    "sleepContext": null,
+    "otherActivities": null,
+    "recentTrainingDetail": null,
+    "readaptationResponse": null
+  },
+  "assessmentReferences": [
+    {
+      "id": "ASSESS-FORCE",
+      "mapFields": [
+        "CTX-17",
+        "CTX-18",
+        "CTX-28"
+      ],
+      "source": "F-CAS-001 v0.4 inputs",
+      "rightExtensionKgf": 30,
+      "leftExtensionKgf": 25,
+      "flexionKgf": null,
+      "interpretationApproved": false
+    },
+    {
+      "id": "ASSESS-BODY",
+      "mapFields": [
+        "CTX-15",
+        "CTX-16"
+      ],
+      "source": "F-CAS-001 v0.4 inputs",
+      "reviewedMassKg": 80,
+      "incorrectSecondaryMassKg": 60,
+      "hypertrophyOutcomeBaseline": null
+    },
+    {
+      "id": "ASSESS-CARDIO",
+      "mapFields": [
+        "CTX-21",
+        "CTX-27"
+      ],
+      "source": "F-CAS-001 v0.4 inputs",
+      "restingHrBpm": 60,
+      "testPeakHrBpm": 180,
+      "peakIsProvenPhysiologicalMax": false,
+      "unreviewedExternalThresholdBpm": 158
+    },
+    {
+      "id": "ASSESS-FLEX",
+      "mapFields": [
+        "CTX-20"
+      ],
+      "source": "CAS-001 v0.3 e F-CAS-001 v0.4 inputs; dados sintéticos históricos",
+      "wellsCm": 28,
+      "activeKneeExtensionDeficitDegrees": {
+        "right": 35,
+        "left": 30
+      },
+      "shoeTaskFunctionalBaseline": null
+    },
+    {
+      "id": "ASSESS-POSTURE",
+      "mapFields": [
+        "CTX-22"
+      ],
+      "source": "Narrativa CAS-001 v0.3",
+      "rubricComplete": false,
+      "postureScore": null,
+      "formulaExampleIsPatientFinding": false
+    },
+    {
+      "id": "ASSESS-BALANCE",
+      "mapFields": [
+        "CTX-23"
+      ],
+      "source": "Narrativa CAS-001 v0.3",
+      "observation": "Auxílio ocasional no apoio unipodal, em cenário fictício",
+      "measuredTug": null,
+      "fallRiskClassification": null
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q-01",
+      "topic": "Dor atual e impacto",
+      "mapFields": [
+        "CTX-11",
+        "CTX-12",
+        "CTX-14"
+      ],
+      "response": null,
+      "sourceLookupBeforeAsking": true
+    },
+    {
+      "id": "Q-02",
+      "topic": "Trabalho e exigências",
+      "mapFields": [
+        "CTX-04",
+        "CTX-05"
+      ],
+      "response": null,
+      "sourceLookupBeforeAsking": true
+    },
+    {
+      "id": "Q-03",
+      "topic": "Rotina, descanso e outras exposições",
+      "mapFields": [
+        "CTX-05",
+        "CTX-06",
+        "CTX-08"
+      ],
+      "response": null,
+      "sourceLookupBeforeAsking": true
+    },
+    {
+      "id": "Q-04",
+      "topic": "Treino recente e interrupções",
+      "mapFields": [
+        "CTX-07",
+        "CTX-28",
+        "CTX-32"
+      ],
+      "response": null,
+      "sourceLookupBeforeAsking": true
+    },
+    {
+      "id": "Q-05",
+      "topic": "Confirmar objetivo e prioridade quando necessário",
+      "mapFields": [
+        "CTX-01",
+        "CTX-02",
+        "CTX-03",
+        "CTX-24"
+      ],
+      "response": null,
+      "sourceLookupBeforeAsking": true
+    }
+  ],
+  "decision": {
+    "direction": "READAPTACAO_PARA_OBSERVAR_RESPOSTA_NESTE_CASO",
+    "directionSource": "Treinador, conversa em 21/10/2026",
+    "d01": "AJUSTAR",
+    "trainingPlanApproval": "PENDENTE",
+    "prescribedFrequency": null,
+    "exercises": null,
+    "setsPerMuscleGroup": null,
+    "repetitions": null,
+    "effort": null,
+    "restSeconds": null,
+    "readaptationDuration": null,
+    "reason": "Contexto pertinente e critérios por tarefa ainda dependem de revisão; não existe obrigatoriedade universal por campo isolado"
+  },
+  "postExposure": {
+    "execution": null,
+    "observedEffort": null,
+    "symptoms": null,
+    "actualDuration": null,
+    "subsequentResponse": null,
+    "nextDecision": null,
+    "reviewer": null,
+    "reviewedAt": null
+  },
+  "scope": {
+    "newHealthCollection": false,
+    "formCreated": false,
+    "engineImplemented": false,
+    "testCatalogCount": 89,
+    "allMapFieldsMandatory": false
+  }
+}

@@ -11,6 +11,7 @@ O desenvolvimento parte da prática relatada pelo treinador na ACESSO, de refer�
 - **Para conhecer o projeto:** [visão do produto](docs/corrections/2026-10-20/CENTRAL-001_Visao_Produto_Arquitetura_Funcional_v0.5.md).
 - **Para saber que dados já existem antes da readaptação:** [MAP-CTX-001](docs/methodology/MAP-CTX-001_Mapa_Entradas_Readaptacao_v0.1.md).
 - **Para entender a base e suas fontes:** [guia dos documentos](docs/README.md).
+- **Para usar o resumo antes da proposta de readaptação:** [RES-CTX-001 aplicado ao caso fictício](docs/validation/RES-CTX-001_Resumo_Contexto_Readaptacao_v0.1.md).
 - **Para acompanhar um exemplo completo:** [CAS-001 v0.4 — pessoa inteiramente fictícia](docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.4.md).
 - **Para revisar como treinador e programador:** [revisão do caso e decisões pendentes](docs/reviews/REV-CAS-001_Revisao_Treinador_Programador_v0.3.md).
 - **Para acompanhar os próximos passos:** [roteiro de evolução](ROADMAP.md).
@@ -72,4 +73,4 @@ O conteúdo público usa exemplos fictícios e documentação revisada. Laudos o
 
 ## Próxima entrega
 
-Usar MAP-CTX-001 para elaborar um resumo de contexto com as fontes existentes; localizar o que falta antes de nova coleta e, então, organizar a proposta de readaptação e seu acompanhamento. Registrar as decisões do treinador por escopo antes de especificar regras executáveis. A proposta de treino continua dependendo de aprovação antes de execução.
+Revisar o RES-CTX-001 aplicado ao caso: aproveitar as informações já conhecidas, localizar respostas existentes e completar somente lacunas pertinentes. Então selecionar tarefas/dose e combinar a observação da resposta. Registrar as decisões do treinador por escopo antes de especificar regras executáveis. A proposta de treino continua dependendo de aprovação antes de execução.

@@ -27,3 +27,8 @@ A Central poderá propor ajuste da sessão e revisão do macro. Ambas exigem jus
 ## Mapa de entradas disponível
 
 MAP-CTX-001 v0.1 relaciona 34 itens, suas fontes/coberturas e seis decisões. Leitura de estrutura e registros previstos não equivale à coleta completa da pessoa nem a integração. O próximo passo é aproveitar relatos existentes para um resumo de contexto revisável, perguntar só pelas lacunas pertinentes e conferir os localizadores dependentes da versão do modelo.
+
+
+## Resumo aplicado disponível
+
+RES-CTX-001 aplica o mapa ao caso sintético e separa informação conhecida, contexto ausente, perguntas condicionais e retorno da sessão. As 15 conferências de representação não executam o motor. Próxima revisão: suficiência do contexto para cada decisão e seleção profissional de tarefas/dose e critérios de observação, sem inventar respostas do caso ou exigir todos os campos de todos os alunos.
