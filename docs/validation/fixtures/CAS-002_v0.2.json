@@ -1,0 +1,547 @@
+{
+  "id": "F-CAS-002",
+  "version": "0.2",
+  "date": "2026-10-21",
+  "entirelySynthetic": true,
+  "newScenarioDoesNotFillCas001": true,
+  "professionalApproval": "PENDENTE",
+  "engineExecution": "NAO_EXECUTADO",
+  "profile": {
+    "ageYears": 36,
+    "massKg": 78,
+    "heightCm": 175,
+    "objective": "Hipertrofia, disposição e regularidade",
+    "additionalTask": "Conforto ao alcançar pé para calçar-se",
+    "priorExperienceMonths": 8,
+    "trainingInterruptionWeeks": 10,
+    "occupation": "Analista de suporte",
+    "workHours": "Segunda a sexta 9–18h",
+    "reportedSeatedWorkHoursApprox": 7,
+    "workBreaks": true,
+    "heavyOccupationalLiftingReported": false,
+    "sleepReportedHoursRange": [
+      6.5,
+      7.5
+    ],
+    "sleepInterpretation": "Relato; sem corte universal",
+    "walkingCommute": {
+      "minutesPerTrip": 10,
+      "tripsPerDay": 2,
+      "daysPerWeek": 5,
+      "intensityCharacterized": false
+    },
+    "currentPainReported": false,
+    "currentPainInAssessedTasks": false,
+    "currentRestrictionsReported": false,
+    "availability": {
+      "days": [
+        "terça",
+        "sexta"
+      ],
+      "time": "18:30",
+      "minutesPerSession": 60
+    },
+    "preference": "Máquinas e supervisão para reaprender ajustes",
+    "readiness": {
+      "origin": "Profissional fictício na narrativa",
+      "submaximalTaskReviewFavorable": true,
+      "isRealUserApproval": false
+    },
+    "environment": {
+      "default": "ACESSO",
+      "devicesAreInventedForFixture": true
+    },
+    "currentResistanceTrainingStatus": "INTERROMPIDO_HA_DEZ_SEMANAS",
+    "trainingLevel": "INDETERMINADO",
+    "priorConsistency": null,
+    "priorFrequencyPerWeek": null,
+    "priorDoseAndResponse": null,
+    "specificReturnMotivation": null,
+    "objectiveHierarchy": {
+      "agreedPrimary": null,
+      "agreedSecondary": null,
+      "candidatePrimary": "Hipertrofia",
+      "candidateOrigin": "HIPOTESE_DA_CENTRAL",
+      "agreementStatus": "PENDENTE",
+      "successCriteria": null
+    }
+  },
+  "assessment": {
+    "extension": {
+      "rightKgf": 32,
+      "leftKgf": 30,
+      "sameSyntheticProtocolBothSides": true,
+      "selection": "Maior de três esforços",
+      "pain": false
+    },
+    "exerciseCalibration": {
+      "source": "Oito repetições na avaliação fictícia com as cargas de mostrador; não prova duas séries completas",
+      "controlledWithInstructions": true,
+      "estimatedRir": 4,
+      "rirPrecision": "EM_APRENDIZAGEM",
+      "pain": false
+    },
+    "cardio": {
+      "protocolType": "Estágios fictícios inspirados no relato local; término de familiarização, não máximo",
+      "restingHrBpm": 68,
+      "stages": [
+        {
+          "minutes": 1,
+          "speedKmh": 3,
+          "inclinePercent": 0,
+          "hrEnd": 90,
+          "borg0to10": 1
+        },
+        {
+          "minutes": 1,
+          "speedKmh": 4,
+          "inclinePercent": 0,
+          "hrEnd": 100,
+          "borg0to10": 2
+        },
+        {
+          "minutes": 1,
+          "speedKmh": 5,
+          "inclinePercent": 0,
+          "hrEnd": 114,
+          "borg0to10": 3
+        },
+        {
+          "minutes": 1,
+          "speedKmh": 6,
+          "inclinePercent": 0,
+          "hrEnd": 126,
+          "borg0to10": 4
+        }
+      ],
+      "activeRecovery": {
+        "minutes": 1,
+        "speedKmh": 5,
+        "hrEnd": 110
+      },
+      "seatedRecovery": {
+        "minutes": 1,
+        "hrEnd": 95
+      },
+      "symptoms": false,
+      "maximalPhysiologicalHrProven": false,
+      "measuredVo2": null,
+      "reviewedAnaerobicThreshold": null,
+      "fitcheckUsed": false
+    },
+    "flexibility": {
+      "wellsCm": 26,
+      "activeKneeExtensionDeficitDegrees": {
+        "right": 30,
+        "left": 32
+      },
+      "syntheticProtocol": "Quadril a 90 graus, pelve apoiada, mesmo goniômetro/operador, melhor de três",
+      "shoeTask": "Independente sentado com pé em banco firme; tensão posterior relatada sem dor"
+    },
+    "balance": {
+      "task": "Apoio unipodal perto de suporte, melhor de três",
+      "rightSeconds": 20,
+      "leftSeconds": 15,
+      "leftTouches": 1,
+      "fallRiskClassification": null
+    },
+    "posture": {
+      "clinicallyRelevantStaticFindingDemonstrated": false,
+      "automaticCorrectionIndicated": false
+    },
+    "regionalMuscleBaseline": {
+      "muscle": "Reto femoral direito",
+      "thicknessMm": 18.4,
+      "site": "50% do comprimento femoral",
+      "acquisition": "Decúbito dorsal em repouso; mesmo aparelho/operador fictícios; média de três imagens; mínima compressão no procedimento sintético",
+      "protocolValidatedByAcademy": false,
+      "globalMuscleMassInferred": false
+    }
+  },
+  "plan": {
+    "origin": "PROPOSTA_CENTRAL",
+    "sessionsPerWeek": 2,
+    "days": [
+      "terça",
+      "sexta"
+    ],
+    "initialSessionsSameStructure": true,
+    "horizonWeeks": 6,
+    "mesoReviewWindowWeeks": [
+      1,
+      2
+    ],
+    "developmentWindowWeeks": [
+      3,
+      6
+    ],
+    "phaseTransitionAutomatic": false,
+    "targetRirRange": [
+      3,
+      4
+    ],
+    "exercises": [
+      {
+        "id": "E01",
+        "name": "Leg press horizontal bilateral",
+        "device": "LP-SIM-01",
+        "displayLoadKg": 35,
+        "primary": "Quadríceps",
+        "secondary": [
+          "Glúteos"
+        ],
+        "sets": 2,
+        "repsRange": [
+          8,
+          10
+        ],
+        "restSeconds": 120,
+        "assumedMaxSetSeconds": 40
+      },
+      {
+        "id": "E02",
+        "name": "Flexora sentada bilateral",
+        "device": "FLEX-SIM-01",
+        "displayLoadKg": 15,
+        "primary": "Isquiotibiais",
+        "secondary": [],
+        "sets": 2,
+        "repsRange": [
+          8,
+          10
+        ],
+        "restSeconds": 120,
+        "assumedMaxSetSeconds": 40
+      },
+      {
+        "id": "E03",
+        "name": "Supino sentado em máquina",
+        "device": "SUP-SIM-01",
+        "displayLoadKg": 15,
+        "primary": "Peitoral",
+        "secondary": [
+          "Deltoides",
+          "Tríceps"
+        ],
+        "sets": 2,
+        "repsRange": [
+          8,
+          10
+        ],
+        "restSeconds": 120,
+        "assumedMaxSetSeconds": 40
+      },
+      {
+        "id": "E04",
+        "name": "Remada sentada com apoio torácico",
+        "device": "REM-SIM-01",
+        "displayLoadKg": 20,
+        "primary": "Costas — categoria ampla da tarefa",
+        "secondary": [
+          "Bíceps",
+          "Deltoides"
+        ],
+        "sets": 2,
+        "repsRange": [
+          8,
+          10
+        ],
+        "restSeconds": 120,
+        "assumedMaxSetSeconds": 40
+      },
+      {
+        "id": "E05",
+        "name": "Extensão de quadril em máquina de ponte",
+        "device": "HIP-SIM-01",
+        "displayLoadKg": 10,
+        "primary": "Glúteos",
+        "secondary": [
+          "Isquiotibiais"
+        ],
+        "sets": 2,
+        "repsRange": [
+          8,
+          10
+        ],
+        "restSeconds": 120,
+        "assumedMaxSetSeconds": 40
+      },
+      {
+        "id": "E06",
+        "name": "Panturrilha sentada",
+        "device": "PAN-SIM-01",
+        "displayLoadKg": 10,
+        "primary": "Flexores plantares",
+        "secondary": [],
+        "sets": 2,
+        "repsRange": [
+          8,
+          10
+        ],
+        "restSeconds": 120,
+        "assumedMaxSetSeconds": 40
+      }
+    ],
+    "counting": {
+      "bilateralSeriesCountedOnce": true,
+      "primaryAssignmentIsPlanningConvention": true,
+      "secondarySeriesCoefficient": null,
+      "trunkControlCountedSeparately": true
+    },
+    "blocks": [
+      {
+        "id": "prep",
+        "minMinutes": 4,
+        "maxMinutes": 5
+      },
+      {
+        "id": "resistance",
+        "minMinutes": 26,
+        "maxMinutes": 30
+      },
+      {
+        "id": "trunk_control",
+        "minMinutes": 2,
+        "maxMinutes": 3
+      },
+      {
+        "id": "balance",
+        "minMinutes": 2,
+        "maxMinutes": 2
+      },
+      {
+        "id": "cyclic",
+        "minMinutes": 6,
+        "maxMinutes": 8
+      },
+      {
+        "id": "flexibility",
+        "minMinutes": 4,
+        "maxMinutes": 4
+      },
+      {
+        "id": "record",
+        "minMinutes": 2,
+        "maxMinutes": 2
+      }
+    ],
+    "additionalReserveMinutes": 4,
+    "sessionLimitMinutes": 60,
+    "trunkControl": {
+      "task": "Dead bug adaptado",
+      "exposures": 2,
+      "repetitionsPerSide": 5,
+      "sides": 2,
+      "assumedSecondsPerMovement": 3,
+      "betweenExposureRestSeconds": 30,
+      "setupSeconds": 30,
+      "weeklyExposureCount": 4
+    },
+    "balance": {
+      "exposuresPerSide": 2,
+      "secondsPerExposure": 20,
+      "sides": 2,
+      "transitionsAndRestSeconds": 40
+    },
+    "cyclic": {
+      "minutesRange": [
+        6,
+        8
+      ],
+      "candidateStartSpeedKmh": 4,
+      "inclinePercent": 0,
+      "targetBorgRange": [
+        2,
+        3
+      ],
+      "talk": "Confortável conforme observação",
+      "targetHrDerivedFromThreshold": null
+    },
+    "flexibility": {
+      "exposuresPerSide": 2,
+      "sides": 2,
+      "secondsPerExposure": 30,
+      "relaxationIntervals": 4,
+      "secondsPerRelaxation": 15,
+      "setupMaxSeconds": 60
+    },
+    "scenarioId": "A_HERDADO_V0.1",
+    "selectedForExecution": false,
+    "doseSelectionStatus": "PENDENTE_COMPARACAO_DE_ALTERNATIVAS"
+  },
+  "simulatedBranches": {
+    "favorable": {
+      "entirelyInventedResponse": true,
+      "isRealExecution": false,
+      "session1": {
+        "totalMinutes": 52,
+        "repsEachResistedSet": 8,
+        "estimatedRir": 4,
+        "control": "Com orientações, mantido",
+        "pain": false
+      },
+      "nextDayReport": "Cansaço muscular leve sem prejuízo percebido da rotina, no ramo fictício",
+      "session2": {
+        "totalMinutes": 54,
+        "repsEachResistedSet": 10,
+        "estimatedRir": 4,
+        "control": "Mantido",
+        "pain": false
+      },
+      "candidateChange": {
+        "exerciseId": "E01",
+        "additionalSetsTuesdayOnly": 1,
+        "loadUnchanged": true,
+        "approval": "PENDENTE",
+        "optionalCyclicCapTuesdayMinutes": 7
+      }
+    },
+    "review": {
+      "entirelyInventedAlternative": true,
+      "newSymptomsOrCompromisedControl": true,
+      "automaticProgression": false,
+      "professionalDecisionRequired": true
+    },
+    "appliesToScenario": "A_HERDADO_V0.1",
+    "observationsUsedAsRealEvidenceForDoseSelection": false
+  },
+  "variants": [
+    {
+      "id": "C002-V01",
+      "condition": "Uma série de leg press adicionada na terça sem outra mudança",
+      "expected": {
+        "extraSeconds": 160,
+        "maxSessionSeconds": 3640,
+        "requiresTimeRevision": true,
+        "approvalAutomatic": false
+      },
+      "scope": "Nova proposta; preservar avaliação e plano anterior",
+      "engineStatus": "NAO_EXECUTADO"
+    },
+    {
+      "id": "C002-V02",
+      "condition": "Mesma série adicional, com teto cíclico de terça reduzido de 8 para 7 min",
+      "expected": {
+        "maxSessionSeconds": 3580,
+        "fitsTimeBudget": true,
+        "weeklyExerciseSets": 25,
+        "weeklyPrimaryQuadricepsSets": 5,
+        "approvalAutomatic": false
+      },
+      "scope": "Alternativa candidata, não progressão aprovada",
+      "engineStatus": "NAO_EXECUTADO"
+    },
+    {
+      "id": "C002-V03",
+      "condition": "Sem relato de resposta após sessão",
+      "expected": {
+        "lowRecoveryAlert": false,
+        "favorableResponseAssumed": false,
+        "progressionApprovalAutomatic": false
+      },
+      "scope": "Revisar uso dependente sem invalidar medidas independentes",
+      "engineStatus": "NAO_EXECUTADO"
+    },
+    {
+      "id": "C002-V04",
+      "condition": "RIR-alvo definido, RIR observado ausente",
+      "expected": {
+        "observedRir": null,
+        "progressionApprovalAutomatic": false
+      },
+      "scope": "Alvo não preenche observação",
+      "engineStatus": "NAO_EXECUTADO"
+    },
+    {
+      "id": "C002-V05",
+      "condition": "Força esquerda ausente numa variante da importação",
+      "expected": {
+        "asymmetryPercent": null,
+        "extraUnilateralSetsAutomatic": false,
+        "invalidateAllIndependentData": false
+      },
+      "scope": "Comparação dependente suspensa; demais usos sob avaliação própria",
+      "engineStatus": "NAO_EXECUTADO"
+    },
+    {
+      "id": "C002-V06",
+      "condition": "Sintoma novo ou controle comprometido",
+      "expected": {
+        "automaticIncrease": false,
+        "professionalReviewRequired": true,
+        "automaticDiagnosis": false,
+        "automaticPermissionToContinueOtherTasks": false
+      },
+      "scope": "Revisão da situação/tarefa e prontidão pertinente pelo treinador",
+      "engineStatus": "NAO_EXECUTADO"
+    }
+  ],
+  "testCatalogCountUnchanged": 89,
+  "variantsRegisteredAsNewTc": false,
+  "revisionScope": "PERFIL_FONTES_E_CALIBRACAO_PRIMEIRO_PASSO",
+  "contextRevision": {
+    "step": 1,
+    "newProfileFactsInvented": false,
+    "guidanceConfirmedByTrainer": [
+      "Dose inicial considera experiência e condição atual",
+      "Análise mecânica e calibração nas primeiras sessões",
+      "Sem adaptação automaticamente reduzida",
+      "Revisão conforme resposta, sem progressão pelo calendário"
+    ],
+    "automaticRulesRejected": [
+      "Oito meses implica nível intermediário",
+      "Dez semanas parado implica perda completa",
+      "Experiência implica três séries",
+      "Uma semana implica progressão"
+    ],
+    "nextStep": "Comparar dose, distribuição e tempo; auditoria profissional por escopo",
+    "professionalApproval": "PENDENTE"
+  },
+  "sourceReview": [
+    {
+      "id": "REF-LIV-02",
+      "printedPages": [
+        65,
+        66
+      ],
+      "pdfPages": [
+        83,
+        84
+      ],
+      "depth": "DUAS_PAGINAS_VISUAIS"
+    },
+    {
+      "id": "REF-LIV-01",
+      "pdfPages": [
+        817
+      ],
+      "depth": "SECAO_DESTREINAMENTO"
+    },
+    {
+      "id": "REF-LIV-03",
+      "printedPages": [
+        283
+      ],
+      "pdfPages": [
+        306
+      ],
+      "depth": "PAGINA_PRINCIPIOS"
+    },
+    {
+      "id": "HALONEN-2024",
+      "pmid": "39364857",
+      "doi": "10.1111/sms.14739",
+      "depth": "RESUMO_EDITOR",
+      "directTwoVsThreeSetReturnComparison": false
+    },
+    {
+      "id": "ACSM-2026",
+      "pmid": "41843416",
+      "depth": "RESUMO"
+    },
+    {
+      "id": "ACESSO-033",
+      "newDirectReviewVerified": false
+    }
+  ]
+}

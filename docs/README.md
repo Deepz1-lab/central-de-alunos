@@ -8,19 +8,19 @@
 |---|---|
 | Qual é a proposta da Central? | [CENTRAL-001 v0.5](corrections/2026-10-20/CENTRAL-001_Visao_Produto_Arquitetura_Funcional_v0.5.md) |
 | O projeto está alinhado e qual é o próximo passo? | [AUD-006 — diagnóstico global, evidências e prioridades](audits/AUD-006_Diagnostico_Alinhamento_Projeto_v0.1.md) |
-| Quais fontes compõem a base de estudo? | [REF-BASE-001 — vídeos, artigos e três livros; estado de leitura e uso](methodology/REF-BASE-001_Fontes_Didaticas_Academicas_v0.1.md) |
+| Quais fontes compõem a base de estudo? | [REF-BASE-001 — vídeos, artigos e três livros; estado de leitura e uso](methodology/REF-BASE-001_Fontes_Didaticas_Academicas_v0.2.md) |
 | Como a avaliação leva ao planejamento? | [NUC-001 v0.2](corrections/2026-10-20/NUC-001_Nucleo_Avaliacao_Prescricao_v0.2.md) e [AV-003 v0.6](methodology/AV-003_Contrato_Avaliacao_Prescricao_v0.6.md) |
 | Que dados já existem antes da readaptação? | [MAP-CTX-001 v0.1](methodology/MAP-CTX-001_Mapa_Entradas_Readaptacao_v0.1.md) e [mapa estruturado](methodology/MAP-CTX-001_Mapa_Entradas_Readaptacao_v0.1.json) |
 | Como tratar qualidade e bloqueios? | [VAL-001 v0.3](corrections/2026-10-20/VAL-001_Auditoria_de_Laudos_v0.3.md) |
 | Como descrever indicadores, unidades e protocolos? | [DIC-001 v0.5](methodology/DIC-001_Indicadores_Protocolos_v0.5.md) |
 | Como as planilhas orientam o trabalho? | [MET-002 — montagem e macrociclo](analyses/MET-002_Logistica_Treinamento_Combinado_v0.1.md), [MET-003 — metabólica e dados de base](analyses/MET-003_Avaliacao_Dados_Base_Treino_Ciclico_v0.1.md) e [DEC-OP-001 — atualização manual e backup](decisions/DEC-OP-001_Atualizacao_Manual_e_Backup_v0.1.md) |
 | Como resumir contexto sem duplicar a coleta? | [RES-CTX-001 v0.1](validation/RES-CTX-001_Resumo_Contexto_Readaptacao_v0.1.md) e [registro sintético](validation/fixtures/RES-CTX-001_CAS-001_v0.1.json) |
-| Como auditar uma proposta concreta com contexto completo? | [CAS-002 v0.1](validation/CAS-002_Readaptacao_Contextualizada_v0.1.md), [parâmetros e variantes fictícios](validation/fixtures/CAS-002_v0.1.json), [conferência de 33 contas](validation/CAS-002_Conferencia_v0.1.md) e [registro numérico](validation/CAS-002_Conferencia_v0.1.json) |
+| Como auditar uma proposta concreta com contexto completo? | [CAS-002 v0.2](validation/CAS-002_Readaptacao_Contextualizada_v0.2.md), [parâmetros e variantes fictícios](validation/fixtures/CAS-002_v0.2.json), [conferência histórica v0.1 de 33 contas](validation/CAS-002_Conferencia_v0.1.md) e [registro numérico histórico v0.1](validation/CAS-002_Conferencia_v0.1.json) |
 | Como evoluiu o primeiro percurso, com lacunas preservadas? | [CAS-001 v0.4](validation/CAS-001_Cascata_Sintetica_Integrada_v0.4.md) |
 | O que foi conferido nesse exemplo? | [Conferência v0.4](validation/CAS-001_Conferencia_v0.4.md) e [registro estruturado](validation/CAS-001_Conferencia_v0.4.json) |
 | O que ainda precisa de decisão? | [Revisão do treinador e programador](reviews/REV-CAS-001_Revisao_Treinador_Programador_v0.3.md) |
 | Como testar o comportamento esperado? | [TEST-001 v0.7](validation/TEST-001_Casos_de_Validacao_v0.7.md) e [fixtures R-OP](validation/fixtures/CAS-001_regras_v0.2.json) |
-| Como ler fontes e governança? | [Governança v0.11](decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.11.md) e [biblioteca metodológica](corrections/2026-10-20/README_Biblioteca_Metodologica_ACESSO_v0.2.md) |
+| Como ler fontes e governança? | [Governança v0.12](decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.12.md) e [biblioteca metodológica](corrections/2026-10-20/README_Biblioteca_Metodologica_ACESSO_v0.2.md) |
 
 ## Três camadas de autoria
 
