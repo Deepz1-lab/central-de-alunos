@@ -1,0 +1,102 @@
+{
+  "id": "CONF-CAS-001",
+  "version": "0.3",
+  "timestamp": "2026-10-21T17:19:51.917Z",
+  "scope": "Revisão documental e 12 contas direcionadas; não é motor, revisão independente ou aprovação profissional",
+  "arithmeticChecks": [
+    {
+      "id": "Aeróbico semanal mínimo",
+      "actual": 24,
+      "expected": 24,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Aeróbico semanal máximo",
+      "actual": 30,
+      "expected": 30,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Exposições de alongamento em segundos",
+      "actual": 120,
+      "expected": 120,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Soltura em segundos",
+      "actual": 60,
+      "expected": 60,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Alongamento com posição e transições teto segundos",
+      "actual": 240,
+      "expected": 240,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Blocos mínimos minutos",
+      "actual": 49,
+      "expected": 49,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Blocos máximos minutos",
+      "actual": 56,
+      "expected": 56,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Total mínimo com reserva",
+      "actual": 53,
+      "expected": 53,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Total máximo com reserva",
+      "actual": 60,
+      "expected": 60,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Resistido execução e intervalos minutos",
+      "actual": 21.6,
+      "expected": 21.6,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Transições no resistido teto minutos",
+      "actual": 11.399999999999999,
+      "expected": 11.4,
+      "result": "CONFERE"
+    },
+    {
+      "id": "Séries de exercícios semanais",
+      "actual": 36,
+      "expected": 36,
+      "result": "CONFERE"
+    }
+  ],
+  "caseCatalogCount": 89,
+  "engineExecution": "NAO_EXECUTADO",
+  "professionalApproval": "PENDENTE",
+  "previousFullArithmeticRecord": "CAS-001_Conferencia_v0.2.json",
+  "manifest": [
+    {
+      "path": "docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.3.md",
+      "sha256": "31133c9f0abb8ca15d1286d773e0d2f4c8f1a928bff18841d6b0fd5b51674841"
+    },
+    {
+      "path": "docs/validation/fixtures/CAS-001_v0.3.json",
+      "sha256": "f1aafd4b716a379a0ceb38cfc8d88666c814fcc375d79e48823f7f64a7fddb79"
+    },
+    {
+      "path": "docs/reviews/REV-CAS-001_Revisao_Treinador_Programador_v0.2.md",
+      "sha256": "eb97e1c2940df79a18303d7013f4e3fecc99ca77eaa16166dce52a45f9fde29d"
+    },
+    {
+      "path": "docs/validation/CAS-001_Conferencia_v0.3.md",
+      "sha256": "9917659b0ebeae570ec63bf8613bf65ef679740577528bacf75031095576abaa"
+    }
+  ]
+}

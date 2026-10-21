@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-21T17:23:34.955Z",
+  "scope": "Conteúdo integral salvo no Drive e recuperado; normalização CRLF/LF e fim do arquivo",
+  "files": [
+    {
+      "id": "1B5MFqXAGzlGZXoXED8JD5WH2XBZW6GaY",
+      "path": "docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.3.md",
+      "title": "CAS-001_Cascata_Sintetica_Integrada_v0.3.md",
+      "verified": true,
+      "sha256Normalized": "420c754933612b223370aca0af50537de3c151b4dc6d94eadfeaf395283f4a51"
+    },
+    {
+      "id": "1uLlnqeZaaLEpGg2Dvc2Rk024Wdh-_J4L",
+      "path": "docs/validation/CAS-001_Conferencia_v0.3.md",
+      "title": "CAS-001_Conferencia_v0.3.md",
+      "verified": true,
+      "sha256Normalized": "835d729b0be6096f9052efb575e73445bee68aefc970196997a859cde27705c4"
+    },
+    {
+      "id": "10Rg-QTmqP7aW41QlaEQ1RudwclLvoWGm",
+      "path": "docs/decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.6.md",
+      "title": "00-LEIA-ME_Governanca_da_Documentacao_v0.6.md",
+      "verified": true,
+      "sha256Normalized": "76f83a11b0e4f2b072a9acf98a0b4e09dd337ed73e05e0cf9cbbe19b3b727762"
+    },
+    {
+      "id": "1raOwrYRRey8KcyFhGjcC1hWVWn9effd2",
+      "path": "docs/reviews/REV-CAS-001_Revisao_Treinador_Programador_v0.2.md",
+      "title": "REV-CAS-001_Revisao_Treinador_Programador_v0.2.md",
+      "verified": true,
+      "sha256Normalized": "964e9f3c146dce597a364bbf24ee527fc1bb23a0b9253fd511fb85554e173dfc"
+    }
+  ]
+}

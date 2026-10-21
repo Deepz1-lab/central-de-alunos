@@ -10,8 +10,8 @@ O desenvolvimento parte da prática relatada pelo treinador na ACESSO, de refer�
 
 - **Para conhecer o projeto:** [visão do produto](docs/corrections/2026-10-20/CENTRAL-001_Visao_Produto_Arquitetura_Funcional_v0.5.md).
 - **Para entender a base e suas fontes:** [guia dos documentos](docs/README.md).
-- **Para acompanhar um exemplo completo:** [CAS-001 v0.2 — pessoa inteiramente fictícia](docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.2.md).
-- **Para revisar como treinador e programador:** [revisão do caso e decisões pendentes](docs/reviews/REV-CAS-001_Revisao_Treinador_Programador_v0.1.md).
+- **Para acompanhar um exemplo completo:** [CAS-001 v0.3 — pessoa inteiramente fictícia](docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.3.md).
+- **Para revisar como treinador e programador:** [revisão do caso e decisões pendentes](docs/reviews/REV-CAS-001_Revisao_Treinador_Programador_v0.2.md).
 - **Para acompanhar os próximos passos:** [roteiro de evolução](ROADMAP.md).
 - **Para executar o piloto no Windows:** [instruções locais](LEIA-ME.md).
 
@@ -46,6 +46,7 @@ Essas famílias são propostas da Central. A falta de uma informação bloqueia 
 - **Nova verificação em 21/10/2026:** 11 testes unitários passaram; TypeScript e build do Vite concluídos.
 - **Evidência histórica do piloto:** 39 assertivas de banco e três testes integrados registrados em [validação local](docs/validation/2026-10-19-primeiro-fluxo.md). Não foram repetidos nesta publicação.
 - **Conferência documental de 20/10/2026:** 21 contas sintéticas reproduzidas e estrutura de 20 novos cenários conferida. Isso não executa os cenários contra um motor de prescrição.
+- **Auditoria aplicada em 21/10/2026:** CAS-001 v0.3 corrige dose/tempo e acompanhamento por finalidade; 12 contas direcionadas conferidas. Seis decisões profissionais continuam pendentes na revisão.
 - **Metodologia dos vídeos:** fichas preliminares e sínteses não equivalem a revisão direta de cada aula. Falas, parâmetros e minutagens não verificados continuam pendentes.
 - **Literatura acadêmica:** cada documento registra a fonte e o alcance consultado; não se presume validação universal de protocolos, aparelhos ou doses.
 
@@ -58,7 +59,7 @@ Essas famílias são propostas da Central. A falta de uma informação bloqueia 
 | `tests/` | Testes unitários e de navegador |
 | `scripts/` | Preparação e verificação do ambiente sintético local |
 | `docs/` | Metodologia, decisões, análises, casos, revisões e evidências |
-| `central-de-aluno/index.html` | Arquivo inicial do repositório, preservado como histórico |
+| Histórico do Git | O arquivo inicial `central-de-aluno/index.html` permanece nos commits anteriores; a pasta foi removida da versão atual |
 
 ## GitHub e Drive
 
@@ -70,4 +71,4 @@ O conteúdo público usa exemplos fictícios e documentação revisada. Laudos o
 
 ## Próxima entrega
 
-Auditar o CAS-001 com o treinador, registrar decisões e suas justificativas e escolher um primeiro conjunto de regras aprovadas para especificar um verificador experimental. A proposta de treino continua dependendo de aprovação antes de execução.
+Concluir com o treinador as seis decisões propostas na auditoria do CAS-001, registrar escolhas e justificativas e escolher um primeiro conjunto de regras aprovadas para especificar um verificador experimental. A proposta de treino continua dependendo de aprovação antes de execução.

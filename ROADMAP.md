@@ -15,6 +15,8 @@ Posição: 21/10/2026. Este roteiro registra sequência e critérios; não é ag
 
 O piloto de cadastro/objetivo/revisão existe. A cascata de prescrição está documentada e demonstrada com um caso fictício. Os 89 cenários não são 89 testes aprovados do produto. O motor de prescrição não existe nesta versão.
 
+A organização inicial no GitHub foi publicada e conferida. A auditoria documental do CAS-001 foi aplicada em v0.3; REV-CAS-001 v0.2 apresenta seis escolhas concretas. A etapa 2 continua aguardando as decisões do treinador, sem promover as doses candidatas a regras aprovadas.
+
 ## Decisões que não podem ser presumidas
 
 A ordem das capacidades e a progressão dependem da pessoa e da finalidade. O calendário não comprova adaptação. Equipamentos são meios: ACESSO é o ambiente padrão, e disponibilidade específica importa quando houver exceção ou treino fora dela. Cinco semanas na aba Montagem descrevem uma janela de operação, não uma lei de periodização.
