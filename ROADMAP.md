@@ -35,7 +35,7 @@ RES-CTX-001 aplica o mapa ao caso sintético e separa informação conhecida, co
 
 ## Proposta contextualizada disponível
 
-[CAS-002](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.2.md) demonstra um novo caso inteiramente fictício: contexto, avaliação, prioridades, duas sessões de readaptação, volume declarado, tempo e respostas alternativas simuladas. Não completa artificialmente os dados ausentes do CAS-001. Foram reproduzidas 33 contas; seis variantes são expectativas documentais sem execução contra motor. O catálogo TEST-001 permanece com 89 cenários.
+[CAS-002](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.3.md) demonstra um novo caso inteiramente fictício: contexto, avaliação, prioridades, duas sessões de readaptação, volume declarado, tempo e respostas alternativas simuladas. Não completa artificialmente os dados ausentes do CAS-001. Foram reproduzidas 33 contas; seis variantes são expectativas documentais sem execução contra motor. O catálogo TEST-001 permanece com 89 cenários.
 
 Próximo passo: auditoria do treinador sobre tarefas, dose, tempo e critérios de progressão, registrando manter/ajustar/rejeitar com justificativa por escopo. Depois, delimitar o primeiro verificador das regras aprovadas. Nenhum motor ou plano operacional foi implantado.
 
@@ -43,3 +43,8 @@ Próximo passo: auditoria do treinador sobre tarefas, dose, tempo e critérios d
 ## Primeiro passo da revisão concluído
 
 CAS-002 v0.2 organiza perfil e lacunas, incorpora a direção recente do treinador e fontes selecionadas. Os números v0.1 são cenário de comparação não selecionado, com conferência histórica própria. Não houve aprovação de dose ou simulação promovida a execução. A próxima entrega é comparar alternativas de dose/organização e viabilidade, conforme AUD-006; a avaliação profissional da proposta concreta continua pendente.
+
+
+## Segundo passo: alternativas calculadas
+
+CAS-002 v0.3 compara A/B/C com fontes dirigidas e contagem de tempo/volume; nenhum método ou número foi escolhido como regra. Próximo passo efetivo: auditoria profissional das alternativas concretas e dos custos. Não iniciar verificador antes de delimitar os critérios desse recorte; não exigir leitura integral de toda a biblioteca para conferir cálculos.
