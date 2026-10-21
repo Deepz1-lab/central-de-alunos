@@ -1,0 +1,507 @@
+{
+  "id": "MAP-CTX-001",
+  "version": "0.1",
+  "date": "2026-10-21",
+  "origin": "PROPOSTA_CENTRAL",
+  "state": "MAPA_DOCUMENTAL_PARCIAL_SEM_INTEGRACAO",
+  "valuesIncluded": false,
+  "medicalThresholdsAdded": false,
+  "fields": [
+    {
+      "id": "CTX-01",
+      "block": "Contexto",
+      "field": "Objetivo relatado",
+      "source": "REF-AV-02 Anotações Gerais!B5:C5; piloto intake_submissions.objective_reported",
+      "evidence": "OBSERVADO",
+      "physicalMapping": "PARCIAL",
+      "pilot": "IMPLEMENTADO_TEXTO",
+      "action": "Reutilizar relato com autoria/data; o objetivo da nota não é confirmação atual automática",
+      "decision": "Prioridade e desfecho pretendido",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-02",
+      "block": "Contexto",
+      "field": "Objetivo confirmado pelo treinador",
+      "source": "Piloto coach_summaries.objective_confirmed; FLX-001 §4; DIC-23",
+      "evidence": "CODIGO_E_MD",
+      "physicalMapping": "EXATO_NO_CODIGO",
+      "pilot": "IMPLEMENTADO_TEXTO",
+      "action": "Preservar base do relato revisada, versão, decisão e liberação distintas",
+      "decision": "Acordo do objetivo; não libera treino por si só",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-03",
+      "block": "Contexto",
+      "field": "Disponibilidade real",
+      "source": "Piloto intake_submissions.availability_reported; FLX-001 §4",
+      "evidence": "CODIGO_E_MD",
+      "physicalMapping": "EXATO_NO_CODIGO",
+      "pilot": "IMPLEMENTADO_TEXTO",
+      "action": "Texto livre; dias/horários/duração não são campos estruturados. Confirmar contexto sem copiar frequência para prescrição",
+      "decision": "Distribuição viável das sessões",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-04",
+      "block": "Contexto",
+      "field": "Ocupação e tarefas do trabalho",
+      "source": "AV-001 §2 prevê rotina_trabalho; conversa do treinador",
+      "evidence": "DESCRITO_MD",
+      "physicalMapping": "NAO_LOCALIZADO",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Localizar relato existente antes de perguntar. Profissão sozinha não determina exigência física",
+      "decision": "Tarefas prioritárias, fadiga percebida e organização",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-05",
+      "block": "Contexto",
+      "field": "Rotina diária e deslocamentos",
+      "source": "AV-001 §2 e FLX-001 §4",
+      "evidence": "DESCRITO_MD",
+      "physicalMapping": "NAO_LOCALIZADO",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Conferir conversa/notas pertinentes; não concluir inexistência por não localizar campo específico",
+      "decision": "Disponibilidade e recuperação contextual",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-06",
+      "block": "Contexto",
+      "field": "Sono e recuperação habitual",
+      "source": "AV-001 §2 prevê rotina_sono",
+      "evidence": "DESCRITO_MD",
+      "physicalMapping": "NAO_LOCALIZADO",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Definição/coleta a revisar; nenhum corte de horas ou escore automático criado",
+      "decision": "Interpretação da resposta e pertinência da dose",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-07",
+      "block": "Contexto",
+      "field": "Experiência e interrupções do treino",
+      "source": "REF-AV-02 Anotações Gerais!A11:C13 contém área de histórico; AV-001 §2",
+      "evidence": "OBSERVADO_E_MD",
+      "physicalMapping": "PARCIAL",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Área genérica não separa experiência, interrupção e resposta prévia; aproveitar texto com revisão",
+      "decision": "Familiarização e ponto de partida da readaptação",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-08",
+      "block": "Contexto",
+      "field": "Outras atividades e fisioterapia",
+      "source": "AV-001 §2 atividades_externas; FLX-001 §4",
+      "evidence": "DESCRITO_MD",
+      "physicalMapping": "NAO_LOCALIZADO",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Perguntar somente se faltar na fonte pertinente; dias/solicitações de outro profissional não são presumidos",
+      "decision": "Distribuição das exposições e integração",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-09",
+      "block": "Contexto",
+      "field": "Preferências e adesão possível",
+      "source": "AV-001 §2 preferencias; anamnese relatada",
+      "evidence": "DESCRITO_MD",
+      "physicalMapping": "NAO_LOCALIZADO",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Relatos podem estar em texto livre; não inferir preferência pelo exercício já escrito",
+      "decision": "Escolha de meios e continuidade",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-10",
+      "block": "Contexto",
+      "field": "Ambiente e exceções de equipamentos",
+      "source": "REF-TC-01 Montagem!F13; DEC-CAP-001; regra confirmada ACESSO padrão",
+      "evidence": "OBSERVADO_E_TREINADOR",
+      "physicalMapping": "PARCIAL",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "F13 é rótulo observado; valor/ID do ambiente a localizar. Detalhar recursos fora da ACESSO ou em indisponibilidade real",
+      "decision": "Viabilidade da variante e alternativa",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-11",
+      "block": "Avaliação",
+      "field": "Dor/queixa e impacto atual",
+      "source": "REF-AV-02 Anotações Gerais!B7:C8; AV-001 §2; AV-003 §11",
+      "evidence": "OBSERVADO_E_MD",
+      "physicalMapping": "PARCIAL",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Observações livres existem; localização, comportamento, irradiação, tarefa e momento não são protocolo estruturado confirmado",
+      "decision": "Revisão profissional das tarefas e prioridades afetadas",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-12",
+      "block": "Avaliação",
+      "field": "Histórico, restrições e orientações pertinentes",
+      "source": "REF-AV-02 Anotações Gerais!A11:C13 e A18:C24; FLX-001 §5",
+      "evidence": "OBSERVADO_E_MD",
+      "physicalMapping": "PARCIAL",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Ler finalidade e atualidade; nota ou condição isolada não vira contraindicação universal",
+      "decision": "Prontidão profissional e adaptação pertinente",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-13",
+      "block": "Avaliação",
+      "field": "Medicamentos/contexto relevante",
+      "source": "REF-AV-02 Anotações Gerais!A15:C17; DIC-19",
+      "evidence": "OBSERVADO_E_MD",
+      "physicalMapping": "PARCIAL",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Localizado bloco de notas, não ficha clínica completa; usar somente o pertinente e manter relato separado de interpretação",
+      "decision": "Interpretação dos testes e esforço quando houver dependência",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-14",
+      "block": "Avaliação",
+      "field": "Ocasião, avaliador e data de coleta",
+      "source": "REF-AV-02 Avaliação!A3/A5/A6/A8 são rótulos; AV-003 §2–3",
+      "evidence": "OBSERVADO_E_MD",
+      "physicalMapping": "PARCIAL",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Colunas dos valores por ocasião não auditadas nesta rodada. C é coluna de variação no recorte lido, não a data. Coleta não é exportação",
+      "decision": "Atualidade, comparação e procedência",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-15",
+      "block": "Avaliação",
+      "field": "Antropometria e composição corporal",
+      "source": "REF-AV-02 Avaliação!A9:A42 e A102:A117; DIC-01–07",
+      "evidence": "OBSERVADO_E_MD",
+      "physicalMapping": "ROTULOS_OBSERVADOS",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Identificar valor por ocasião, unidade, método e equação antes de comparar ou derivar",
+      "decision": "Desfecho corporal pertinente, sem usar massa total como hipertrofia",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-16",
+      "block": "Avaliação",
+      "field": "Ultrassom regional",
+      "source": "REF-AV-02 Avaliação!A43:A101; AV-002; DIC-08",
+      "evidence": "OBSERVADO_E_MD",
+      "physicalMapping": "ROTULOS_OBSERVADOS",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Mapa de rótulos; aquisição, regiões, valores e repetibilidade por pergunta ainda exigem conferência",
+      "decision": "Acompanhamento regional quando pertinente",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-17",
+      "block": "Avaliação",
+      "field": "Dinamometria e comparação D/E/flexão-extensão",
+      "source": "AV-003 §12.1; DIC-09–12; relatórios externos já descritos",
+      "evidence": "MD_E_RELATO_TREINADOR",
+      "physicalMapping": "RELATORIO_POR_MAPEAR",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Localizador do bruto por teste/laudo ainda pendente; registrar lado, gesto, fixação, ângulo, seleção e dor no teste",
+      "decision": "Hipótese de assimetria e decisão de tarefa; sem corte H/Q universal",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-18",
+      "block": "Avaliação",
+      "field": "Carga/reps de teste e resultados rotulados 1RM",
+      "source": "REF-AV-02 Avaliação!A126:A135; DIC-13",
+      "evidence": "OBSERVADO_E_MD",
+      "physicalMapping": "ROTULOS_OBSERVADOS",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Separar cargas/reps, estimativa e teste direto; localizar fórmula e aparelho. Dinamometria não fornece kg da máquina",
+      "decision": "Referência específica de força quando aplicável",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-19",
+      "block": "Avaliação",
+      "field": "RML e execução em tarefa",
+      "source": "REF-AV-02 Avaliação!A119/A121 e A123; DIC-14",
+      "evidence": "OBSERVADO_E_MD",
+      "physicalMapping": "ROTULOS_OBSERVADOS",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "A123 é observação; descrever protocolo/cadência/término. Não supor que represente resistência global",
+      "decision": "Tarefa e capacidade pertinente",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-20",
+      "block": "Avaliação",
+      "field": "Flexibilidade/Wells e medida específica",
+      "source": "REF-AV-02 Avaliação!A120/A122/A123; AV-003 §12; DIC-24",
+      "evidence": "OBSERVADO_E_MD",
+      "physicalMapping": "ROTULOS_OBSERVADOS",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Conferir procedimento e medida específica quando a pergunta exigir; Wells não localiza toda limitação",
+      "decision": "Indicação e acompanhamento de amplitude/função",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-21",
+      "block": "Avaliação",
+      "field": "Cardiorrespiratório: estágios, FC, PSE e recuperação",
+      "source": "REF-AV-02 Avaliação!A139:A148; Metabólica!A16:H38 em MET-003",
+      "evidence": "OBSERVADO_E_LEITURA_ANTERIOR",
+      "physicalMapping": "PARCIAL_COM_MET003",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Rótulos reconferidos; bloco metabólico usa leitura anterior, não nova auditoria completa. Fonte/modalidade/data por variável",
+      "decision": "Proposta cíclica; não usar 85% como limiar validado",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-22",
+      "block": "Avaliação",
+      "field": "Postura e pergunta de movimento",
+      "source": "REF-AV-02 aba Imagens confirmada por metadados; AV-003 §12; DIC-22",
+      "evidence": "METADADOS_E_MD",
+      "physicalMapping": "PARCIAL",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Rubricas, escores e localizadores completos pendentes; relacionar observação à pergunta pertinente",
+      "decision": "Hipótese e acompanhamento; sem correção automática",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-23",
+      "block": "Avaliação",
+      "field": "Equilíbrio/baropodometria e tarefa funcional",
+      "source": "AV-001; DIC-21; AV-003 §11",
+      "evidence": "DESCRITO_MD",
+      "physicalMapping": "RELATORIO_POR_MAPEAR",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Registrar tarefa/apoio/instrumento e protocolo da fonte. TUG permanece candidato seletivo",
+      "decision": "Tarefa de equilíbrio/função quando indicada",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-24",
+      "block": "Prioridades",
+      "field": "Interpretação e prioridades acordadas",
+      "source": "REF-AV-02 Plano de Ação!A1:D12; MAP-AV-001/002; DIC-23",
+      "evidence": "OBSERVADO_E_MD",
+      "physicalMapping": "PARCIAL",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Cabeçalhos Etapa/Planos/Outros itens localizados; separar texto do plano de uma prioridade justificada e aprovada",
+      "decision": "Plano de Ação e sequência de trabalho",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-25",
+      "block": "Prioridades",
+      "field": "Readaptação indicada e pergunta de observação",
+      "source": "CAS-001 v0.4; REV-CAS-001 v0.3; orientação direta do treinador",
+      "evidence": "CONFIRMADO_TREINADOR_E_PROPOSTA",
+      "physicalMapping": "NAO_APLICAVEL_A_PLANILHA_AINDA",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Direção para o caso, sem prazo/dose automáticos; objetivo continua presente desde o começo",
+      "decision": "Proposta inicial individual e critério de revisão",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-26",
+      "block": "Prioridades",
+      "field": "Dose planejada e unidade de séries/grupamento",
+      "source": "REF-TC-01 Montagem!I:P em MET-002; Macrociclo linhas 31/33 em MET-002",
+      "evidence": "LEITURA_ANTERIOR_E_ROTULOS",
+      "physicalMapping": "PARCIAL_COM_MET002",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "N1/O1/P1 reconferidos: exercício/RR/carga. Mapear lado, unidade e participação muscular; SGM não é total de séries",
+      "decision": "Viabilidade, contagem de volume e comparação do plano",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-27",
+      "block": "Prioridades",
+      "field": "Referências cíclicas de base",
+      "source": "REF-AV-02 Dados de Base!C5:J22; REF-TC-01 Dados de Base/Importar; MET-003",
+      "evidence": "LEITURA_ANTERIOR_MET003",
+      "physicalMapping": "PARCIAL_COM_MET003",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Origem/ocasião por campo; importação manual não prova referência recente ou sincronização",
+      "decision": "Escolha de referência para prescrição cíclica",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-28",
+      "block": "Resposta",
+      "field": "Série/reps/carga/RR planejados versus realizados",
+      "source": "REF-TC-01 Montagem!I:P e Aluno!F13:P13 em MET-002",
+      "evidence": "LEITURA_ANTERIOR_MET002",
+      "physicalMapping": "PARCIAL_COM_MET002",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Plano e carga relatada/registro são distintos; localizador por tentativa ainda necessário. RR não vira RIR observado automaticamente",
+      "decision": "Ajuste de tarefa e proposta de progressão",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-29",
+      "block": "Resposta",
+      "field": "Tempo e distância realmente executados",
+      "source": "REF-TC-01 Controle Cíclico!AR1:AS1; AV2:BA2",
+      "evidence": "OBSERVADO",
+      "physicalMapping": "CABECALHOS_EXATOS",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "AR/AS: data executada/prevista; AV/AW: tempo executado/previsto; AY/AZ: distância executada/prevista. Cabeçalho não comprova preenchimento",
+      "decision": "Viabilidade, aderência descritiva e ajuste do cíclico",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-30",
+      "block": "Resposta",
+      "field": "Esforço relatado versus previsto",
+      "source": "REF-TC-01 Controle Cíclico!AE2 e BB1:BD1; AV-003 §14",
+      "evidence": "OBSERVADO_E_MD",
+      "physicalMapping": "CABECALHOS_EXATOS",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "AE2 PSE Real; BB/BC relatado/previsto. Conferir escala, janela e unidade; não misturar Borg por estágio, PSE global, RIR e PSR",
+      "decision": "Interpretação da exposição e revisão de dose",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-31",
+      "block": "Resposta",
+      "field": "Sintomas, controle, apoio e observações da execução",
+      "source": "REF-TC-01 Controle Cíclico!AN1/BE1; Montagem!U:V em MET-002; AV-003 §14",
+      "evidence": "OBSERVADO_E_MD",
+      "physicalMapping": "PARCIAL",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Observação existe; separar quando proposta e quando realmente observada, autoria e tarefa. Ausência não prova tolerância",
+      "decision": "Adaptar/manter/propor progressão por tarefa",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-32",
+      "block": "Resposta",
+      "field": "Recuperação e impacto após a sessão",
+      "source": "AV-003 §14; DIC-001 §15; anamnese/conversa existente",
+      "evidence": "DESCRITO_MD",
+      "physicalMapping": "NAO_LOCALIZADO_NESTA_LEITURA",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Canal, período e registro a conferir antes de novo campo; não inferir baixa recuperação de dados ausentes",
+      "decision": "Decisão de dose/retorno no contexto",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-33",
+      "block": "Resposta",
+      "field": "Decisão do treinador e motivo",
+      "source": "REF-TC-01 Controle Cíclico!BP1:BT1",
+      "evidence": "OBSERVADO",
+      "physicalMapping": "CABECALHOS_EXATOS",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "BP interpretação; BQ decisão; BR justificativa; BS momento; BT data de impacto. Não confundir opções disponíveis com decisão preenchida",
+      "decision": "Manter/adaptar/progredir e momento de revisão",
+      "valuesIncluded": false
+    },
+    {
+      "id": "CTX-34",
+      "block": "Resposta",
+      "field": "Comparação/reavaliação e mudança de contexto",
+      "source": "Avaliação!A8 é rótulo de reavaliação; AV-003 §2/5; VAL-001",
+      "evidence": "OBSERVADO_E_MD",
+      "physicalMapping": "PARCIAL",
+      "pilot": "NAO_IMPLEMENTADO",
+      "action": "Data prevista não prova coleta; comparar variável/protocolo/contexto; retomar somente dependências afetadas",
+      "decision": "Revisão de sessão, micro, meso ou macro",
+      "valuesIncluded": false
+    }
+  ],
+  "decisionDependencies": [
+    {
+      "id": "DEC-CTX-01",
+      "question": "Conhecer o objetivo e o tempo disponível",
+      "fields": [
+        "CTX-01",
+        "CTX-02",
+        "CTX-03",
+        "CTX-14"
+      ],
+      "insufficient": "Objetivo acordado e distribuição propostos ficam pendentes no escopo sem confirmação; não fabricar frequência prescrita."
+    },
+    {
+      "id": "DEC-CTX-02",
+      "question": "Escolher tarefas pertinentes para a readaptação",
+      "fields": [
+        "CTX-07",
+        "CTX-10",
+        "CTX-11",
+        "CTX-12",
+        "CTX-17",
+        "CTX-24",
+        "CTX-25"
+      ],
+      "insufficient": "Revisar tarefa/entrada dependente e obter contexto pertinente; não escolher exercícios por diagnóstico ou assimetria isolada."
+    },
+    {
+      "id": "DEC-CTX-03",
+      "question": "Organizar dose compatível com rotina e experiência",
+      "fields": [
+        "CTX-03",
+        "CTX-04",
+        "CTX-05",
+        "CTX-06",
+        "CTX-07",
+        "CTX-08",
+        "CTX-26"
+      ],
+      "insufficient": "Não aplicar dose ótima padrão ou deduzir esforço ocupacional do nome da profissão. Julgar a pertinência de cada lacuna."
+    },
+    {
+      "id": "DEC-CTX-04",
+      "question": "Selecionar referência para trabalho cíclico",
+      "fields": [
+        "CTX-14",
+        "CTX-21",
+        "CTX-27"
+      ],
+      "insufficient": "Referência de zona dependente fica em revisão; preservar observações e decisões realmente independentes."
+    },
+    {
+      "id": "DEC-CTX-05",
+      "question": "Decidir sobre flexibilidade/equilíbrio",
+      "fields": [
+        "CTX-11",
+        "CTX-20",
+        "CTX-22",
+        "CTX-23",
+        "CTX-24"
+      ],
+      "insufficient": "Teste específico só é pedido se pertinente; Wells/fotografia não escolhem automaticamente uma intervenção."
+    },
+    {
+      "id": "DEC-CTX-06",
+      "question": "Propor manutenção, ajuste ou progressão",
+      "fields": [
+        "CTX-11",
+        "CTX-14",
+        "CTX-26",
+        "CTX-28",
+        "CTX-29",
+        "CTX-30",
+        "CTX-31",
+        "CTX-32",
+        "CTX-33",
+        "CTX-34"
+      ],
+      "insufficient": "Sem resposta pertinente observada, não declarar adaptação ou progressão aprovada; reabrir o que depende da informação faltante."
+    }
+  ],
+  "dependencyScope": "Referências para revisão de pertinência; não são conjuntos universais obrigatórios nem motor aprovado",
+  "sourceVersionConflict": {
+    "alias": "REF-AV-02",
+    "titleVersion": "4.10.13",
+    "visibleHeaderVersion": "4.9.12",
+    "headerLocator": "Avaliação!A2",
+    "resolution": "PENDENTE; não alterar fonte ou assumir equivalência"
+  }
+}

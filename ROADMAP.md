@@ -22,3 +22,8 @@ A organização inicial no GitHub foi publicada e conferida. A auditoria documen
 A ordem das capacidades e a progressão dependem da pessoa e da finalidade. O calendário não comprova adaptação. Equipamentos são meios: ACESSO é o ambiente padrão, e disponibilidade específica importa quando houver exceção ou treino fora dela. Cinco semanas na aba Montagem descrevem uma janela de operação, não uma lei de periodização.
 
 A Central poderá propor ajuste da sessão e revisão do macro. Ambas exigem justificativa e decisão do treinador no respectivo escopo.
+
+
+## Mapa de entradas disponível
+
+MAP-CTX-001 v0.1 relaciona 34 itens, suas fontes/coberturas e seis decisões. Leitura de estrutura e registros previstos não equivale à coleta completa da pessoa nem a integração. O próximo passo é aproveitar relatos existentes para um resumo de contexto revisável, perguntar só pelas lacunas pertinentes e conferir os localizadores dependentes da versão do modelo.
