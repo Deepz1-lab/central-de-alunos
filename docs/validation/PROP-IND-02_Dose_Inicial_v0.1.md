@@ -120,6 +120,40 @@ O próximo passo operacional do raciocínio é comparar **referência recente �
 
 **Critério de saída desta etapa futura:** obter um registro rastreável das exposições e do contexto relevante, com decisão justificada e limites explícitos. Se a referência prévia continuar insuficiente, manter a classificação a confirmar. Não há um escore único de prontidão, aumento obrigatório de carga ou ciclo de choque/recuperação disparado por calendário. Este quadro é desenho da Central para auditoria, não resultado coletado nem novo recurso implantado.
 
+### 6.2 Quatro respostas simuladas à mesma proposta
+
+**SIMULAÇÃO_DOCUMENTAL — autoria PROPOSTA_CENTRAL.** Os quatro ramos abaixo são histórias alternativas, não etapas sucessivas do IND-02. Os dados foram inventados para examinar o raciocínio; não são registros recebidos, respostas clínicas observadas, cargas aprovadas ou informações acrescentadas ao caso original. A seção 6.1 continua com o realizado desconhecido. Não transferir estas narrativas para cadastros/planilhas.
+
+**Base comum fictícia dos ramos S-01/S-02/S-04:** os cinco exercícios previstos, no mesmo aparelho/ajustes e critérios de execução definidos para a demonstração; três séries por exercício. Em S-01 e S-04, cada exercício registra 10/10/10 repetições, RIR relatadas de 3/3/3, dez intervalos internos de 120 s e critérios preservados. Todas as 15 séries foram concluídas nessa narrativa. O tempo total fictício registrado é 47 min, não tempo medido por nós ou recalculado pelo motor. Kg não são fornecidos; nenhum aumento numérico de carga pode ser calculado. Esses fatos são hipótese de leitura, não prova de que o IND-02 os suportaria.
+
+| Ramo independente | Realizado/retorno estipulado na simulação | Leitura permitida | Alternativas a apresentar ao treinador |
+|---|---|---|---|
+| S-01 — Exposição compatível com a intenção | Base comum; não relata sintomas nas tarefas. No retorno fictício do dia seguinte, relata que a sessão não interferiu de forma relevante nas atividades habituais | Há informações favoráveis sobre esta exposição e este relato. Não demonstram hipertrofia, recuperação completa ou classificação do microciclo | Considerar manter a proposta em B para comparar novamente; recalibrar uma tarefa se a avaliação atual justificar. Não obrigar progressão: fazer 10 reps com a reserva pretendida pode estar de acordo com a proposta |
+| S-02 — Demanda acima da pretendida numa tarefa | Só o leg press muda em relação à base: 10/9/7 reps, RIR relatadas 3/1/0; a terceira série é interrompida após sete reps ao perder os critérios combinados. As outras 12 séries são concluídas como na base. Retorno fictício relata fadiga nas pernas com interferência na rotina, sem sintoma de dor declarado | A terceira tentativa não é série completa na dose pretendida. Há motivo para rever a tarefa e esclarecer o retorno; não há diagnóstico de lesão, síndrome de excesso ou prova de choque planejado | Rever carga e preparação; considerar mais recuperação ou menos séries se pertinente. Não repetir por obrigação nem alterar toda a ficha automaticamente. Se escolher 180 s nos dois intervalos internos do leg press, o orçamento previsto passa de 45–48 para 47–50 min, antes de outras mudanças |
+| S-03 — Sintoma durante uma tarefa | Ramo separado: leg press com três séries concluídas de 10 reps e RIR relatadas 3/3/3. No supino, primeira série com 10 reps; segunda interrompida após seis por desconforto novo no ombro, sem RIR informada. Terceira série do supino e demais exercícios não são executados nesta narrativa, após interrupção da sessão para revisão | Há quatro séries concluídas e uma tentativa interrompida, não cinco séries completas nem 15 realizadas. O relato não identifica causa. A interrupção foi estipulada neste exemplo, não imposta como única conduta para toda dor | Caracterizar sintoma, condições e orientações pertinentes; revisar a tarefa e decidir adaptação, suspensão ou encaminhamento conforme avaliação. Não trocar automaticamente para supino declinado nem aprovar o restante por ausência de queixa. Preservar o registro independente do leg press |
+| S-04 — Sessão registrada, retorno ausente | Realizado igual à base; retorno após A não foi obtido e condição antes de B ainda não foi revista. Não acrescentar ausência de sintomas à narrativa por falta de registro | Execução relatada disponível; recuperação e sintomas posteriores desconhecidos. Ausência de retorno não comprova nem boa nem má recuperação | Recuperar o relato pertinente e rever a condição antes de decidir B. O registro de A continua útil. Sem esse dado, não justificar progressão como resposta favorável; também não inferir incapacidade para todo exercício |
+
+**Carga do microciclo em todos os ramos:** continua a confirmar, pois referência recente e conjunto das exposições/contexto permanecem insuficientes. Uma sessão difícil ou um relato favorável não define sozinho ordinário/choque. A classificação é outra pergunta, não resultado automático das colunas acima.
+
+### 6.3 Saída preenchida de auditoria — exemplo S-02
+
+| Elemento | Registro candidato |
+|---|---|
+| Identidade/versão | PROP-IND-02 v0.1, ramo alternativo S-02; origem integralmente simulada |
+| Intenção anterior | 3 × 8–12, cerca de 3 RIR, 120 s de referência no leg press |
+| Evidência usada | 10/9/7 reps e RIR relatadas 3/1/0; critérios perdidos na terceira tentativa; retorno fictício com interferência na rotina |
+| Problema delimitado | Exposição do leg press excedeu a intenção neste ramo; esclarecer condições e resposta antes de escolher B |
+| Proposta principal para auditoria | Rever a calibração da carga nessa tarefa e os critérios; considerar 180 s internos se a recuperação entre séries justificar. A carga em kg não pode ser preenchida com os dados disponíveis |
+| Alternativas | Rever variante, amplitude, preparação ou séries conforme os achados. Se houver várias mudanças, registrar todas e limitar a comparação com A |
+| Efeito logístico se só o intervalo mudar | Dois intervalos × 60 s extras = 2 min; orçamento candidato de 47–50 min. Não é tempo realizado ou garantia de caber |
+| Dados preservados | As outras 12 séries e seus registros conservam o próprio escopo; isso não aprova automaticamente sua repetição em B |
+| Conclusões vedadas | “Pessoa virou iniciante”, “todo treino precisa diminuir”, “microciclo é choque” ou “houve lesão” a partir desses dados isolados |
+| Decisão/execução futura | PENDENTES de auditoria; não há aprovação profissional atribuída nem sessão B executada |
+
+**Conferência desta simulação:** S-01 permite considerar manutenção sem progressão obrigatória; S-02 localiza a revisão; S-03 separa concluído/interrompido/não executado e não cria diagnóstico; S-04 conserva desconhecido. São leituras humanas propostas, não quatro novos testes executáveis ou resultados PASSOU do motor. Os oito casos RI e os 89 cenários TEST-001 mantêm seus estados. Não houve nova pesquisa de eficácia: a base de fontes/limites dos §§2.1/7, AV-003 e DEC-IND-001 orienta a representação; escolhas e respostas inventadas são nossas, não exemplos dos autores ou do professor.
+
+O próximo uso é o treinador confrontar as alternativas de cada ramo com sua conduta e indicar o que mudaria. Somente depois de delimitar condições e saídas será possível especificar quais partes admitem verificação automatizada, sem transformar estas quatro histórias em catálogo fechado de respostas humanas.
+
 ## 7. Fundamentação por camada e leitura efetiva
 
 | Camada/fonte | O que sustenta e o que não determina |
