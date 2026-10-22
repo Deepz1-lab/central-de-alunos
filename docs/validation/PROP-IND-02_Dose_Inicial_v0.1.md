@@ -34,6 +34,16 @@ O seriado foi escolhido para observar carga, execução e esforço com menos mud
 
 Três séries são a opção posta à auditoria para oferecer exposições sucessivas ao mesmo exercício dentro do orçamento, sem buscar falha intencional. Duas séries continuam alternativa se observação, dose total ou tempo justificarem; não seriam automaticamente um treino fraco. A escolha destes cinco exercícios oferece um recorte de membros inferiores/superiores com ajustes observáveis em aparelhos; não demonstra que outras tarefas ou músculos sejam dispensáveis. Essa justificativa é nossa e depende das hipóteses do §1.
 
+### 2.1 Intenção e classificação da carga do microciclo
+
+**Esclarecimento discutido e acolhido pelo treinador em 22/10/2026:** a proposta não foi desenhada como choque. A intenção é calibrar o trabalho inicial, observar a resposta e estabelecer uma referência individual. O registro adotado nesta versão é **“proposta inicial de calibração; classificação da carga do microciclo a confirmar”**. A concordância com essa distinção não foi convertida em aprovação da dose ou em resposta observada.
+
+Ordinário não significa treino fraco. Choque não é sinônimo de três séries, carga alta na máquina, proximidade da falha ou sensação de treino difícil isoladamente. São classificações da organização da carga no ciclo, que precisam ser contextualizadas pelo trabalho precedente, capacidades atuais, conjunto das sessões, outras exposições e recuperação planejada. Não inferir carga recente zero a partir da interrupção relatada.
+
+Nesta etapa não há dados suficientes para confirmar a classificação individual como ordinário. A intenção de calibração aproxima-se da finalidade introdutória/aplicada descrita na literatura, sem obrigar fase fraca, duração fixa ou renomeação automática de qualquer retorno. Uma resposta excessiva ao plano exige revisão; ela não comprova que um choque tenha sido adequadamente planejado.
+
+**Complementação acadêmica:** [Naclerio, Moody e Chapman, 2013, DOI 10.4100/jhse.2012.82.04](https://gala.gre.ac.uk/id/eprint/12337/1/Naclerio_periodization_jhse_Vol_8_2013.pdf), seção “Types of Microcycles”, pp. 360–361/PDF 11–12, consultada na discussão anterior. O texto distingue introdutório/aplicado, ordinário, choque e outras funções, considerando objetivos e distribuição das sessões. É referência metodológica com ênfase esportiva, não validação da classificação deste caso ou corte universal para a carteira ACESSO. Não importar suas durações, percentuais ou frequências como regras automáticas.
+
 ## 3. Contagem e distribuição muscular
 
 **Previsto, se A e B forem integralmente mantidas:** 5 exercícios × 3 séries = **15 séries por sessão**; duas sessões = **30 séries de exercício na semana**. Aquecimentos/aproximações são registrados separadamente e não estão incluídos nessas 15 séries. Nada foi realizado.
@@ -90,6 +100,25 @@ O documento detalha o **componente resistido inicial**. Não declara concluída 
 | Volume torna-se a variável que se pretende mudar | Explicar por que ele é prioridade, considerar alternativa de distribuição e recalcular tempo/recuperação antes de acrescentar séries. Aumento semanal não é obrigatório |
 
 Esses critérios são **propostas operacionais da Central**, não pontos de corte validados para este aluno. Não alterar várias variáveis sem registrar a razão; quando isso for necessário, a comparação deve reconhecer a mudança de condições.
+
+### 6.1 Acompanhamento das duas exposições — aplicação documental
+
+O próximo passo operacional do raciocínio é comparar **referência recente → previsto → realizado → resposta → decisão**. Reutilizar os registros pertinentes já mapeados em [MAP-CTX-001](../methodology/MAP-CTX-001_Mapa_Entradas_Readaptacao_v0.1.md), especialmente CTX-07/08 e 26/28–34. Não criar outro formulário ou modificar planilhas nesta etapa. A localização física de um cabeçalho não comprova que o valor tenha sido coletado ou possa ser importado automaticamente.
+
+| Informação para revisão | Previsto/disponível nesta demonstração | Realizado ou resposta |
+|---|---|---|
+| Referência recente de treino e outras atividades | Histórico/interrupção do IND-02; carga recente e exposições externas não descritas | Desconhecido; buscar relato/registro pertinente antes de comparar |
+| Exercício, aparelho, ajustes e amplitude | Cinco variantes candidatas; ajustes individuais a definir | Desconhecido por tarefa; não copiar o previsto |
+| Séries e repetições | 3 × 8–12 em cada exercício, se proposta mantida | Desconhecido por série; registrar também interrupções e mudanças |
+| Carga e esforço | Kg a calibrar; cerca de 3 RIR como intenção | Kg/unidade e RIR estimadas, ou incerteza, ainda desconhecidos |
+| Recuperação e duração | 120 s de referência; orçamento de 45–48 min sob hipóteses | Intervalos e tempos reais desconhecidos; distinguir espera, instrução e trabalho |
+| Execução e sintomas durante a tarefa | Critérios acordados a observar | Desconhecido por tarefa/ocasião; ausência de nota não é ausência de sintoma |
+| Resposta após A e antes de B | Coletar retorno pertinente com momento e impacto na rotina | Desconhecido; não presumir recuperação favorável nem desfavorável |
+| Decisão profissional | Manter/adaptar/recalibrar/adiar conforme os achados pertinentes | PENDENTE; registrar responsável, ocasião, justificativa e versão |
+
+**Passagem entre A e B:** a revisão de A deve dizer o que foi efetivamente realizado, o que mudou em relação ao previsto, como a pessoa respondeu e quais conclusões isso permite. A decisão sobre B precisa citar essas evidências ou explicitar as lacunas. Depois de B, comparar as exposições em condições pertinentes e revisar a classificação e a próxima proposta; duas sessões não são garantia de informação suficiente nem prazo obrigatório para decidir.
+
+**Critério de saída desta etapa futura:** obter um registro rastreável das exposições e do contexto relevante, com decisão justificada e limites explícitos. Se a referência prévia continuar insuficiente, manter a classificação a confirmar. Não há um escore único de prontidão, aumento obrigatório de carga ou ciclo de choque/recuperação disparado por calendário. Este quadro é desenho da Central para auditoria, não resultado coletado nem novo recurso implantado.
 
 ## 7. Fundamentação por camada e leitura efetiva
 
