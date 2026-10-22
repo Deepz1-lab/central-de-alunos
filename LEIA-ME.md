@@ -65,6 +65,7 @@ VER-001 já está no main do GitHub: componente puro para contagens, unidades, t
 - [Execução e revisão do VER-001](docs/validation/VER-001_Execucao_v0.1.md).
 - [Percurso sintético CAS-002 → verificador → auditoria](docs/validation/FLX-VER-001_CAS-002_v0.1.md).
 - [Casos contrastantes e justificativa individual](docs/decisions/DEC-IND-001_Casos_Contrastantes_e_Justificativa_Individual_v0.1.md).
+- [Aula 33: conferência da transcrição, minutagens e ressalvas](docs/decisions/DEC-IND-001_Casos_Contrastantes_e_Justificativa_Individual_v0.1.md#71-aula-33--conferência-direta-e-alcance).
 - [Governança atual v0.23](docs/decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.23.md).
 
 O recorte inicial descrito acima pertence ao piloto de cadastro; os resultados do verificador e da sondagem têm evidências e limites próprios. Não confundir integração do código ao repositório com integração do fluxo completo de prescrição ao aplicativo. Drive e GitHub não têm sincronização automática.

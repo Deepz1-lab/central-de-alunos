@@ -110,7 +110,43 @@ Leitura realizada em 22/10/2026, por afirmação; nenhum livro foi revisado inte
 | M1 — metodologia ACESSO documentada | [Caderno v0.2](../corrections/2026-10-20/Central_de_Alunos_Caderno_Tecnico_Cientifico_v0.2.md), AULA-026, 031 e 033; [MAP-AV-002 v0.2](../corrections/2026-10-20/MAP-AV-002_Matriz_Aplicacao_Aulas_Planejamento_v0.2.md), §§1–2, relidos | Preserva a síntese anterior sobre individualidade, avaliação, prioridades e revisão. Essas páginas são referências internas; não equivalem a nova verificação direta dos vídeos |
 | M2 — direção do treinador/operacionalização | AV-003 §§1/2/6, MAP-CTX-001 e DEC-SES-001, relidos | Contexto e avaliação antes da dose, finalidade, rastreio e decisão revisável. As alternativas deste documento são PROPOSTA_CENTRAL, ainda para auditoria |
 
-Nova tentativa da [aula 33](https://www.youtube.com/watch?v=_AmEut4pqCU) não forneceu conteúdo verificável devido à limitação de acesso. Não foram acrescentadas falas, minutagens ou doses atribuídas ao professor. As sínteses e estados anteriores continuam explícitos; essa dependência não foi fechada por inferência.
+A tentativa inicial da [aula 33](https://www.youtube.com/watch?v=_AmEut4pqCU) falhou por limitação de acesso. Posteriormente, nesta mesma data, a página abriu no navegador e sua transcrição foi lida diretamente: ver §7.1. O insucesso anterior não demonstra indisponibilidade do vídeo. M1 mantém a profundidade declarada para as outras aulas; a conferência adicional abaixo vale somente para a aula 33.
+
+### 7.1 Aula 33 — conferência direta e alcance
+
+**Registro de acesso em 22/10/2026:** título exibido “33ª Aula - Estudo sobre planejamento/periodização - Parte 1 *ACESSO (16/10/26)”; duração 52min45s; vídeo não listado. Leitura dos 440 segmentos da transcrição exibida no YouTube, de 0:00 a 52:40. Não houve auditoria audiovisual integral nem conferência de cada legenda contra o áudio. Há erros de reconhecimento e alternância entre participantes; as notas abaixo são paráfrases temáticas, sem atribuir toda intervenção ao professor. Não reproduzir nomes, medidas identificáveis ou a transcrição integral.
+
+**M3 — metodologia didática diretamente consultada:**
+
+| Localizador na aula | Tema localizado |
+|---|---|
+| [0:00–1:00](https://www.youtube.com/watch?v=_AmEut4pqCU&t=0s) | Avaliação, interpretação, prioridades e planejamento; demandas concomitantes |
+| [9:28–11:26](https://www.youtube.com/watch?v=_AmEut4pqCU&t=568s) | Experiência, aprendizagem do teste e reavaliação |
+| [13:24–18:54](https://www.youtube.com/watch?v=_AmEut4pqCU&t=804s) | Alternativas para diferenças de força; lados versus flexores/extensores |
+| [19:12–25:32](https://www.youtube.com/watch?v=_AmEut4pqCU&t=1152s) | Exemplos de volume/progressão; ausência de receita única |
+| [26:26–29:25](https://www.youtube.com/watch?v=_AmEut4pqCU&t=1586s) | Hipertrofia, plano e revisão intermediária |
+| [31:35–34:49](https://www.youtube.com/watch?v=_AmEut4pqCU&t=1895s) | Especificidade; conferir condição atual, execução, carga e esforço |
+| [35:11–41:54](https://www.youtube.com/watch?v=_AmEut4pqCU&t=2111s) | Diferentes distribuições de flexibilidade e discussão de dor |
+| [42:02–45:37](https://www.youtube.com/watch?v=_AmEut4pqCU&t=2522s) | Componente aeróbico, massa corporal e VO₂ relativo |
+| [45:39–49:14](https://www.youtube.com/watch?v=_AmEut4pqCU&t=2739s) | Ênfases, reavaliação e mudança de estratégia |
+| [49:21–52:40](https://www.youtube.com/watch?v=_AmEut4pqCU&t=2961s) | Teste de força e variações do supino |
+
+**Interpretação operacional nossa — PROPOSTA_CENTRAL:** os contrastes dos §§2–4 são compatíveis com o percurso avaliação → interpretação → prioridade → proposta → resposta → revisão. Isso não torna seus personagens exemplos do professor, não aprova suas doses e não prova eficácia. Em IND-02, a observação atual permanece necessária; reconhecer experiência não obriga uma adaptação arbitrariamente fraca nem dispensa calibração. Hipertrofia pode ser objetivo explícito do treinamento resistido, com variáveis escolhidas para favorecê-la; não é resultado garantido de qualquer treino de força. A1 permite distinguir adaptações e variáveis sem criar uma modalidade isolada chamada “treino de hipertrofia”.
+
+**Ressalvas por finalidade — nenhuma regra instalada:**
+
+| Ponto a revisar | Tratamento na Central e sustentação |
+|---|---|
+| Doses ilustrativas em 19:12–23:25 | Não converter os números e calendários do exemplo em mínimo de saúde, teto biológico ou progressão obrigatória. A1 associa maior volume semanal a hipertrofia em adultos saudáveis, mas seu resumo não valida tais limites universais ou o calendário local. Dose continua dependente da pessoa, finalidade e resposta |
+| Razão flexores/extensores em 17:18–18:54 | Nenhum corte percentual importado. O procedimento local e suas lacunas seguem em AV-003 §12.1/DIC-09–12; força, torque, ângulos, fixação e seleção de tentativas precisam ser identificados antes do uso comparativo. Esta conferência não é nova validação acadêmica da razão H/Q |
+| Dor, postura, assimetria e flexibilidade em 5:38–9:17, 27:49–28:12 e 38:37–41:54 | Hipóteses didáticas não diagnosticam a causa individual. Não automatizar cura com exercício específico, proibição de todo alongamento durante qualquer dor ou obrigação de zerar dor antes de toda atividade. A3 fundamenta o caráter pessoal/multifatorial do relato; não testa essas condutas. A escolha requer avaliação pertinente e apoio específico ainda não concluído aqui |
+| VO₂ e ganho de massa em 43:13–43:56 | Distinguir valor absoluto, normalização pela massa, método de obtenção e desempenho. Pela identidade de unidades, VO₂ relativo = VO₂ absoluto em mL/min ÷ massa em kg. Mantido o numerador constante, aumentar o denominador reduz o quociente; quando ambos mudam, é preciso verificar a relação. Ganho muscular isolado não demonstra queda obrigatória da capacidade absoluta. Exemplo aritmético nosso: 3000/60 = 50 e 3000/65 ≈ 46,15 mL/kg/min; se o absoluto mudar para 3300, 3300/65 ≈ 50,77. Não é previsão fisiológica nem fórmula nova aprovada para a planilha |
+| Retirar estímulo de um lado em 47:32–49:14 | Relato de hipótese em acompanhamento, sem desfecho confirmado nessa aula. Não autoriza suspensão unilateral automática nem inferência de causa da dor. Não transpor o caso para IND-05/06 |
+| Supino declinado em 50:36–52:07 | Não adotar ausência absoluta de ação do deltoide anterior ou indicação automática para ombro doloroso. A4 encontrou EMG desse músculo no declinado; a medida não comprova segurança, analgesia ou hipertrofia futura |
+
+**A4 — complementação acadêmica adicional:** [Saeterbakken et al., 2017, PMID 28713459, DOI 10.1515/hukin-2017-0047](https://pmc.ncbi.nlm.nih.gov/articles/PMC5504579/). Leitura dirigida de resumo, participantes/procedimentos, resultados “Bench positions” e tabela de posições: 12 atletas competitivos, 6RM, bancos reto/+25°/−25°, pegada larga. A tabela registra EMG anterior do deltoide diferente de zero no declinado. Pessoas com dor musculoesquelética atual foram excluídas. Esse estudo agudo e específico impede assumir ausência de atividade, mas não fornece prescrição para dor no ombro. Não extrapolar suas cargas ou valores de EMG para alunos da Central. A1 e A3 foram reconferidos em suas páginas nesta rodada, com os limites já declarados na tabela de fontes.
+
+**Conferência documental:** links temporais correspondem aos inícios indicados; as ressalvas estão separadas da síntese didática. A avaliação continua norteando os usos dependentes; componentes independentes mantêm seus estados. O acesso à transcrição fecha a lacuna de leitura textual desta aula, não as pendências de protocolos, evidência clínica, critérios de dose ou aprovação profissional. Não se declara revisão direta das aulas 28–32 nem dos três livros completos por extensão.
 
 ## 8. Resultado e próxima decisão
 
