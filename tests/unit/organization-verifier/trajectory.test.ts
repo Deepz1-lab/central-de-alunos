@@ -1,0 +1,11 @@
+import {test,expect} from 'vitest'
+import {verifyOrganization} from '../../../src/domain/organization-verifier'
+import {snapshotOf,resultOf} from './helpers'
+const run=(values:(number|null)[],extra={})=>verifyOrganization(snapshotOf('r1','TRAJECTORY',{axis:'load',stages:values.map(value=>({value,unit:'kg_mostrador',conditionKey:'A'})),...extra}))
+test('trajectory_does_not_sort_or_infer_from_label',()=>expect(resultOf(run([14,10]),'r1:trajectory').derived).toBe('DECRESCENTE_ESTRITA'))
+test.each([[[10,12,14],'CRESCENTE_ESTRITA'],[[14,12,10],'DECRESCENTE_ESTRITA'],[[12,12],'CONSTANTE'],[[10,12,12],'MISTA']])('direction for %j',(values,direction)=>expect(resultOf(run(values as number[]),'r1:trajectory').derived).toBe(direction))
+test('missing stage prevents complete direction without losing counts',()=>{const r=run([10,null,14]);expect(resultOf(r,'r1:trajectory').derived).toBeNull();expect(resultOf(r,'r1:known-stage-count').derived).toBe(2);expect(resultOf(r,'r1:stage-count').derived).toBe(3)})
+test('device and units changes block comparison while preserving stage count',()=>{for(const extra of [{conditionKey:'D2'},{unit:'other'},{conditionKey:null}]){const r=run([],{stages:[{value:20,unit:'kg',conditionKey:'D1'},{value:25,unit:'kg',conditionKey:'D1',...extra}]});expect(resultOf(r,'r1:trajectory').derived).toBeNull();expect(resultOf(r,'r1:stage-count').derived).toBe(2)}})
+test('single stage and missing axis are not classified',()=>{expect(resultOf(run([10]),'r1:trajectory').derived).toBeNull();expect(resultOf(run([10,20],{axis:null}),'r1:trajectory').derived).toBeNull()})
+test('claimed direction divergence is descriptive, no clinical severity',()=>expect(resultOf(run([14,10],{claimedDirection:'CRESCENTE_ESTRITA'}),'r1:trajectory')).toMatchObject({derived:'DECRESCENTE_ESTRITA',declared:'CRESCENTE_ESTRITA',calculationStatus:'DIVERGENTE',impactReview:null}))
+test('method labels do not change dose direction',()=>{const s=snapshotOf('r1','TRAJECTORY',{axis:'load',stages:[{value:14,unit:'kg',conditionKey:'A'},{value:10,unit:'kg',conditionKey:'A'}]});const before=verifyOrganization(s);s.requests[0].originalMethodLabel='piramidal crescente';expect(verifyOrganization(s)).toEqual(before)})

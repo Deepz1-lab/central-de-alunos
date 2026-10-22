@@ -1,0 +1,6 @@
+import {test,expect} from 'vitest'
+import {verifyOrganization} from '../../../src/domain/organization-verifier'
+import {snapshotOf,resultOf} from './helpers'
+test('target_does_not_fill_observed',()=>{const r=verifyOrganization(snapshotOf('r1','OBSERVATION',{target:3,observed:null,variable:'RIR',unit:'RIR',observedSource:null}));expect(resultOf(r,'r1:observed')).toMatchObject({derived:null,declared:3,source:null,calculationStatus:'NAO_CALCULAVEL'});expect(r).not.toHaveProperty('progressionApproved')})
+test('raw observation without source is not silently validated',()=>{const r=verifyOrganization(snapshotOf('r1','OBSERVATION',{target:3,observed:2,variable:'RIR',unit:'RIR',observedSource:null},'OBSERVED'));expect(resultOf(r,'r1:observed')).toMatchObject({derived:2,declared:3,source:null,suggestedQuality:'CONTEXTO_INSUFICIENTE',reasonCodes:expect.arrayContaining(['MISSING_PROVENANCE'])})})
+test('observed provenance and raw value are retained independently of target',()=>{const s={id:'observation',version:'v2',locator:'synthetic record'};const r=verifyOrganization(snapshotOf('r1','OBSERVATION',{target:4,observed:0,variable:'exercise series',unit:'EXERCISE_SERIES',observedSource:s},'OBSERVED'));expect(resultOf(r,'r1:observed')).toMatchObject({derived:0,declared:4,source:s,basis:'OBSERVED'})})
