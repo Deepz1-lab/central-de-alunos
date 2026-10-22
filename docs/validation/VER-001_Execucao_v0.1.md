@@ -36,3 +36,26 @@ Commits por tarefa precedem este registro; a revisão e o commit final verificad
 Ferramentas observadas: Node v24.19.0, pnpm 11.25.0, Vitest 5.0.5. Nenhuma dependência adicionada; instalação reproduziu o lockfile existente.
 
 Decisões de execução: checkout isolado criado pelo Git após o recurso do aplicativo retornar Not a git repository; extração de tarefas e registro equivalentes em PowerShell porque o extrator da habilidade reconhece apenas títulos Task, enquanto o plano usa Tarefa. Custo: registro do checkout no aplicativo indisponível e adaptação de controle de execução; histórico e saídas reais preservados.
+
+## Fechamento da revisão independente
+
+Revisão do conjunto realizada em contexto separado sobre `a03aa2b6ed7dab1e83c78e4213902af27a6f7f79`: nenhum achado crítico, nove importantes e quatro menores. Dois menores foram reclassificados como importantes por produzirem soma incorreta ou aplicabilidade inferida. Os onze pontos importantes foram corrigidos em uma rodada, com **19 testes de regressão que falharam antes das correções e passaram depois**. Não houve segunda revisão; a evidência das correções é a reprodução automatizada, seguida da suíte completa e build.
+
+**Código verificado: `509bfe58eb4a5ae35d400fe597819940a8027a3a`. Resultado final: 128/128 testes unitários, onze arquivos, 24/24 oráculos e build aprovado.** Isso não significa aprovação dos treinos.
+
+Correções: identidade Unicode que podia interromper pedidos independentes; linhas inválidas removidas indevidamente das dependências; total semanal parcial exibido como completo; conflito observado afetando dados previstos; unidade inválida em conta por tarefa; componente maior que o bloco que o inclui; perda da duração explícita quando a distribuição era inválida; lacunas de arrays ignoradas na cobertura; caminhos de origem pouco específicos; cancelamento numérico na soma temporal; agrupamento inferido sem declaração.
+
+A reserva contida de 70 min num bloco de 10 min agora impede classificar o orçamento como cabível. Sessões ou tempos ausentes continuam desconhecidos, enquanto parcelas independentes permanecem disponíveis. Mensagens apontam campos concretos; nenhuma correção reescreve a origem.
+
+### Decisões adicionais
+
+- Segmentos de IDs conservam a codificação URI habitual; unidades UTF-16 isoladas usam escape `%uXXXX`, sem substituir identidades ou interromper pedidos independentes. Custo: consumidores devem tratar IDs de resultado como opacos ou reconhecer esse escape.
+- `known-task-subtotal:<id>` explicita a parcela semanal conhecida; `task:<id>` permanece desconhecido se a cobertura daquela natureza estiver incompleta. Custo: consumidores precisam distinguir esse sufixo adicional.
+- As duas adaptações de execução já registradas acima continuam válidas: checkout por Git após falha do recurso nativo e controle equivalente em PowerShell para títulos em português.
+
+### Melhorias menores adiadas
+
+1. Reforçar as projeções de ausência de capacidades com mais testes de invariância entre rótulos de métodos. As contas dos oráculos continuam comparadas integralmente; a invariância da trajetória já possui teste próprio. Algumas afirmações estruturais de ausência de aprovação são mais estreitas que testes de comportamento gerais.
+2. Melhorar a formatação dos módulos/testes compactos para facilitar auditorias futuras.
+
+A versão está preservada na branch local `feat/ver-001-organizacao`, em checkout separado. Nenhuma publicação, merge, deploy ou integração automática com o aplicativo foi realizada. Próximo passo recomendado: disponibilizar a proposta de código para revisão no GitHub e, depois, preparar uma integração de leitura que exiba conferências sem aprovar treino.
