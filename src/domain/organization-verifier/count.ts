@@ -64,7 +64,7 @@ export function verifyCount(r:Request,limits:ProcessingLimits):RelationResult[]{
  main.difference=difference
  const result=[main,...[...values].map(([id,value])=>relation(r,`task:${encodeURIComponent(id)}`,'V-R03',value,unit,value===null?[...reasons]:[]))]
  result.push(relation(r,'occurrence-total','V-R03',occurrences,'WORK_OCCURRENCES',occurrences===null?['OCORRENCIAS_NAO_EXPLICITADAS']:[]))
- result.push(relation(r,'group-rounds','V-R03',p.groupingApplicable===false?null:rounds,'GROUP_ROUNDS',p.groupingApplicable===false?[]:rounds===null?['PASSAGENS_NAO_EXPLICITADAS']:[],p.groupingApplicable===false?'NAO_APLICAVEL':undefined))
+ result.push(relation(r,'group-rounds','V-R03',p.groupingApplicable===false?null:rounds,'GROUP_ROUNDS',p.groupingApplicable===false?[]:rounds===null?['PASSAGENS_NAO_EXPLICITADAS']:[],p.groupingApplicable===false?'NAO_APLICAVEL':undefined,finite(p.rounds)?p.rounds:null))
  const independent=result.filter(x=>x.calculationStatus==='CALCULADO').map(x=>x.relationId)
  for(const item of result)if(item.calculationStatus!=='CALCULADO')item.independentResultIds=[...independent]
  return result
