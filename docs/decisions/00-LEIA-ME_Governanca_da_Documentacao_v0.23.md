@@ -34,6 +34,7 @@ Os links apontam aos arquivos atuais. Referências versionadas no corpo de docum
 |---|---|
 | [VER-001 — Execução e revisão](../validation/VER-001_Execucao_v0.1.md) — GitHub | 0.1 |
 | [FLX-VER-001 — Percurso do CAS-002](../validation/FLX-VER-001_CAS-002_v0.1.md) — GitHub | 0.1 |
+| [DEC-IND-001 — Casos contrastantes e justificativa individual](DEC-IND-001_Casos_Contrastantes_e_Justificativa_Individual_v0.1.md) — GitHub | 0.1 |
 | [DEC-SES-001 — Demanda funcional e adaptações](https://drive.google.com/file/d/1hWGLYgrpcxb8LcoR_IirGngRPDqDVlDu/view) | 0.1 |
 | [DEC-CAP-001 — Capacidades e adaptação ao ambiente](https://drive.google.com/file/d/1JMr7Yiu3bUAG-5TSvVNKXGEQxnmxNzM3/view?usp=drivesdk) | 0.1 |
 | [ANL-FH-001 — Análise da planilha](https://drive.google.com/file/d/14x_IhPynLv3bTfIRIL5HaT8Mu16Kx7EL/view) | 0.2 |
@@ -284,3 +285,12 @@ FLX-VER-001 documenta a revisão da cascata e a execução de sete cenários sob
 Avaliação/contexto → prioridades → ciclos/sessão ainda é revisão documental apoiada nos MDs, não um gerador automático demonstrado. A hierarquia dos objetivos e a auditoria dos parâmetros do CAS-002 continuam pendentes; a distribuição mantida não aprova o conjunto. Os 89 cenários TEST-001 e as fontes originais permanecem intactos. O relatório distingue contas, hipóteses, decisão profissional e resposta observada.
 
 v0.23 — posição atual do recorte implementado e exercício rastreável do fluxo; sem criação de regra clínica, homologação com alunos ou escrita operacional.
+
+
+## Individualização: análise comparativa — 22/10/2026
+
+DEC-IND-001 aplica a preocupação do treinador a seis situações fictícias em três contrastes. Objetivo semelhante, montagem semelhante ou número igual de avaliação não determinam condutas idênticas; semelhanças também são possíveis quando justificadas. O registro de decisão vincula evidência, intenção, alternativa, justificativa, dependências e revisão. Não foi criado motor individualizador, dose padrão ou novo resultado de teste clínico.
+
+McArdle/Powers e duas páginas de Prestes foram consultados em trechos localizados; resumos acadêmicos e notas oficiais foram reconferidos, com limites no documento. A nova tentativa de acesso direto à aula 33 não foi verificável; a síntese anterior da metodologia mantém seu estado. Não apresentar seis análises documentais como seis programas testados ou substituir por elas a auditoria do treinador.
+
+Próxima decisão: auditar as justificativas e delimitar uma primeira regra candidata com as condições e fontes de AV-003 §6. Os 128 testes de software e sete cenários da sondagem anterior conservam seus alcances; as seis situações acrescentadas são documentais. Nenhuma alteração operacional ou sincronização automática com Drive foi realizada.

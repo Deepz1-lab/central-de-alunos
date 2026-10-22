@@ -100,3 +100,6 @@ Como gestor, a sequência já evita versões históricas tratadas como vigentes 
 ## 6. Evidência de fechamento desta rodada
 
 Em 22/10/2026: os sete cenários foram reexecutados a partir do JSON salvo, com igualdade dos relatórios completos por hash e das relações selecionadas; hashes das fontes e links locais foram conferidos. A suíte existente passou em 128/128 testes unitários, onze arquivos, e `pnpm run build` passou. Nenhum teste permanente ou código de produto foi adicionado nesta rodada; sondagem e suíte são evidências distintas. A navegação recebeu governança v0.23 no repositório, explicitando que não houve sincronização automática com o Drive.
+
+
+Complemento solicitado pelo treinador: [DEC-IND-001](../decisions/DEC-IND-001_Casos_Contrastantes_e_Justificativa_Individual_v0.1.md) desenvolve seis situações em três contrastes de individualização. São análises humanas documentais com fontes e pendências, sem reutilizar o CAS-002 como ficha universal ou declarar novos testes executáveis.
