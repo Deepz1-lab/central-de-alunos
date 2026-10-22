@@ -22,14 +22,16 @@ Entregue: MET-005 contém oito fichas preliminares e dez exemplos documentais de
 
 Entregue em 22/10: VER-001 especifica entradas, relações, saídas, mensagens e 24 oráculos documentais. Diferencia resultado computacional, qualidade VAL, gravidade, aprovação e execução. Os casos ainda não foram executados contra motor.
 
-Próxima passagem: revisar a especificação e, depois, preparar o plano técnico de implementação e testes do componente sem efeitos externos. O desenho não verifica adequação fisiológica por nome de método ou por um intervalo isolado; essa camada permanece trabalho posterior com fontes/contexto próprios.
+Entregue em 22/10: revisão do desenho e plano técnico em sete tarefas. Define entrada/saída, isolamento de erros, fronteiras de contagem, limites de processamento e ligação de testes ao componente público, sem dose padrão. O piloto existente passou novamente em 11 testes unitários e build; isso não é teste do verificador futuro.
+
+Próxima passagem: revisar o plano e escolher execução aqui na conversa ou com subagentes por tarefa. A implementação ainda não começou. Após essa escolha, executar e testar o plano em checkout isolado, preservando arquivos operacionais e sem integração com planilhas.
 
 ## Sequência após essa entrega
 
 | Etapa | Resultado | Evidência de passagem |
 |---|---|---|
 | Fichas iniciais e exemplos disponíveis | MET-005, com repertório aberto e variantes pendentes quando necessário | Contas documentais conferidas; não são testes do motor ou doses aprovadas |
-| Revisar VER-001 e planejar implementação | Contrato e limites concretos; plano técnico subsequente | Revisão da especificação e do plano; depois código com testes reais e cobertura declarada |
+| Revisar o plano e escolher execução | Sete tarefas prontas, com contrato e testes | Escolha registrada; depois execução com resultados reais e cobertura declarada |
 | Propor planejamento assistido | Dados pertinentes ligados a prioridades e proposta explicável | Revisão profissional; distinção entre gerado, aprovado e realizado |
 | Fechar acompanhamento | Execução e resposta relacionadas à proposta | Revisão de sessão/ciclo rastreável |
 | Ampliar carteira e apoio às planilhas | Pendências, avaliação, plano e evolução por pessoa | Caminho de dados por versão conferido e utilidade prática observada |
@@ -43,3 +45,5 @@ Não é necessário fechar todas as capacidades para experimentar um recorte. N�
 [Fichas e exemplos — MET-005](docs/methodology/MET-005_Fichas_Metodos_Organizacao_v0.1.md)
 
 [Especificação do verificador — VER-001](docs/methodology/VER-001_Especificacao_Verificador_Organizacao_v0.1.md)
+
+[Plano técnico do verificador](docs/superpowers/plans/2026-10-22-verificador-organizacao.md)

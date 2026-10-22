@@ -13,7 +13,7 @@ O desenvolvimento parte da prática relatada pelo treinador na ACESSO, de refer�
 - **Para entender a base e suas fontes:** [guia dos documentos](docs/README.md).
 - **Para usar o resumo antes da proposta de readaptação:** [RES-CTX-001 aplicado ao caso fictício](docs/validation/RES-CTX-001_Resumo_Contexto_Readaptacao_v0.1.md).
 - **Para auditar a proposta integrada de treino:** [CAS-002 v0.6 — caso inteiramente fictício com lacunas explícitas](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.6.md).
-- **Para revisar o primeiro verificador, ainda sem implementação:** [VER-001 — contrato, regras, mensagens e cenários](docs/methodology/VER-001_Especificacao_Verificador_Organizacao_v0.1.md).
+- **Para revisar a implementação futura do verificador:** [plano técnico em sete tarefas](docs/superpowers/plans/2026-10-22-verificador-organizacao.md), acompanhado da [especificação VER-001](docs/methodology/VER-001_Especificacao_Verificador_Organizacao_v0.1.md).
 - **Para consultar métodos e combinações sem receitas obrigatórias:** [MET-005 — oito fichas e dez exemplos de representação](docs/methodology/MET-005_Fichas_Metodos_Organizacao_v0.1.md); [MET-004](docs/analyses/MET-004_Repertorio_Metodos_Organizacao_v0.1.md) preserva o inventário da planilha.
 - **Para entender a logística atual e suas correções:** [AUD-007 — gestor, treinador e programador](docs/audits/AUD-007_Revisao_Logistica_Gestor_Treinador_Programador_v0.1.md).
 - **Para acompanhar a evolução do primeiro exemplo:** [CAS-001 v0.4](docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.4.md).
@@ -77,4 +77,4 @@ O conteúdo público usa exemplos fictícios e documentação revisada. Laudos o
 
 ## Próxima passagem
 
-VER-001 especifica o primeiro verificador geral, com 24 oráculos documentais: estrutura, contagem, unidades, trajetória, tempo, semana, proveniência e previsto/observado. Não aprova doses nem substitui revisão técnico-científica. Próxima passagem: revisar esse desenho; depois preparar o plano técnico de implementação e testes do componente sem efeitos externos. Motor ainda não implementado; TEST-001 conserva seus estados.
+A revisão do VER-001 e seu plano técnico estão disponíveis em docs/superpowers/plans/2026-10-22-verificador-organizacao.md. O plano define contrato, arquivos, sete tarefas com testes e ligação dos 24 oráculos à entrada pública do futuro componente. Próxima passagem: revisar o plano e escolher como executar; código do verificador ainda não iniciado. Repertório aberto, bloqueios por finalidade e ausência de aprovação automática permanecem.
