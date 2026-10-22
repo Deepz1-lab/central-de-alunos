@@ -1,0 +1,390 @@
+{
+  "id": "MET-005-REP",
+  "version": "0.1",
+  "date": "2026-10-21",
+  "schemaScope": "EXEMPLOS_DOCUMENTAIS_NAO_CONTRATO_IMPLEMENTADO",
+  "catalogIsOpen": true,
+  "methodIdsAreNotClosedEnum": true,
+  "examplesAreNotDefaults": true,
+  "engineExecution": "NAO_EXECUTADO",
+  "testCatalogCountUnchanged": 89,
+  "newExecutedTc": 0,
+  "countingScope": "Exposicoes por tarefa e passagens sao unidades distintas; equivalencia muscular nao automatica",
+  "examples": [
+    {
+      "id": "REP-01",
+      "methodRefs": [
+        "F-MET-01"
+      ],
+      "description": "Seriado com quantidades diferentes por tarefa",
+      "origin": "PROPOSTA_CENTRAL",
+      "entirelySynthetic": true,
+      "prescriptionRecommendation": false,
+      "actualExecution": null,
+      "professionalApproval": "PENDENTE",
+      "structure": {
+        "taskSeries": {
+          "A": 3,
+          "B": 2
+        }
+      },
+      "expectedDocumentaryRelations": {
+        "groupRounds": null,
+        "exerciseExposures": {
+          "A": 3,
+          "B": 2
+        },
+        "totalExerciseExposures": 5,
+        "sessionSeconds": null
+      }
+    },
+    {
+      "id": "REP-02",
+      "methodRefs": [
+        "F-MET-02"
+      ],
+      "description": "Par com duas voltas; durações distintas por tarefa",
+      "origin": "PROPOSTA_CENTRAL",
+      "entirelySynthetic": true,
+      "prescriptionRecommendation": false,
+      "actualExecution": null,
+      "professionalApproval": "PENDENTE",
+      "structure": {
+        "rounds": 2,
+        "tasksPerRound": [
+          "A",
+          "B"
+        ],
+        "exposuresPerTaskPerRound": 1,
+        "plannedTimelineSeconds": [
+          {
+            "task": "A",
+            "start": 0,
+            "end": 30
+          },
+          {
+            "task": "B",
+            "start": 45,
+            "end": 70
+          },
+          {
+            "task": "A",
+            "start": 130,
+            "end": 160
+          },
+          {
+            "task": "B",
+            "start": 175,
+            "end": 200
+          }
+        ],
+        "internalTransitionSeconds": 15,
+        "betweenRoundPauseSeconds": 60
+      },
+      "expectedDocumentaryRelations": {
+        "groupRounds": 2,
+        "exerciseExposures": {
+          "A": 2,
+          "B": 2
+        },
+        "totalExerciseExposures": 4,
+        "blockSeconds": 200,
+        "sameTaskEndToNextStartSeconds": {
+          "A": [
+            100
+          ],
+          "B": [
+            105
+          ]
+        },
+        "sessionSeconds": null
+      }
+    },
+    {
+      "id": "REP-03",
+      "methodRefs": [
+        "F-MET-03"
+      ],
+      "description": "Trio com três voltas; não é dose-padrão",
+      "origin": "PROPOSTA_CENTRAL",
+      "entirelySynthetic": true,
+      "prescriptionRecommendation": false,
+      "actualExecution": null,
+      "professionalApproval": "PENDENTE",
+      "structure": {
+        "rounds": 3,
+        "tasksPerRound": [
+          "A",
+          "B",
+          "C"
+        ],
+        "exposuresPerTaskPerRound": 1
+      },
+      "expectedDocumentaryRelations": {
+        "groupRounds": 3,
+        "exerciseExposures": {
+          "A": 3,
+          "B": 3,
+          "C": 3
+        },
+        "totalExerciseExposures": 9,
+        "sessionSeconds": null
+      }
+    },
+    {
+      "id": "REP-04",
+      "methodRefs": [
+        "F-MET-05"
+      ],
+      "description": "Circuito por tempo, sem repetições registradas",
+      "origin": "PROPOSTA_CENTRAL",
+      "entirelySynthetic": true,
+      "prescriptionRecommendation": false,
+      "actualExecution": null,
+      "professionalApproval": "PENDENTE",
+      "structure": {
+        "rounds": 2,
+        "stations": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "workSecondsPerVisit": 20,
+        "recoveryAndTransitionSecondsAfterEveryVisit": 10,
+        "includesRecoveryAfterFinalVisit": true,
+        "recordedRepetitions": null
+      },
+      "expectedDocumentaryRelations": {
+        "stationVisits": 8,
+        "workSeconds": 160,
+        "recoveryAndTransitionSeconds": 80,
+        "blockSeconds": 240,
+        "exerciseSetEquivalence": null,
+        "totalRepetitions": null,
+        "sessionSeconds": null
+      }
+    },
+    {
+      "id": "REP-05",
+      "methodRefs": [
+        "F-MET-07"
+      ],
+      "description": "Carga de mostrador fictícia crescente; eixo explícito",
+      "origin": "PROPOSTA_CENTRAL",
+      "entirelySynthetic": true,
+      "prescriptionRecommendation": false,
+      "actualExecution": null,
+      "professionalApproval": "PENDENTE",
+      "structure": {
+        "task": "A",
+        "axis": "display_load",
+        "unit": "kg_mostrador_ficticio",
+        "workSeries": [
+          {
+            "load": 20,
+            "reps": 12
+          },
+          {
+            "load": 25,
+            "reps": 10
+          },
+          {
+            "load": 30,
+            "reps": 8
+          }
+        ],
+        "notRealLoadRecommendation": true
+      },
+      "expectedDocumentaryRelations": {
+        "workSeriesCount": 3,
+        "loadDirection": "INCREASING",
+        "repsDirection": "DECREASING",
+        "totalRepetitions": 30,
+        "sessionSeconds": null
+      }
+    },
+    {
+      "id": "REP-06",
+      "methodRefs": [
+        "F-MET-08"
+      ],
+      "description": "Carga de mostrador fictícia decrescente entre séries, não drop-set",
+      "origin": "PROPOSTA_CENTRAL",
+      "entirelySynthetic": true,
+      "prescriptionRecommendation": false,
+      "actualExecution": null,
+      "professionalApproval": "PENDENTE",
+      "structure": {
+        "task": "A",
+        "axis": "display_load",
+        "unit": "kg_mostrador_ficticio",
+        "workSeries": [
+          {
+            "load": 30,
+            "reps": 8
+          },
+          {
+            "load": 25,
+            "reps": 10
+          },
+          {
+            "load": 20,
+            "reps": 12
+          }
+        ],
+        "withinSetDrops": false,
+        "notRealLoadRecommendation": true
+      },
+      "expectedDocumentaryRelations": {
+        "workSeriesCount": 3,
+        "loadDirection": "DECREASING",
+        "repsDirection": "INCREASING",
+        "totalRepetitions": 30,
+        "sessionSeconds": null
+      }
+    },
+    {
+      "id": "REP-07",
+      "methodRefs": [
+        "F-MET-02",
+        "F-MET-07"
+      ],
+      "description": "Par combinado com carga crescente por tarefa entre voltas",
+      "origin": "PROPOSTA_CENTRAL",
+      "entirelySynthetic": true,
+      "prescriptionRecommendation": false,
+      "actualExecution": null,
+      "professionalApproval": "PENDENTE",
+      "structure": {
+        "rounds": [
+          {
+            "A": {
+              "load": 10,
+              "reps": 10
+            },
+            "B": {
+              "load": 8,
+              "reps": 10
+            }
+          },
+          {
+            "A": {
+              "load": 12,
+              "reps": 10
+            },
+            "B": {
+              "load": 10,
+              "reps": 10
+            }
+          }
+        ],
+        "axis": "display_load",
+        "unit": "kg_mostrador_ficticio",
+        "notRealLoadRecommendation": true
+      },
+      "expectedDocumentaryRelations": {
+        "groupRounds": 2,
+        "exerciseExposures": {
+          "A": 2,
+          "B": 2
+        },
+        "totalExerciseExposures": 4,
+        "loadDirectionPerTask": {
+          "A": "INCREASING",
+          "B": "INCREASING"
+        },
+        "extraSeriesCreatedByPyramidLabel": 0,
+        "sessionSeconds": null
+      }
+    },
+    {
+      "id": "REP-08",
+      "methodRefs": [
+        "F-MET-06"
+      ],
+      "description": "Intervalado temporal resistido genérico, intensidade não caracterizada",
+      "origin": "PROPOSTA_CENTRAL",
+      "entirelySynthetic": true,
+      "prescriptionRecommendation": false,
+      "actualExecution": null,
+      "professionalApproval": "PENDENTE",
+      "structure": {
+        "cycles": 3,
+        "task": "A",
+        "workSecondsPerCycle": 20,
+        "recoverySecondsPerCycle": 20,
+        "includesFinalRecovery": true,
+        "load": null,
+        "effort": null,
+        "repetitions": null,
+        "equivalentToPaoli2012": false
+      },
+      "expectedDocumentaryRelations": {
+        "intervalCycles": 3,
+        "workSeconds": 60,
+        "recoverySeconds": 60,
+        "blockSeconds": 120,
+        "highIntensityConfirmed": null,
+        "exerciseSetEquivalence": null,
+        "totalRepetitions": null,
+        "sessionSeconds": null
+      }
+    },
+    {
+      "id": "REP-09",
+      "methodRefs": [
+        "F-MET-06"
+      ],
+      "description": "Somente rótulo local: não há estrutura suficiente para contar",
+      "origin": "PROPOSTA_CENTRAL",
+      "entirelySynthetic": true,
+      "prescriptionRecommendation": false,
+      "actualExecution": null,
+      "professionalApproval": "PENDENTE",
+      "structure": {
+        "originalLabel": "HIIRT 20:20",
+        "tasks": null,
+        "cycles": null,
+        "timingMeaningConfirmed": false
+      },
+      "expectedDocumentaryRelations": {
+        "intervalCycles": null,
+        "exerciseExposures": null,
+        "blockSeconds": null,
+        "sessionSeconds": null,
+        "dependentUse": "DEFINICAO_OPERACIONAL_PENDENTE",
+        "invalidateIndependentData": false
+      }
+    },
+    {
+      "id": "REP-10",
+      "methodRefs": [
+        "F-MET-02"
+      ],
+      "description": "Total declarado incompatível com a estrutura; não corrigir silenciosamente",
+      "origin": "PROPOSTA_CENTRAL",
+      "entirelySynthetic": true,
+      "prescriptionRecommendation": false,
+      "actualExecution": null,
+      "professionalApproval": "PENDENTE",
+      "structure": {
+        "rounds": 2,
+        "tasksPerRound": [
+          "A",
+          "B"
+        ],
+        "exposuresPerTaskPerRound": 1,
+        "declaredTotalExerciseExposures": 6
+      },
+      "expectedDocumentaryRelations": {
+        "derivedTotalExerciseExposures": 4,
+        "countMismatch": true,
+        "automaticCorrection": false,
+        "clinicalInvalidityClaimed": false,
+        "invalidateIndependentData": false,
+        "sessionSeconds": null
+      }
+    }
+  ]
+}

@@ -13,7 +13,7 @@ O desenvolvimento parte da prática relatada pelo treinador na ACESSO, de refer�
 - **Para entender a base e suas fontes:** [guia dos documentos](docs/README.md).
 - **Para usar o resumo antes da proposta de readaptação:** [RES-CTX-001 aplicado ao caso fictício](docs/validation/RES-CTX-001_Resumo_Contexto_Readaptacao_v0.1.md).
 - **Para auditar a proposta integrada de treino:** [CAS-002 v0.6 — caso inteiramente fictício com lacunas explícitas](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.6.md).
-- **Para reaproveitar variações sem transformar exemplos em regras:** [MET-004 — repertório e organização dos métodos](docs/analyses/MET-004_Repertorio_Metodos_Organizacao_v0.1.md).
+- **Para consultar métodos e combinações sem receitas obrigatórias:** [MET-005 — oito fichas e dez exemplos de representação](docs/methodology/MET-005_Fichas_Metodos_Organizacao_v0.1.md); [MET-004](docs/analyses/MET-004_Repertorio_Metodos_Organizacao_v0.1.md) preserva o inventário da planilha.
 - **Para entender a logística atual e suas correções:** [AUD-007 — gestor, treinador e programador](docs/audits/AUD-007_Revisao_Logistica_Gestor_Treinador_Programador_v0.1.md).
 - **Para acompanhar a evolução do primeiro exemplo:** [CAS-001 v0.4](docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.4.md).
 - **Para consultar decisões históricas do primeiro caso:** [revisão do CAS-001](docs/reviews/REV-CAS-001_Revisao_Treinador_Programador_v0.3.md).
@@ -76,4 +76,4 @@ O conteúdo público usa exemplos fictícios e documentação revisada. Laudos o
 
 ## Próxima passagem
 
-Mapear o repertório de métodos da planilha antiga com significado operacional, combinações, fontes e limites, conforme MET-004. A Central deve representar organizações e doses variadas; o CAS-002 é somente um exemplo, sem método, séries ou frequência obrigatórios. Depois, especificar a verificação de relações de contagem, recuperação e tempo conforme a organização informada, sem copiar uma receita fixa do caso. Nenhum motor foi implementado.
+MET-005 reúne oito fichas preliminares de métodos/organização e dez exemplos documentais, incluindo combinações, ausência e conflito. O repertório é aberto e o CAS-002 permanece somente um exemplo. Próxima entrega: especificar o verificador geral de relações — contagem, unidades, sequência, recuperação e tempo quando informados — sem inferir dose pelo nome do método. Sem motor ou prescrição automática implementados.

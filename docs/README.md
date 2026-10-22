@@ -14,7 +14,7 @@
 | Que dados já existem antes da readaptação? | [MAP-CTX-001 v0.1](methodology/MAP-CTX-001_Mapa_Entradas_Readaptacao_v0.1.md) e [mapa estruturado](methodology/MAP-CTX-001_Mapa_Entradas_Readaptacao_v0.1.json) |
 | Como tratar qualidade e bloqueios? | [VAL-001 v0.3](corrections/2026-10-20/VAL-001_Auditoria_de_Laudos_v0.3.md) |
 | Como descrever indicadores, unidades e protocolos? | [DIC-001 v0.5](methodology/DIC-001_Indicadores_Protocolos_v0.5.md) |
-| Como aproveitar métodos variados sem fixar a receita do exemplo? | [MET-004 — repertório, fontes e semântica](analyses/MET-004_Repertorio_Metodos_Organizacao_v0.1.md) |
+| Como aproveitar métodos variados sem fixar a receita do exemplo? | [MET-005 — oito fichas e dez exemplos](methodology/MET-005_Fichas_Metodos_Organizacao_v0.1.md), [exemplos estruturados](methodology/MET-005_Exemplos_Representacao_v0.1.json) e [MET-004 — inventário da planilha](analyses/MET-004_Repertorio_Metodos_Organizacao_v0.1.md) |
 | Como as planilhas orientam o trabalho? | [MET-002 — montagem e macrociclo](analyses/MET-002_Logistica_Treinamento_Combinado_v0.1.md), [MET-003 — metabólica e dados de base](analyses/MET-003_Avaliacao_Dados_Base_Treino_Ciclico_v0.1.md) e [DEC-OP-001 — atualização manual e backup](decisions/DEC-OP-001_Atualizacao_Manual_e_Backup_v0.1.md) |
 | Como resumir contexto sem duplicar a coleta? | [RES-CTX-001 v0.1](validation/RES-CTX-001_Resumo_Contexto_Readaptacao_v0.1.md) e [registro sintético](validation/fixtures/RES-CTX-001_CAS-001_v0.1.json) |
 | Como auditar a proposta integrada, com lacunas explícitas? | [CAS-002 v0.6](validation/CAS-002_Readaptacao_Contextualizada_v0.6.md), [parâmetros da proposta integrada](validation/fixtures/CAS-002_v0.6.json), [conferência histórica v0.1 de 33 contas](validation/CAS-002_Conferencia_v0.1.md) e [registro numérico histórico v0.1](validation/CAS-002_Conferencia_v0.1.json) |
@@ -22,7 +22,7 @@
 | O que foi conferido nesse exemplo? | [Conferência v0.4](validation/CAS-001_Conferencia_v0.4.md) e [registro estruturado](validation/CAS-001_Conferencia_v0.4.json) |
 | Como foram registradas as decisões anteriores do CAS-001? | [Revisão do treinador e programador](reviews/REV-CAS-001_Revisao_Treinador_Programador_v0.3.md) |
 | Como testar o comportamento esperado? | [TEST-001 v0.7](validation/TEST-001_Casos_de_Validacao_v0.7.md) e [fixtures R-OP](validation/fixtures/CAS-001_regras_v0.2.json) |
-| Como ler fontes e governança? | [Governança v0.19](decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.19.md) e [biblioteca metodológica](corrections/2026-10-20/README_Biblioteca_Metodologica_ACESSO_v0.2.md) |
+| Como ler fontes e governança? | [Governança v0.20](decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.20.md) e [biblioteca metodológica](corrections/2026-10-20/README_Biblioteca_Metodologica_ACESSO_v0.2.md) |
 
 ## Três camadas de autoria
 
