@@ -35,7 +35,7 @@ RES-CTX-001 aplica o mapa ao caso sintético e separa informação conhecida, co
 
 ## Proposta contextualizada disponível
 
-[CAS-002](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.3.md) demonstra um novo caso inteiramente fictício: contexto, avaliação, prioridades, duas sessões de readaptação, volume declarado, tempo e respostas alternativas simuladas. Não completa artificialmente os dados ausentes do CAS-001. Foram reproduzidas 33 contas; seis variantes são expectativas documentais sem execução contra motor. O catálogo TEST-001 permanece com 89 cenários.
+[CAS-002](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.4.md) demonstra um novo caso inteiramente fictício: contexto, avaliação, prioridades, duas sessões de readaptação, volume declarado, tempo e respostas alternativas simuladas. Não completa artificialmente os dados ausentes do CAS-001. Foram reproduzidas 33 contas; seis variantes são expectativas documentais sem execução contra motor. O catálogo TEST-001 permanece com 89 cenários.
 
 Próximo passo: auditoria do treinador sobre tarefas, dose, tempo e critérios de progressão, registrando manter/ajustar/rejeitar com justificativa por escopo. Depois, delimitar o primeiro verificador das regras aprovadas. Nenhum motor ou plano operacional foi implantado.
 
@@ -48,3 +48,8 @@ CAS-002 v0.2 organiza perfil e lacunas, incorpora a direção recente do treinad
 ## Segundo passo: alternativas calculadas
 
 CAS-002 v0.3 compara A/B/C com fontes dirigidas e contagem de tempo/volume; nenhum método ou número foi escolhido como regra. Próximo passo efetivo: auditoria profissional das alternativas concretas e dos custos. Não iniciar verificador antes de delimitar os critérios desse recorte; não exigir leitura integral de toda a biblioteca para conferir cálculos.
+
+
+## Intenção antes da montagem
+
+CAS-002 v0.4 confere o princípio nas fontes e aplica ficha de intenção candidata, sem promover a concordância geral do treinador a aprovação do caso. A/B/C continuam intactos e disponíveis. Próxima decisão: intenção e prioridade dos componentes; depois montagem, dose e observação, com liberdade para outra combinação justificada.

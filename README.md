@@ -12,7 +12,7 @@ O desenvolvimento parte da prática relatada pelo treinador na ACESSO, de refer�
 - **Para saber que dados já existem antes da readaptação:** [MAP-CTX-001](docs/methodology/MAP-CTX-001_Mapa_Entradas_Readaptacao_v0.1.md).
 - **Para entender a base e suas fontes:** [guia dos documentos](docs/README.md).
 - **Para usar o resumo antes da proposta de readaptação:** [RES-CTX-001 aplicado ao caso fictício](docs/validation/RES-CTX-001_Resumo_Contexto_Readaptacao_v0.1.md).
-- **Para auditar contexto, treino e progressão concretos:** [CAS-002 v0.2 — novo caso inteiramente fictício](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.3.md).
+- **Para auditar contexto, treino e progressão concretos:** [CAS-002 v0.2 — novo caso inteiramente fictício](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.4.md).
 - **Para acompanhar a evolução do primeiro exemplo:** [CAS-001 v0.4](docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.4.md).
 - **Para revisar como treinador e programador:** [revisão do caso e decisões pendentes](docs/reviews/REV-CAS-001_Revisao_Treinador_Programador_v0.3.md).
 - **Para acompanhar os próximos passos:** [roteiro de evolução](ROADMAP.md).
@@ -74,4 +74,4 @@ O conteúdo público usa exemplos fictícios e documentação revisada. Laudos o
 
 ## Próxima entrega
 
-CAS-002 v0.3 acrescenta comparação de volume e organização com fontes específicas. A: duas séries tradicionais; B: três em todas, excedendo o orçamento mantido; C: dose por tarefa e pares alternados, com custos e condições explícitos. Nenhuma dose foi escolhida. Próximo passo: auditoria do treinador sobre objetivo priorizado, tarefas, dose/esforço, recuperação e distribuição de tempo. Os números da v0.1 e sua conferência permanecem históricos; o motor continua não implementado.
+CAS-002 v0.4 confere na base o princípio finalidade→variáveis e apresenta uma intenção candidata antes de escolher a montagem. Hipertrofia permanece hipótese de objetivo principal; manifestação específica e significado de híbrido não estão selecionados. A/B/C e seus custos continuam disponíveis, sem dose escolhida. Próximo passo: auditar intenção, objetivos e prioridade dos componentes; então selecionar ou ajustar a montagem, com justificativa e observação da resposta. O motor continua não implementado.
