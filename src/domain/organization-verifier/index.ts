@@ -3,6 +3,7 @@ import {buildReport} from './report'
 import {verifyIntegrity} from './integrity'
 import {verifyCount} from './count'
 import {verifyComparison,verifyConversion} from './units'
+import {verifyTrajectory} from './trajectory'
 import type {ProcessingLimits,RelationResult,Request,VerificationReport} from './types'
 export type * from './types'
 const known=new Set(['INTEGRITY','COUNT','COMPARE','CONVERT','TRAJECTORY','TIMELINE','BUDGET','WEEK','OBSERVATION'])
@@ -11,6 +12,7 @@ handlers.INTEGRITY=verifyIntegrity
 handlers.COUNT=verifyCount
 handlers.COMPARE=verifyComparison
 handlers.CONVERT=verifyConversion
+handlers.TRAJECTORY=verifyTrajectory
 export function verifyOrganization(input:unknown,limits?:Partial<ProcessingLimits>):VerificationReport {
  const configured={...defaults,...limits}
  const parsed=parseSnapshot(input,configured)
