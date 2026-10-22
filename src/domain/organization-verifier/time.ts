@@ -1,22 +1,25 @@
-import {record,text,finite} from './input'
+import {record,text,finite,encodeSegment,fieldPaths} from './input'
 import {duplicateIds} from './integrity'
 import {relation} from './report'
 import {toSeconds} from './units'
 import type {Request,RelationResult} from './types'
-type Interval={id:string;taskId:string;start:number|null;end:number|null;role:string;recoveryKey:string|null;concurrencyGroupId:string|null;valid:boolean}
+type Interval={id:string|null;taskId:string|null;start:number|null;end:number|null;role:string;recoveryKey:string|null;concurrencyGroupId:string|null;valid:boolean;paths:string[]}
 export function verifyTimeline(r:Request):RelationResult[]{
  const p=r.input
- if(!record(p)||!Array.isArray(p.intervals)||!Array.isArray(p.simultaneityGroups))return [relation(r,'elapsed','V-R07',null,'s',['DEPENDENCIA_NAO_MAPEADA']),relation(r,'work-clock','V-R07',null,'s',['DEPENDENCIA_NAO_MAPEADA'])]
- const reasons=new Set<string>(),duplicates=duplicateIds(p.intervals,'id')
+ if(!record(p))return [relation(r,'elapsed','V-R07',null,'s',['DEPENDENCIA_NAO_MAPEADA']),relation(r,'work-clock','V-R07',null,'s',['DEPENDENCIA_NAO_MAPEADA'])]
  const boundary=record(p.boundary)&&finite(p.boundary.start)&&finite(p.boundary.end)&&p.boundary.start>=0&&p.boundary.end>=p.boundary.start?{start:p.boundary.start,end:p.boundary.end}:null
+ const elapsed=relation(r,'elapsed','V-R07',boundary?boundary.end-boundary.start:null,'s',boundary?[]:['FRONTEIRA_AUSENTE'],undefined,null,fieldPaths(p.boundary,`${r.requestPath}.input.boundary`))
+ if(!Array.isArray(p.intervals)||!Array.isArray(p.simultaneityGroups)||!p.simultaneityGroups.every(text))return [boundary?elapsed:relation(r,'elapsed','V-R07',null,'s',['DEPENDENCIA_NAO_MAPEADA','FRONTEIRA_AUSENTE']),relation(r,'work-clock','V-R07',null,'s',['DEPENDENCIA_NAO_MAPEADA']),relation(r,'work-task-sum','V-R07',null,'s',['DEPENDENCIA_NAO_MAPEADA'])]
+ const reasons=new Set<string>(),duplicates=duplicateIds(p.intervals,'id')
  const intervals:Interval[]=[]
- for(const raw of p.intervals){
-  if(!record(raw)||!text(raw.id)||!text(raw.taskId)){reasons.add('INVALID_STRUCTURE');continue}
-  const valid=finite(raw.start)&&finite(raw.end)&&raw.start>=0&&raw.end>=raw.start&&(raw.role!=='WORK'||raw.end>raw.start)&&['WORK','PREPARATION','OTHER'].includes(raw.role as string)
+ for(const [index,entry] of p.intervals.entries()){
+  const raw=record(entry)?entry:{}
+  if(!text(raw.id)||!text(raw.taskId))reasons.add('INVALID_STRUCTURE')
+  const valid=text(raw.id)&&text(raw.taskId)&&finite(raw.start)&&finite(raw.end)&&raw.start>=0&&raw.end>=raw.start&&(raw.role!=='WORK'||raw.end>raw.start)&&['WORK','PREPARATION','OTHER'].includes(raw.role as string)
   if(!valid)reasons.add('TEMPO_AUSENTE_OU_INVALIDO')
-  if(duplicates.has(raw.id))reasons.add('IDENTIFICADOR_DUPLICADO')
+  if(text(raw.id)&&duplicates.has(raw.id))reasons.add('IDENTIFICADOR_DUPLICADO')
   if(valid&&boundary&&((raw.start as number)<boundary.start||(raw.end as number)>boundary.end))reasons.add('FORA_DA_FRONTEIRA')
-  intervals.push({id:raw.id,taskId:raw.taskId,start:finite(raw.start)?raw.start:null,end:finite(raw.end)?raw.end:null,role:typeof raw.role==='string'?raw.role:'',recoveryKey:text(raw.recoveryKey)?raw.recoveryKey:null,concurrencyGroupId:text(raw.concurrencyGroupId)?raw.concurrencyGroupId:null,valid:valid&&!duplicates.has(raw.id)})
+  intervals.push({id:text(raw.id)?raw.id:null,taskId:text(raw.taskId)?raw.taskId:null,start:finite(raw.start)?raw.start:null,end:finite(raw.end)?raw.end:null,role:typeof raw.role==='string'?raw.role:'',recoveryKey:text(raw.recoveryKey)?raw.recoveryKey:null,concurrencyGroupId:text(raw.concurrencyGroupId)?raw.concurrencyGroupId:null,valid:valid&&text(raw.id)&&!duplicates.has(raw.id),paths:fieldPaths(entry,`${r.requestPath}.input.intervals[${index}]`)})
  }
  const valid=intervals.filter(x=>x.valid).sort((a,b)=>a.start!-b.start!)
  let overlap=false
@@ -29,11 +32,11 @@ export function verifyTimeline(r:Request):RelationResult[]{
  const work=valid.filter(x=>x.role==='WORK')
  let clock=0,end=-Infinity
  for(const w of work){clock+=Math.max(0,w.end!-Math.max(end,w.start!));end=Math.max(end,w.end!)}
- const sum=work.reduce((a,x)=>a+x.end!-x.start!,0)
+ const sum=work.reduce((a,x)=>a+(x.end!-x.start!),0)
  const complete=p.coverageComplete===true&&intervals.length===p.intervals.length&&intervals.every(x=>x.valid)
  const clockValid=complete&&!overlap&&!reasons.has('FORA_DA_FRONTEIRA')&&Number.isFinite(clock)
  const sumValid=complete&&Number.isFinite(sum)
- const results=[relation(r,'elapsed','V-R07',boundary?boundary.end-boundary.start:null,'s',boundary?[]:['FRONTEIRA_AUSENTE']),relation(r,'work-clock','V-R07',clockValid?clock:null,'s',clockValid?[]:[...reasons,...(!complete?['COBERTURA_INCOMPLETA']:[])]),relation(r,'work-task-sum','V-R07',sumValid?sum:null,'s',sumValid?[]:['TEMPO_AUSENTE_OU_INVALIDO'])]
+ const results=[elapsed,relation(r,'work-clock','V-R07',clockValid?clock:null,'s',clockValid?[]:[...reasons,...(!complete?['COBERTURA_INCOMPLETA']:[])]),relation(r,'work-task-sum','V-R07',sumValid?sum:null,'s',sumValid?[]:['TEMPO_AUSENTE_OU_INVALIDO'])]
  const byKey=new Map<string,Interval[]>()
  for(const i of intervals)if(i.role==='WORK'&&i.recoveryKey){const list=byKey.get(i.recoveryKey)??[];list.push(i);byKey.set(i.recoveryKey,list)}
  for(const [key,list]of byKey){
@@ -42,7 +45,7 @@ export function verifyTimeline(r:Request):RelationResult[]{
    const prev=ordered[i-1],next=ordered[i]
    const gap=prev.valid&&next.valid?next.start!-prev.end!:null
    const usable=gap!==null&&gap>=0&&Number.isFinite(gap)
-   results.push(relation(r,`recovery:${encodeURIComponent(key)}:${encodeURIComponent(next.id)}`,'V-R07',usable?gap:null,'s',usable?[]:['RECUPERACAO_NAO_CALCULAVEL']))
+   if(next.id!==null)results.push(relation(r,`recovery:${encodeSegment(key)}:${encodeSegment(next.id)}`,'V-R07',usable?gap:null,'s',usable?[]:['RECUPERACAO_NAO_CALCULAVEL'],undefined,null,[...prev.paths,...next.paths]))
   }
  }
  return results
@@ -65,7 +68,12 @@ export function verifyBudget(r:Request):RelationResult[]{
    if(current.includedIn===null)break
    if(current.includedIn==='UNKNOWN'||!text(current.includedIn)){reasons.add('INCLUSAO_DESCONHECIDA');usable=false;break}
    const parent=components.get(current.includedIn)
-   if(!parent){reasons.add('REFERENCIA_INEXISTENTE');usable=false;break}current=parent
+   if(!parent){reasons.add('REFERENCIA_INEXISTENTE');usable=false;break}
+   if(finite(parent.max)&&text(parent.unit)){
+    const childMin=toSeconds(current.min as number,current.unit as string),parentMax=toSeconds(parent.max,parent.unit)
+    if(childMin!==null&&parentMax!==null&&childMin>parentMax){reasons.add('CONTENCAO_IMPOSSIVEL');usable=false;break}
+   }
+   current=parent
   }
   if(usable&&c.includedIn===null){min+=toSeconds(c.min as number,c.unit as string)!;max+=toSeconds(c.max as number,c.unit as string)!}
  }

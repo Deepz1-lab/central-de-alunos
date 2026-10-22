@@ -1,4 +1,4 @@
-import {record,text,count,finite} from './input'
+import {record,text,count,finite,encodeSegment,fieldPaths} from './input'
 import {duplicateIds} from './integrity'
 import {relation} from './report'
 import type {Request,ProcessingLimits,RelationResult} from './types'
@@ -6,6 +6,11 @@ export function verifyCount(r:Request,limits:ProcessingLimits):RelationResult[]{
  const p=r.input
  if(!record(p))return [relation(r,'total','V-R03',null,null,['DEPENDENCIA_NAO_MAPEADA'])]
  const unit=text(p.requestedUnit)?p.requestedUnit:null,reasons=new Set<string>(),values=new Map<string,number|null>()
+ const taskPaths=new Map<string,string[]>(),base=`${r.requestPath}.input`
+ for(const key of ['counts','items','occurrences'])if(Array.isArray(p[key]))(p[key] as unknown[]).forEach((row,i)=>{
+  if(record(row)&&text(row.taskId))taskPaths.set(row.taskId,[...(taskPaths.get(row.taskId)??[]),...fieldPaths(row,`${base}.${key}[${i}]`)])
+ })
+ const sharedPaths=['mode','requestedUnit','rounds','groupingApplicable'].filter(key=>Object.hasOwn(p,key)).map(key=>`${base}.${key}`)
  let occurrences:number|null=null,rounds:number|null=null
  const add=(id:string,value:number|null)=>{const old=values.get(id);values.set(id,value===null||old===null?null:(old??0)+value)}
  if(!['EXERCISE_SERIES','WORK_OCCURRENCES','STATION_VISITS'].includes(unit??''))reasons.add('INVALID_UNIT')
@@ -36,7 +41,7 @@ export function verifyCount(r:Request,limits:ProcessingLimits):RelationResult[]{
    let occurrenceSum=0,occurrenceValid=true,passagesValid=true
    if(p.occurrences.length>limits.maxExpandedOccurrences)reasons.add('PROCESSING_LIMIT')
    for(const o of p.occurrences){
-    if(!record(o)||!text(o.taskId)||!text(o.occurrenceId)){reasons.add('INVALID_STRUCTURE');occurrenceValid=false;continue}
+    if(!record(o)||!text(o.taskId)||!text(o.occurrenceId)){reasons.add('INVALID_STRUCTURE');occurrenceValid=false;if(record(o)&&text(o.taskId))values.set(o.taskId,null);continue}
     if(duplicates.has(o.occurrenceId)){reasons.add('IDENTIFICADOR_DUPLICADO');values.set(o.taskId,null);occurrenceValid=false;continue}
     if(!['WORK','PREPARATION','OTHER'].includes(o.role as string)){reasons.add('UNKNOWN_ROLE');values.set(o.taskId,null);occurrenceValid=false;continue}
     if(o.role!=='WORK')continue
@@ -56,15 +61,17 @@ export function verifyCount(r:Request,limits:ProcessingLimits):RelationResult[]{
  let total=reasons.size?null:sum
  if(total!==null&&!Number.isSafeInteger(total)){total=null;reasons.add('NUMERIC_OVERFLOW')}
  if(reasons.has('PROCESSING_LIMIT')){total=null;occurrences=null;rounds=null;for(const id of values.keys())values.set(id,null)}
+ if(reasons.has('INVALID_UNIT')||(p.mode==='SERIES_COUNTS'&&unit!=='EXERCISE_SERIES'))for(const id of values.keys())values.set(id,null)
  const duplicate=reasons.has('IDENTIFICADOR_DUPLICADO')
  const declared=finite(p.declaredTotal)?p.declaredTotal:null
  const difference=total!==null&&declared!==null?declared-total:null
  const divergent=duplicate||(difference!==null&&difference!==0)
  const main=relation(r,'total','V-R03',total,unit,[...reasons,...(difference!==null&&difference!==0?['TOTAL_DIVERGENTE']:[])],divergent?'DIVERGENTE':undefined,declared)
  main.difference=difference
- const result=[main,...[...values].map(([id,value])=>relation(r,`task:${encodeURIComponent(id)}`,'V-R03',value,unit,value===null?[...reasons]:[]))]
+ const result=[main,...[...values].map(([id,value])=>relation(r,`task:${encodeSegment(id)}`,'V-R03',value,unit,value===null?[...reasons]:[],undefined,null,[...sharedPaths,...(taskPaths.get(id)??[])]))]
  result.push(relation(r,'occurrence-total','V-R03',occurrences,'WORK_OCCURRENCES',occurrences===null?['OCORRENCIAS_NAO_EXPLICITADAS']:[]))
- result.push(relation(r,'group-rounds','V-R03',p.groupingApplicable===false?null:rounds,'GROUP_ROUNDS',p.groupingApplicable===false?[]:rounds===null?['PASSAGENS_NAO_EXPLICITADAS']:[],p.groupingApplicable===false?'NAO_APLICAVEL':undefined,finite(p.rounds)?p.rounds:null))
+ const groupingKnown=typeof p.groupingApplicable==='boolean'
+ result.push(relation(r,'group-rounds','V-R03',!groupingKnown||p.groupingApplicable===false?null:rounds,'GROUP_ROUNDS',!groupingKnown?['AGRUPAMENTO_NAO_INFORMADO']:p.groupingApplicable===false?[]:rounds===null?['PASSAGENS_NAO_EXPLICITADAS']:[],p.groupingApplicable===false?'NAO_APLICAVEL':undefined,finite(p.rounds)?p.rounds:null))
  const independent=result.filter(x=>x.calculationStatus==='CALCULADO').map(x=>x.relationId)
  for(const item of result)if(item.calculationStatus!=='CALCULADO')item.independentResultIds=[...independent]
  return result

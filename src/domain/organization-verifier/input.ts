@@ -5,6 +5,18 @@ export const text=(x:unknown):x is string=>typeof x==='string'&&x.trim().length>
 export const finite=(x:unknown):x is number=>typeof x==='number'&&Number.isFinite(x)
 export const count=(x:unknown):x is number=>finite(x)&&Number.isSafeInteger(x)&&x>=0
 export const source=(x:unknown):x is Source=>record(x)&&text(x.id)&&text(x.version)&&text(x.locator)
+// URI encoding for ordinary Unicode; isolated UTF-16 code units have a disjoint escape.
+export function encodeSegment(id:string):string {
+ return id.replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]|[\s\S]/g,part=>{
+  const code=part.charCodeAt(0)
+  return part.length===1&&code>=0xD800&&code<=0xDFFF?`%u${code.toString(16).toUpperCase()}`:encodeURIComponent(part)
+ })
+}
+export function fieldPaths(value:unknown,path:string):string[]{
+ if(Array.isArray(value))return value.length?value.flatMap((v,i)=>fieldPaths(v,`${path}[${i}]`)):[path]
+ if(record(value)){const keys=Object.keys(value);return keys.length?keys.flatMap(key=>fieldPaths(value[key],`${path}.${key}`)):[path]}
+ return [path]
+}
 export function parseSnapshot(raw:unknown, limits:ProcessingLimits):ParseResult {
  const issues:InputIssue[]=[]
  let requested:number|null=null
@@ -23,6 +35,10 @@ export function parseSnapshot(raw:unknown, limits:ProcessingLimits):ParseResult 
   if(typeof x!=='object')return 'NON_JSON_INPUT'
   const proto=Object.getPrototypeOf(x)
   if((!Array.isArray(x)&&proto!==Object.prototype&&proto!==null)||stack.has(x))return 'NON_JSON_INPUT'
+  if(Array.isArray(x)){
+   const keys=Object.keys(x)
+   if(proto!==Array.prototype||keys.length!==x.length||keys.some(key=>!Number.isInteger(Number(key))||Number(key)<0||Number(key)>=x.length||String(Number(key))!==key))return 'NON_JSON_INPUT'
+  }
   stack.add(x)
   for(const key of Reflect.ownKeys(x)){
    if(Array.isArray(x)&&key==='length')continue
