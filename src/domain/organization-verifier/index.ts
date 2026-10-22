@@ -1,9 +1,11 @@
 import {defaults,parseSnapshot} from './input'
 import {buildReport} from './report'
+import {verifyIntegrity} from './integrity'
 import type {ProcessingLimits,RelationResult,Request,VerificationReport} from './types'
 export type * from './types'
 const known=new Set(['INTEGRITY','COUNT','COMPARE','CONVERT','TRAJECTORY','TIMELINE','BUDGET','WEEK','OBSERVATION'])
 const handlers:Record<string,(r:Request,l:ProcessingLimits)=>RelationResult[]>=Object.create(null)
+handlers.INTEGRITY=verifyIntegrity
 export function verifyOrganization(input:unknown,limits?:Partial<ProcessingLimits>):VerificationReport {
  const configured={...defaults,...limits}
  const parsed=parseSnapshot(input,configured)
