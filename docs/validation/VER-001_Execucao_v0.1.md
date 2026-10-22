@@ -1,6 +1,6 @@
 # VER-001 — Execução do verificador v0.1
 
-Data: 22/10/2026. Estado: componente experimental local, revisão independente pendente.
+Data: 22/10/2026. Estado: componente experimental local, revisão independente realizada e correções verificadas.
 
 ## Resultado observado
 
