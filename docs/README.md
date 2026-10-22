@@ -1,6 +1,6 @@
 # Guia da documentação
 
-**Posição em 21/10/2026.** Os documentos abaixo orientam a leitura da versão publicada. Arquivos com versões anteriores permanecem como histórico; não somar suas propostas como se fossem regras atuais.
+**Posição em 22/10/2026.** Os documentos abaixo orientam a leitura da versão publicada. Arquivos com versões anteriores permanecem como histórico; não somar suas propostas como se fossem regras atuais.
 
 ## Percurso recomendado
 
@@ -21,8 +21,9 @@
 | Como evoluiu o primeiro percurso, com lacunas preservadas? | [CAS-001 v0.4](validation/CAS-001_Cascata_Sintetica_Integrada_v0.4.md) |
 | O que foi conferido nesse exemplo? | [Conferência v0.4](validation/CAS-001_Conferencia_v0.4.md) e [registro estruturado](validation/CAS-001_Conferencia_v0.4.json) |
 | Como foram registradas as decisões anteriores do CAS-001? | [Revisão do treinador e programador](reviews/REV-CAS-001_Revisao_Treinador_Programador_v0.3.md) |
+| O que o primeiro verificador deverá conferir e quais seus limites? | [VER-001 — especificação](methodology/VER-001_Especificacao_Verificador_Organizacao_v0.1.md) e [24 oráculos documentais](methodology/VER-001_Oraculos_v0.1.json), ainda não executados contra motor |
 | Como testar o comportamento esperado? | [TEST-001 v0.7](validation/TEST-001_Casos_de_Validacao_v0.7.md) e [fixtures R-OP](validation/fixtures/CAS-001_regras_v0.2.json) |
-| Como ler fontes e governança? | [Governança v0.20](decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.20.md) e [biblioteca metodológica](corrections/2026-10-20/README_Biblioteca_Metodologica_ACESSO_v0.2.md) |
+| Como ler fontes e governança? | [Governança v0.21](decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.21.md) e [biblioteca metodológica](corrections/2026-10-20/README_Biblioteca_Metodologica_ACESSO_v0.2.md) |
 
 ## Três camadas de autoria
 

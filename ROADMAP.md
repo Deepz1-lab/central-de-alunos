@@ -1,6 +1,6 @@
 # Evolução da Central de Alunos
 
-Posição consolidada: 21/10/2026. Este é o roteiro vigente, sem agenda automática. O histórico das rodadas anteriores permanece nos documentos versionados e nos commits.
+Posição consolidada: 22/10/2026. Este é o roteiro vigente, sem agenda automática. O histórico das rodadas anteriores permanece nos documentos versionados e nos commits.
 
 ## Objetivo permanente
 
@@ -11,7 +11,7 @@ Avaliação e contexto → interpretação e prioridades → Plano de Ação →
 - Piloto de cadastro, objetivo e revisão implementado; avaliação/prescrição ainda não implementadas no aplicativo.
 - CAS-002 v0.6 registra distribuição de séries MANTIDA pelo treinador no caso, com contagem de voltas/séries esclarecida; demais parâmetros pendentes, sem execução.
 - DEC-SES-001 registra coexistência de demandas funcionais e adaptações, sem transformar exemplos em regras.
-- Fontes com profundidade de leitura explícita; verificador e gerador não implementados. Os 89 cenários não são 89 testes aprovados do motor.
+- Fontes com profundidade de leitura explícita; VER-001 especifica o verificador, ainda não implementado; gerador também não implementado. Os 89 cenários não são 89 testes aprovados do motor.
 - Logística de planilhas estudada parcialmente, com ponte manual e backup antes da renovação; nenhuma integração automática instalada.
 
 ## Diretriz vigente e próxima entrega
@@ -20,14 +20,16 @@ O treinador esclareceu que seriado, bi-set, tri-set, supersérie, circuito, HIIR
 
 Entregue: MET-005 contém oito fichas preliminares e dez exemplos documentais de representação, com fontes, variantes, ausência e conflito. Organização, relação entre tarefas e variação da dose permanecem dimensões combináveis; sem normalização universal por nome.
 
-Próxima entrega: especificação do verificador geral dessas relações explícitas, com saídas por finalidade e tratamento de ausências, sem inventar dados ou validar eficácia pela aritmética. Usar DIC-001/TEST-001 como referências; implementação é etapa posterior.
+Entregue em 22/10: VER-001 especifica entradas, relações, saídas, mensagens e 24 oráculos documentais. Diferencia resultado computacional, qualidade VAL, gravidade, aprovação e execução. Os casos ainda não foram executados contra motor.
+
+Próxima passagem: revisar a especificação e, depois, preparar o plano técnico de implementação e testes do componente sem efeitos externos. O desenho não verifica adequação fisiológica por nome de método ou por um intervalo isolado; essa camada permanece trabalho posterior com fontes/contexto próprios.
 
 ## Sequência após essa entrega
 
 | Etapa | Resultado | Evidência de passagem |
 |---|---|---|
 | Fichas iniciais e exemplos disponíveis | MET-005, com repertório aberto e variantes pendentes quando necessário | Contas documentais conferidas; não são testes do motor ou doses aprovadas |
-| Especificar e implementar o primeiro verificador | Informações necessárias, unidades, volume/tempo e relações conforme organizações descritas | Testes sobre o código efetivamente usado; positivos, negativos e ausências; cobertura declarada |
+| Revisar VER-001 e planejar implementação | Contrato e limites concretos; plano técnico subsequente | Revisão da especificação e do plano; depois código com testes reais e cobertura declarada |
 | Propor planejamento assistido | Dados pertinentes ligados a prioridades e proposta explicável | Revisão profissional; distinção entre gerado, aprovado e realizado |
 | Fechar acompanhamento | Execução e resposta relacionadas à proposta | Revisão de sessão/ciclo rastreável |
 | Ampliar carteira e apoio às planilhas | Pendências, avaliação, plano e evolução por pessoa | Caminho de dados por versão conferido e utilidade prática observada |
@@ -39,3 +41,5 @@ Não é necessário fechar todas as capacidades para experimentar um recorte. N�
 [Repertório e diretriz vigente — MET-004](docs/analyses/MET-004_Repertorio_Metodos_Organizacao_v0.1.md)
 
 [Fichas e exemplos — MET-005](docs/methodology/MET-005_Fichas_Metodos_Organizacao_v0.1.md)
+
+[Especificação do verificador — VER-001](docs/methodology/VER-001_Especificacao_Verificador_Organizacao_v0.1.md)

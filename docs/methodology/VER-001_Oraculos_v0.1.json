@@ -1,0 +1,864 @@
+{
+  "id": "VER-001-ORACULOS",
+  "version": "0.1",
+  "date": "2026-10-22",
+  "scope": "EXPECTATIVAS_DOCUMENTAIS_POR_RELACAO_NAO_ENTRADAS_COMPLETAS_DO_APP",
+  "ruleState": "RASCUNHO",
+  "engineImplemented": false,
+  "testCatalogCountUnchanged": 89,
+  "newExecutedTc": 0,
+  "cases": [
+    {
+      "id": "V-01",
+      "ruleIds": [
+        "V-R03"
+      ],
+      "purpose": "Somar seriado heterogeneo",
+      "sourceRefs": [
+        "MET-005 REP-01",
+        "DIC §15"
+      ],
+      "inputFragment": {
+        "taskSeries": {
+          "A": 3,
+          "B": 2
+        }
+      },
+      "expected": {
+        "calculationStatus": "CALCULADO",
+        "taskSeries": {
+          "A": 3,
+          "B": 2
+        },
+        "totalExerciseSeries": 5,
+        "groupRounds": null,
+        "groupRoundsStatus": "NAO_APLICAVEL"
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-02",
+      "ruleIds": [
+        "V-R03",
+        "V-R07"
+      ],
+      "purpose": "Contar par e calcular tempo ate repetir a mesma tarefa",
+      "sourceRefs": [
+        "MET-005 REP-02",
+        "AV R-OP-03"
+      ],
+      "inputFragment": {
+        "rounds": 2,
+        "tasksPerRound": [
+          "A",
+          "B"
+        ],
+        "seriesPerTaskPerRound": 1,
+        "plannedTimelineSeconds": [
+          {
+            "task": "A",
+            "start": 0,
+            "end": 30
+          },
+          {
+            "task": "B",
+            "start": 45,
+            "end": 70
+          },
+          {
+            "task": "A",
+            "start": 130,
+            "end": 160
+          },
+          {
+            "task": "B",
+            "start": 175,
+            "end": 200
+          }
+        ],
+        "recoveryKeysExplicit": true
+      },
+      "expected": {
+        "calculationStatus": "CALCULADO",
+        "groupRounds": 2,
+        "seriesByTask": {
+          "A": 2,
+          "B": 2
+        },
+        "totalExerciseSeries": 4,
+        "blockSeconds": 200,
+        "sameTaskRecoverySeconds": {
+          "A": 100,
+          "B": 105
+        },
+        "physiologicalRecoveryProven": false
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-03",
+      "ruleIds": [
+        "V-R03"
+      ],
+      "purpose": "Trio com quantidade diferente do exemplo historico",
+      "sourceRefs": [
+        "MET-005 REP-03 variante"
+      ],
+      "inputFragment": {
+        "rounds": 2,
+        "tasksPerRound": [
+          "A",
+          "B",
+          "C"
+        ],
+        "seriesPerTaskPerRound": 1
+      },
+      "expected": {
+        "calculationStatus": "CALCULADO",
+        "groupRounds": 2,
+        "seriesByTask": {
+          "A": 2,
+          "B": 2,
+          "C": 2
+        },
+        "totalExerciseSeries": 6
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-04",
+      "ruleIds": [
+        "V-R03",
+        "V-R08"
+      ],
+      "purpose": "Circuito temporal sem inventar repeticoes",
+      "sourceRefs": [
+        "MET-005 REP-04",
+        "DIC §15"
+      ],
+      "inputFragment": {
+        "rounds": 2,
+        "stations": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "workSecondsPerVisit": 20,
+        "recoveryAndTransitionSecondsPerVisit": 10,
+        "includesLastRecovery": true,
+        "repetitions": null
+      },
+      "expected": {
+        "calculationStatus": "CALCULADO",
+        "stationVisits": 8,
+        "workSeconds": 160,
+        "recoveryAndTransitionSeconds": 80,
+        "blockSeconds": 240,
+        "repetitions": null,
+        "muscleSetEquivalence": null
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-05",
+      "ruleIds": [
+        "V-R03",
+        "V-R06"
+      ],
+      "purpose": "Combinar par com variacao de carga sem duplicar series",
+      "sourceRefs": [
+        "MET-005 REP-07"
+      ],
+      "inputFragment": {
+        "seriesBoundariesExplicit": true,
+        "rounds": [
+          {
+            "A": 10,
+            "B": 8
+          },
+          {
+            "A": 12,
+            "B": 10
+          }
+        ],
+        "axis": "load",
+        "unit": "kg_mostrador_ficticio",
+        "sameTaskConditions": true
+      },
+      "expected": {
+        "calculationStatus": "CALCULADO",
+        "groupRounds": 2,
+        "seriesByTask": {
+          "A": 2,
+          "B": 2
+        },
+        "totalExerciseSeries": 4,
+        "loadDirectionByTask": {
+          "A": "CRESCENTE_ESTRITA",
+          "B": "CRESCENTE_ESTRITA"
+        },
+        "extraSeriesFromMethodName": 0
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-06",
+      "ruleIds": [
+        "V-R01",
+        "V-R11"
+      ],
+      "purpose": "Rotulo insuficiente para as contas solicitadas",
+      "sourceRefs": [
+        "MET-005 REP-09",
+        "VAL §4"
+      ],
+      "inputFragment": {
+        "originalLabel": "HIIRT 20:20",
+        "tasks": null,
+        "rounds": null,
+        "timingMeaningConfirmed": false
+      },
+      "expected": {
+        "calculationStatus": "NAO_CALCULAVEL",
+        "workCount": null,
+        "blockSeconds": null,
+        "reason": "DEPENDENCIA_NAO_MAPEADA",
+        "suggestedDerivativeQuality": "CONTEXTO_INSUFICIENTE",
+        "invalidateIndependentData": false
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-07",
+      "ruleIds": [
+        "V-R03",
+        "V-R04"
+      ],
+      "purpose": "Conflito entre declarado e derivado",
+      "sourceRefs": [
+        "MET-005 REP-10",
+        "VAL §4"
+      ],
+      "inputFragment": {
+        "rounds": 2,
+        "tasksPerRound": [
+          "A",
+          "B"
+        ],
+        "seriesPerTaskPerRound": 1,
+        "declaredTotalExerciseSeries": 6
+      },
+      "expected": {
+        "calculationStatus": "DIVERGENTE",
+        "declared": 6,
+        "derived": 4,
+        "declaredMinusDerived": 2,
+        "automaticCorrection": false,
+        "suggestedQuality": "INCONSISTENTE",
+        "clinicalSeverity": null,
+        "preserveIndependentData": true
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-08",
+      "ruleIds": [
+        "V-R02",
+        "V-R05"
+      ],
+      "purpose": "Numero de voltas negativo ou fracionario",
+      "sourceRefs": [
+        "VER §4.1",
+        "VAL §4"
+      ],
+      "inputFragment": {
+        "invalidRoundValues": [
+          -1,
+          1.5
+        ],
+        "independentKnownTaskSeries": {
+          "C": 2
+        }
+      },
+      "expected": {
+        "calculationStatus": "NAO_CALCULAVEL",
+        "invalidRoundValues": [
+          -1,
+          1.5
+        ],
+        "dependentCount": null,
+        "independentKnownTaskSeries": {
+          "C": 2
+        },
+        "clampOrRoundAutomatically": false
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-09",
+      "ruleIds": [
+        "V-R02"
+      ],
+      "purpose": "ID duplicado sem deduplicacao silenciosa",
+      "sourceRefs": [
+        "VER V-R02"
+      ],
+      "inputFragment": {
+        "workOccurrences": [
+          {
+            "occurrenceId": "dup",
+            "taskId": "A"
+          },
+          {
+            "occurrenceId": "dup",
+            "taskId": "A"
+          },
+          {
+            "occurrenceId": "ok",
+            "taskId": "C"
+          }
+        ]
+      },
+      "expected": {
+        "calculationStatus": "DIVERGENTE",
+        "reason": "IDENTIFICADOR_DUPLICADO",
+        "dependentCountA": null,
+        "independentOccurrenceCountC": 1,
+        "deduplicateAutomatically": false
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-10",
+      "ruleIds": [
+        "V-R02"
+      ],
+      "purpose": "Ciclo de agrupamento localizado",
+      "sourceRefs": [
+        "VER V-R02"
+      ],
+      "inputFragment": {
+        "groups": [
+          {
+            "groupId": "X",
+            "childGroupIds": [
+              "X"
+            ]
+          }
+        ],
+        "independentTaskSeries": {
+          "B": 1
+        }
+      },
+      "expected": {
+        "calculationStatus": "NAO_CALCULAVEL",
+        "reason": "CICLO_DE_AGRUPAMENTO",
+        "expandGroupX": false,
+        "independentTaskSeries": {
+          "B": 1
+        }
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-11",
+      "ruleIds": [
+        "V-R10"
+      ],
+      "purpose": "Alvo nao preenche observado",
+      "sourceRefs": [
+        "TC-80 referencia",
+        "AV R-OP-01/04"
+      ],
+      "inputFragment": {
+        "basis": "PLANNED",
+        "rirTarget": 3,
+        "rirObserved": null,
+        "plannedExerciseSeries": 4,
+        "observedExerciseSeries": null
+      },
+      "expected": {
+        "calculationStatus": "NAO_CALCULAVEL",
+        "requestedUse": "RELATO_OBSERVADO",
+        "rirObserved": null,
+        "observedExerciseSeries": null,
+        "plannedExerciseSeriesPreserved": 4,
+        "progressionApproved": false
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-12",
+      "ruleIds": [
+        "V-R05",
+        "V-R10"
+      ],
+      "purpose": "Zero explicito de pausa difere de pausa ausente",
+      "sourceRefs": [
+        "VAL §4",
+        "AV R-OP-01"
+      ],
+      "inputFragment": {
+        "declaredTransitionSeconds": 0,
+        "zeroMeaningConfirmed": true,
+        "source": "exemplo ficticio explicito",
+        "missingRecoverySeconds": null
+      },
+      "expected": {
+        "zeroTransitionStatus": "CALCULADO",
+        "transitionSeconds": 0,
+        "missingRecoveryStatus": "NAO_CALCULAVEL",
+        "recoverySeconds": null,
+        "readinessInferred": false
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-13",
+      "ruleIds": [
+        "V-R05"
+      ],
+      "purpose": "Converter so unidades autorizadas",
+      "sourceRefs": [
+        "DIC §14/15",
+        "VER §4.1"
+      ],
+      "inputFragment": {
+        "durationA": {
+          "value": 2,
+          "unit": "min"
+        },
+        "durationB": {
+          "value": 30,
+          "unit": "s"
+        },
+        "force": {
+          "value": 32,
+          "unit": "kgf"
+        },
+        "requestedLoadUnit": "kg_maquina"
+      },
+      "expected": {
+        "timeStatus": "CALCULADO",
+        "totalSeconds": 150,
+        "forceToMachineLoadStatus": "NAO_CALCULAVEL",
+        "machineLoad": null,
+        "preservedForce": {
+          "value": 32,
+          "unit": "kgf"
+        }
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-14",
+      "ruleIds": [
+        "V-R05"
+      ],
+      "purpose": "Unidades distintas nao formam um total unico",
+      "sourceRefs": [
+        "DIC §15",
+        "VAL §4"
+      ],
+      "inputFragment": {
+        "requestedSum": [
+          {
+            "value": 90,
+            "unit": "s"
+          },
+          {
+            "value": 2,
+            "unit": "series_exercicio"
+          }
+        ]
+      },
+      "expected": {
+        "calculationStatus": "NAO_CALCULAVEL",
+        "reason": "UNIDADES_INCOMPATIVEIS",
+        "sum": null,
+        "preserveRawValues": true
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-15",
+      "ruleIds": [
+        "V-R06"
+      ],
+      "purpose": "Trajetoria incompleta nao recebe direcao completa",
+      "sourceRefs": [
+        "MET-005 F-MET-07/08",
+        "VAL §4"
+      ],
+      "inputFragment": {
+        "axis": "load",
+        "values": [
+          10,
+          null,
+          14
+        ],
+        "sameTaskConditions": true,
+        "unit": "kg_mostrador_ficticio"
+      },
+      "expected": {
+        "calculationStatus": "NAO_CALCULAVEL",
+        "direction": null,
+        "knownStages": 2,
+        "totalStages": 3,
+        "imputeMissing": false
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-16",
+      "ruleIds": [
+        "V-R05",
+        "V-R06"
+      ],
+      "purpose": "Troca de maquina impede comparacao de carga, nao contagem",
+      "sourceRefs": [
+        "MET-005 F-MET-07",
+        "DIC §15"
+      ],
+      "inputFragment": {
+        "axis": "load",
+        "workSeries": [
+          {
+            "task": "A",
+            "device": "D1",
+            "load": 20,
+            "unit": "kg_mostrador"
+          },
+          {
+            "task": "A",
+            "device": "D2",
+            "load": 25,
+            "unit": "kg_mostrador"
+          }
+        ],
+        "deviceEquivalenceConfirmed": false
+      },
+      "expected": {
+        "trajectoryStatus": "NAO_CALCULAVEL",
+        "direction": null,
+        "countStatus": "CALCULADO",
+        "workSeriesCount": 2,
+        "invalidateAllData": false
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-17",
+      "ruleIds": [
+        "V-R07"
+      ],
+      "purpose": "Horario ausente impede intervalo mas preserva ocorrencias",
+      "sourceRefs": [
+        "AV R-OP-03",
+        "VER V-R07"
+      ],
+      "inputFragment": {
+        "workOccurrences": [
+          {
+            "id": "A1",
+            "task": "A",
+            "start": 0,
+            "end": 30
+          },
+          {
+            "id": "A2",
+            "task": "A",
+            "start": null,
+            "end": null
+          }
+        ],
+        "recoveryKey": "A_mesma_condicao"
+      },
+      "expected": {
+        "recoveryStatus": "NAO_CALCULAVEL",
+        "recoverySeconds": null,
+        "countStatus": "CALCULADO",
+        "workOccurrenceCount": 2
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-18",
+      "ruleIds": [
+        "V-R07",
+        "V-R08"
+      ],
+      "purpose": "Simultaneidade explicita usa uniao para relogio",
+      "sourceRefs": [
+        "DIC §15",
+        "VER §5.2"
+      ],
+      "inputFragment": {
+        "plannedIntervals": [
+          {
+            "task": "A",
+            "start": 0,
+            "end": 20,
+            "concurrencyGroupId": "SIM"
+          },
+          {
+            "task": "B",
+            "start": 0,
+            "end": 20,
+            "concurrencyGroupId": "SIM"
+          }
+        ],
+        "simultaneityExplicit": true
+      },
+      "expected": {
+        "calculationStatus": "CALCULADO",
+        "elapsedWorkSeconds": 20,
+        "summedTaskSeconds": 40,
+        "overlapError": false,
+        "dualTaskBenefitConfirmed": false
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-19",
+      "ruleIds": [
+        "V-R08"
+      ],
+      "purpose": "Reserva incluida nao somada novamente",
+      "sourceRefs": [
+        "TC-76 referencia",
+        "AV R-OP-03"
+      ],
+      "inputFragment": {
+        "basis": "BUDGET_RANGES",
+        "blocksMinutes": [
+          [
+            40,
+            50
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "reserveMinutes": 4,
+        "reserveIncludedInFirstBlock": true,
+        "coverageComplete": true,
+        "limitMinutes": 60
+      },
+      "expected": {
+        "calculationStatus": "CALCULADO",
+        "totalMinutes": [
+          46,
+          58
+        ],
+        "fitsBudgetAssumptions": true,
+        "observedSessionSeconds": null,
+        "approvalGranted": false
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-20",
+      "ruleIds": [
+        "V-R08"
+      ],
+      "purpose": "Distinguir faixa possivel, excesso certo no orcamento e faixa que cabe",
+      "sourceRefs": [
+        "TC-77 referencia",
+        "VER §5.2"
+      ],
+      "inputFragment": {
+        "completeRangesMinutes": [
+          [
+            52,
+            66
+          ],
+          [
+            61,
+            65
+          ],
+          [
+            52,
+            60
+          ]
+        ],
+        "limitMinutes": 60
+      },
+      "expected": {
+        "calculationStatus": "CALCULADO",
+        "budgetClasses": [
+          "PODE_EXCEDER",
+          "TODA_FAIXA_EXCEDE",
+          "CABE_NAS_HIPOTESES"
+        ],
+        "actualExcessConfirmed": null,
+        "adjustDoseAutomatically": false
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-21",
+      "ruleIds": [
+        "V-R08"
+      ],
+      "purpose": "Cobertura incompleta nao gera total de sessao",
+      "sourceRefs": [
+        "AV R-OP-03",
+        "DIC §15"
+      ],
+      "inputFragment": {
+        "knownSequentialBlockMinutes": [
+          5,
+          6
+        ],
+        "unknownAdditionalBlocks": true,
+        "sessionBoundaryMinutes": null,
+        "limitMinutes": 60
+      },
+      "expected": {
+        "calculationStatus": "NAO_CALCULAVEL",
+        "knownSubtotalMinutes": 11,
+        "sessionTotalMinutes": null,
+        "fitsBudgetAssumptions": null
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-22",
+      "ruleIds": [
+        "V-R09"
+      ],
+      "purpose": "Semana heterogenea usa ocorrencias explicitas",
+      "sourceRefs": [
+        "DIC §15",
+        "VER V-R09"
+      ],
+      "inputFragment": {
+        "window": "semana ficticia W1",
+        "coverageComplete": true,
+        "plannedSessionOccurrences": [
+          {
+            "id": "S-ter",
+            "version": "v1",
+            "taskASeries": 4
+          },
+          {
+            "id": "S-sex",
+            "version": "v2",
+            "taskASeries": 6
+          }
+        ]
+      },
+      "expected": {
+        "calculationStatus": "CALCULADO",
+        "weeklyTaskASeries": 10,
+        "assumeSessionsIdentical": false,
+        "observedSeries": null
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-23",
+      "ruleIds": [
+        "V-R09"
+      ],
+      "purpose": "Semana incompleta exibe subtotal conhecido",
+      "sourceRefs": [
+        "DIC §15",
+        "VER V-R09"
+      ],
+      "inputFragment": {
+        "coverageComplete": false,
+        "knownPlannedSessionSeries": [
+          4
+        ],
+        "missingSessionDose": true,
+        "availabilityDays": 2
+      },
+      "expected": {
+        "calculationStatus": "NAO_CALCULAVEL",
+        "knownSubtotalSeries": 4,
+        "weeklyTotalSeries": null,
+        "fillMissingSessionWithZeroOrClone": false
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    },
+    {
+      "id": "V-24",
+      "ruleIds": [
+        "V-R03",
+        "V-R11"
+      ],
+      "purpose": "Metodo novo descrito nao e rejeitado pelo nome",
+      "sourceRefs": [
+        "MET-004/005 repertorio aberto"
+      ],
+      "inputFragment": {
+        "originalMethodLabel": "Organizacao pessoal X",
+        "explicitWorkSeriesByTask": {
+          "A": 2,
+          "B": 1
+        },
+        "methodOnCatalog": false
+      },
+      "expected": {
+        "calculationStatus": "CALCULADO",
+        "totalExerciseSeries": 3,
+        "rejectByName": false,
+        "scientificApprovalGranted": false,
+        "methodMeaningForOtherUses": "PENDENTE"
+      },
+      "executionStatus": "NAO_EXECUTADO",
+      "observedOutput": null,
+      "entirelySynthetic": true
+    }
+  ]
+}
