@@ -9,6 +9,7 @@
 | Qual é a proposta da Central? | [CENTRAL-001 v0.5](corrections/2026-10-20/CENTRAL-001_Visao_Produto_Arquitetura_Funcional_v0.5.md) |
 | O projeto está alinhado e qual é o próximo passo? | [AUD-006 — diagnóstico global, evidências e prioridades](audits/AUD-006_Diagnostico_Alinhamento_Projeto_v0.1.md) |
 | Quais fontes compõem a base de estudo? | [REF-BASE-001 — vídeos, artigos e três livros; estado de leitura e uso](methodology/REF-BASE-001_Fontes_Didaticas_Academicas_v0.4.md) |
+| Uma demanda funcional pode coexistir com hipertrofia? | [DEC-SES-001 — demandas, ênfase e adaptações](decisions/DEC-SES-001_Demandas_Funcionais_e_Adaptacoes_v0.1.md) |
 | Como a avaliação leva ao planejamento? | [NUC-001 v0.2](corrections/2026-10-20/NUC-001_Nucleo_Avaliacao_Prescricao_v0.2.md) e [AV-003 v0.6](methodology/AV-003_Contrato_Avaliacao_Prescricao_v0.6.md) |
 | Que dados já existem antes da readaptação? | [MAP-CTX-001 v0.1](methodology/MAP-CTX-001_Mapa_Entradas_Readaptacao_v0.1.md) e [mapa estruturado](methodology/MAP-CTX-001_Mapa_Entradas_Readaptacao_v0.1.json) |
 | Como tratar qualidade e bloqueios? | [VAL-001 v0.3](corrections/2026-10-20/VAL-001_Auditoria_de_Laudos_v0.3.md) |
@@ -20,7 +21,7 @@
 | O que foi conferido nesse exemplo? | [Conferência v0.4](validation/CAS-001_Conferencia_v0.4.md) e [registro estruturado](validation/CAS-001_Conferencia_v0.4.json) |
 | O que ainda precisa de decisão? | [Revisão do treinador e programador](reviews/REV-CAS-001_Revisao_Treinador_Programador_v0.3.md) |
 | Como testar o comportamento esperado? | [TEST-001 v0.7](validation/TEST-001_Casos_de_Validacao_v0.7.md) e [fixtures R-OP](validation/fixtures/CAS-001_regras_v0.2.json) |
-| Como ler fontes e governança? | [Governança v0.14](decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.14.md) e [biblioteca metodológica](corrections/2026-10-20/README_Biblioteca_Metodologica_ACESSO_v0.2.md) |
+| Como ler fontes e governança? | [Governança v0.15](decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.15.md) e [biblioteca metodológica](corrections/2026-10-20/README_Biblioteca_Metodologica_ACESSO_v0.2.md) |
 
 ## Três camadas de autoria
 
