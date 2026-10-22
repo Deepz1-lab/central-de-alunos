@@ -60,6 +60,8 @@ Este repositório não lê nem modifica laudos, planilhas, prescrições, Apps S
 
 ## Conferências de organização — 22/10/2026
 
+[Ponto de passagem para continuidade — PASS-001](docs/decisions/PASS-001_Ponto_de_Passagem_v0.1.md): decisões, propostas pendentes, evidências e próxima tarefa delimitada.
+
 VER-001 já está no main do GitHub: componente puro para contagens, unidades, trajetórias, tempo, semana e observações. Foram verificados 128 testes unitários, incluindo 24 oráculos, e build. Ainda não gera prescrição, não aprova treino e não está ligado à tela/banco.
 
 - [Execução e revisão do VER-001](docs/validation/VER-001_Execucao_v0.1.md).
