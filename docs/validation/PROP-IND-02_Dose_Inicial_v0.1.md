@@ -170,6 +170,38 @@ O próximo uso é o treinador confrontar as alternativas de cada ramo com sua co
 
 [Halonen et al., 2024, PMID 39364857, DOI 10.1111/sms.14739](https://pubmed.ncbi.nlm.nih.gov/39364857/): resumo recuperado no resultado indexado do PubMed; abertura direta não exibiu o resumo. O ensaio comparou treinamento contínuo e periódico em participantes inicialmente não treinados; o grupo periódico realizou 10 semanas de treino, 10 de pausa e 10 de retreinamento. Houve perdas durante a pausa e recuperação nas medidas examinadas no retreinamento. Isso não define a dose das primeiras sessões de um experiente voltando de viagem, nem prova duração ideal para “tirar a ferrugem”. A retomada ajustada e as perguntas desta seção são operacionalização da Central a auditar, sem novos números aprovados.
 
+### 6.5 Percurso de esclarecimento até a decisão
+
+**PROPOSTA_CENTRAL para auditoria humana, derivada da revisão do treinador.** A sequência organiza o registro; não exige entrevista inteira antes de interromper uma tarefa quando a situação pedir. Não é algoritmo de diagnóstico ou liberação.
+
+| Passagem | Registro necessário para aquela decisão | Saída possível |
+|---|---|---|
+| 1. Identificar o acontecimento | Tarefa, ocasião, descrição da pessoa e observação do treinador, separadamente | Delimitar o que precisa ser esclarecido; “dificuldade” sozinha não escolhe ajuste |
+| 2. Caracterizar sintoma, se houver | Local, característica, momento, comportamento e impacto; restrições/orientações pertinentes | Decisão profissional sobre continuar, adaptar, suspender ou encaminhar, com escopo explícito. Não obrigar nova tentativa para preencher campos |
+| 3. Conferir condições pertinentes | Ajustes, pés/apoios ou pegada, amplitude, trajetória, carga, ritmo, esforço e recuperação efetiva | Hipóteses delimitadas e lacunas. Uma posição diferente não é automaticamente erro ou causa do sintoma |
+| 4. Escolher alternativa e critério de observação | Variável escolhida, razão, alternativa considerada e o que permitiria revisar essa escolha | Proposta para auditoria; nenhum percentual fixo ou alteração simultânea obrigatória |
+| 5. Registrar eventual resposta | O que foi autorizado e realmente feito, condições, execução, esforço e sintomas; retorno posterior em registro próprio | Reavaliar a escolha. Melhora numa tentativa não comprova causa, segurança futura ou recuperação completa |
+| 6. Definir alcance no plano | Efeito na tarefa, sessão, distribuição e tempo; implicações para micro/meso/macro quando pertinentes | Manter ou rever somente as decisões dependentes. Registrar autoria, versão e aprovação; preservar dados independentes |
+
+Se uma informação não for necessária à decisão, registrar a pertinência em vez de exigir preenchimento artificial. Se for necessária e faltar, a conclusão dependente continua pendente. Dados relatados, observados e interpretados mantêm origem e significado próprios.
+
+### 6.6 Aplicação preenchida com esclarecimentos fictícios
+
+**SIMULAÇÕES ADICIONAIS de raciocínio — não são novas respostas de S-02, nem execução de aluno real.** Os dois desdobramentos abaixo mostram como informações diferentes podem mudar a pergunta. Não substituem as lacunas dos quatro ramos anteriores e não acrescentam testes executados.
+
+| Etapa | S-02A — Esclarecimento fictício sem dor | S-02B — Esclarecimento fictício com sintoma |
+|---|---|---|
+| Relato estipulado | Perguntada sobre a tarefa, a pessoa nega dor durante e após a exposição e descreve dificuldade por esforço/fadiga nas repetições finais | A pessoa relata desconforto localizado no joelho ao descer no leg press; característica, lado, história e comportamento ainda incompletos |
+| Observação estipulada | Treinador observa ajustes reproduzidos; já na primeira série de calibração, ao chegar a oito reps, a pessoa estima apenas uma repetição adicional com os critérios mantidos, diante do alvo candidato de cerca de três | Não há observação suficiente para atribuir o sintoma aos pés, à amplitude, à carga ou a uma estrutura. Descrever a fase não fornece diagnóstico |
+| Leitura | Há discrepância entre esforço pretendido e estimado naquela calibração. A causa da queda posterior não foi provada, mas existe razão para rever o desafio inicial | A pergunta deixa de ser somente como adequar esforço: primeiro é necessária a avaliação profissional pertinente do sintoma e da tarefa |
+| Alternativa principal candidata | Recalibrar a carga no mesmo aparelho, preservando inicialmente ajustes e referência de intervalo, se a avaliação profissional permitir. O novo kg depende da calibração, não de uma redução percentual pré-definida | Esclarecer o sintoma e decidir a conduta profissional antes de nova exposição à tarefa provocativa. Não ordenar automaticamente mudança dos pés, corte de amplitude, troca de exercício ou repetição do teste |
+| Resposta adicional inventada para conferir a lógica | Em uma aproximação supervisionada hipotética, com carga recalibrada, realiza oito reps nos critérios e estima três RIR, sem dor relatada. Isso é resposta imediata estipulada, não comprovação de tolerância a três séries | Nenhuma nova tentativa ou resposta foi inventada. A decisão e seus efeitos na montagem permanecem pendentes |
+| Próxima decisão candidata | Considerar essa carga como nova referência a auditar; observar séries subsequentes e retorno pertinente. O orçamento precisa considerar a aproximação adicional. Não aumentar séries porque a primeira tentativa foi compatível | Registrar o que foi realizado/interrompido, revisar as dependências e definir acompanhamento. Dados independentes permanecem disponíveis, sem autorização automática de outros exercícios |
+
+**Consequência para a Central futura:** o sistema poderá ajudar a localizar informação ausente, explicitar divergências entre intenção e registro, apresentar alternativas e conferir efeitos de organização já cobertos. O enquadramento profissional do sintoma, a interpretação mecânica, a pertinência do ajuste e sua aprovação não estão automatizados por estas narrativas. Uma mensagem adequada para S-02A seria: “O esforço relatado difere do alvo nesta calibração; revisar carga e condições antes de confirmar a proposta”. Para S-02B: “Há sintoma ainda não esclarecido nesta tarefa; a decisão dependente requer revisão profissional”.
+
+As mensagens são propostas de apresentação, não novos estados VAL ou resultados do VER-001. Fontes e limites dos §§6.4/7 permanecem os mesmos; esta etapa operacionaliza o raciocínio discutido, sem nova alegação de eficácia acadêmica ou validação da simulação. Antes de especificar comportamento de software, o treinador deve revisar o sentido das mensagens, os dados necessários e o alcance de cada conclusão.
+
 ## 7. Fundamentação por camada e leitura efetiva
 
 | Camada/fonte | O que sustenta e o que não determina |
