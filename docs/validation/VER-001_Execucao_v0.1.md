@@ -59,3 +59,9 @@ A reserva contida de 70 min num bloco de 10 min agora impede classificar o orça
 2. Melhorar a formatação dos módulos/testes compactos para facilitar auditorias futuras.
 
 A versão está preservada na branch local `feat/ver-001-organizacao`, em checkout separado. Nenhuma publicação, merge, deploy ou integração automática com o aplicativo foi realizada. Próximo passo recomendado: disponibilizar a proposta de código para revisão no GitHub e, depois, preparar uma integração de leitura que exiba conferências sem aprovar treino.
+
+## Preparação da proposta no GitHub
+
+Por escolha do treinador, a entrega foi preparada para envio e proposta de revisão. Como o histórico local original era independente do histórico remoto, os dez commits foram reaplicados em `feat/ver-001-revisao`, a partir de `main` remoto `5889e75c58f6201ed8f1969cae8e1f736b4b4e8b`, sem reescrever main. O conteúdo do domínio e dos testes é idêntico ao revisado localmente. A correção de código corresponde agora ao commit `a9f8a4e`; `509bfe58` identifica sua versão no histórico local preservado. A evidência inicial continua registrada acima.
+
+A proposta contém somente o novo domínio, seus testes e este relatório. Continua sem ligação com tela/banco, sem publicação de aplicação e sem mudança nos arquivos operacionais. As duas melhorias menores adiadas permanecem explícitas.
