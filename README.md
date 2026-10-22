@@ -12,7 +12,7 @@ O desenvolvimento parte da prática relatada pelo treinador na ACESSO, de refer�
 - **Para saber que dados já existem antes da readaptação:** [MAP-CTX-001](docs/methodology/MAP-CTX-001_Mapa_Entradas_Readaptacao_v0.1.md).
 - **Para entender a base e suas fontes:** [guia dos documentos](docs/README.md).
 - **Para usar o resumo antes da proposta de readaptação:** [RES-CTX-001 aplicado ao caso fictício](docs/validation/RES-CTX-001_Resumo_Contexto_Readaptacao_v0.1.md).
-- **Para auditar contexto, intenção e alternativas de treino:** [CAS-002 v0.4 — caso inteiramente fictício com lacunas explícitas](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.4.md).
+- **Para auditar a proposta integrada de treino:** [CAS-002 v0.5 — caso inteiramente fictício com lacunas explícitas](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.5.md).
 - **Para entender a logística atual e suas correções:** [AUD-007 — gestor, treinador e programador](docs/audits/AUD-007_Revisao_Logistica_Gestor_Treinador_Programador_v0.1.md).
 - **Para acompanhar a evolução do primeiro exemplo:** [CAS-001 v0.4](docs/validation/CAS-001_Cascata_Sintetica_Integrada_v0.4.md).
 - **Para consultar decisões históricas do primeiro caso:** [revisão do CAS-001](docs/reviews/REV-CAS-001_Revisao_Treinador_Programador_v0.3.md).
@@ -73,6 +73,6 @@ A publicação inicial adiciona um retrato do projeto ao histórico já existent
 
 O conteúdo público usa exemplos fictícios e documentação revisada. Laudos originais, cadastros individuais, planilhas reais, arquivos de ambiente e credenciais não fazem parte desta publicação. As contas e a senha descritas nas instruções são exclusivas dos testes locais.
 
-## Próxima entrega
+## Próxima passagem
 
-Consolidar o CAS-002 em uma proposta integrada para uma rodada de auditoria: demandas/desfechos, intenção, papel no ciclo, sessões candidatas, fontes, dose/tempo e observação da resposta. A/B/C são alternativas disponíveis, não pacotes obrigatórios. Reaproveitar a direção já confirmada e pedir decisão profissional somente sobre pontos concretos. O AUD-007 explica o fluxo e seus limites; o motor continua não implementado.
+CAS-002 v0.5 reúne a proposta integrada C para uma rodada de auditoria profissional: demandas, intenção, ciclo, sessões, dose/tempo e acompanhamento. A proposta foi preparada, mas não está aprovada ou executada. Registrar manter/ajustar/rejeitar por escopo; então especificar o primeiro verificador sobre o recorte aceito. A/B/C anteriores são histórico, sem dose universal ou motor implementado.

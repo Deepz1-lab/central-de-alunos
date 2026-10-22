@@ -9,16 +9,16 @@ Avaliação e contexto → interpretação e prioridades → Plano de Ação →
 ## Situação atual
 
 - Piloto de cadastro, objetivo e revisão implementado; avaliação/prescrição ainda não implementadas no aplicativo.
-- CAS-002 v0.4 apresenta perfil com lacunas, intenção candidata e alternativas calculadas; nenhuma dose selecionada.
+- CAS-002 v0.5 reúne a proposta integrada C, recomendada pela Central para auditoria; perfil/avaliação preservados, sem aprovação profissional ou execução.
 - DEC-SES-001 registra coexistência de demandas funcionais e adaptações, sem transformar exemplos em regras.
 - Fontes com profundidade de leitura explícita; verificador e gerador não implementados. Os 89 cenários não são 89 testes aprovados do motor.
 - Logística de planilhas estudada parcialmente, com ponte manual e backup antes da renovação; nenhuma integração automática instalada.
 
-## Próxima entrega única
+## Entrega integrada disponível e próxima passagem
 
-Consolidar o CAS-002 em uma proposta integrada para uma rodada de auditoria: demandas/desfechos, intenção, papel no ciclo, sessões candidatas, fontes, dose/tempo, observações e alternativas. Reaproveitar a direção já confirmada; não pedir ao treinador que adivinhe fatos de um caso fictício. Lacunas pertinentes continuam explícitas.
+CAS-002 v0.5 apresenta o conjunto para uma rodada de auditoria: demandas/desfechos, intenção, papel no ciclo, sessões candidatas, fontes, dose/tempo e observações. C é a recomendação concreta da Central; A/B/C anteriores permanecem históricos. Não pedir ao treinador que adivinhe lacunas do personagem.
 
-Critério de saída: o treinador consegue revisar o conjunto e registrar manter/ajustar/rejeitar por escopo com justificativa. Não exige objetivo exclusivo, bateria completa, leitura integral da biblioteca ou dose universal. Esta entrega ainda não foi executada por atualizar o roteiro.
+Próxima passagem: registrar manter/ajustar/rejeitar por escopo e justificativa sobre o conjunto. Nenhuma decisão foi inferida do pedido de continuar. Depois, especificar o primeiro verificador sobre o recorte aceito, usando DIC-001/TEST-001 como referências.
 
 ## Sequência após essa entrega
 
@@ -32,4 +32,4 @@ Critério de saída: o treinador consegue revisar o conjunto e registrar manter/
 
 Não é necessário fechar todas as capacidades para experimentar um recorte. Não iniciar escrita/renovação em planilhas com base apenas neste roteiro.
 
-[Revisão atual da logística — AUD-007](docs/audits/AUD-007_Revisao_Logistica_Gestor_Treinador_Programador_v0.1.md) · [Caso atual](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.4.md) · [Guia](docs/README.md)
+[Revisão atual da logística — AUD-007](docs/audits/AUD-007_Revisao_Logistica_Gestor_Treinador_Programador_v0.1.md) · [Caso atual](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.5.md) · [Guia](docs/README.md)
