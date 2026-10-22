@@ -57,3 +57,13 @@ Vite/TypeScript e Supabase Auth/Postgres/RLS são a escolha deste protótipo loc
 TC-51–56 têm cobertura neste recorte; isso não aprova os 56 casos de TEST-001. Não houve teste de carga, homologação com alunos reais ou validação de produção. Decisão repetida e versão antiga foram testadas; concorrência simultânea entre sessões ainda merece teste próprio antes da ampliação.
 
 Este repositório não lê nem modifica laudos, planilhas, prescrições, Apps Script, gatilhos, automações, backups, cadastros existentes ou sources/. Não tem projeto remoto Supabase vinculado. O trabalho permanece na branch local feat/first-student-flow.
+
+## Conferências de organização — 22/10/2026
+
+VER-001 já está no main do GitHub: componente puro para contagens, unidades, trajetórias, tempo, semana e observações. Foram verificados 128 testes unitários, incluindo 24 oráculos, e build. Ainda não gera prescrição, não aprova treino e não está ligado à tela/banco.
+
+- [Execução e revisão do VER-001](docs/validation/VER-001_Execucao_v0.1.md).
+- [Percurso sintético CAS-002 → verificador → auditoria](docs/validation/FLX-VER-001_CAS-002_v0.1.md).
+- [Governança atual v0.23](docs/decisions/00-LEIA-ME_Governanca_da_Documentacao_v0.23.md).
+
+O recorte inicial descrito acima pertence ao piloto de cadastro; os resultados do verificador e da sondagem têm evidências e limites próprios. Não confundir integração do código ao repositório com integração do fluxo completo de prescrição ao aplicativo. Drive e GitHub não têm sincronização automática.
