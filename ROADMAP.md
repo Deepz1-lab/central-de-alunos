@@ -1,55 +1,35 @@
 # Evolução da Central de Alunos
 
-Posição: 21/10/2026. Este roteiro registra sequência e critérios; não é agenda automática nem compromisso de prazo.
+Posição consolidada: 21/10/2026. Este é o roteiro vigente, sem agenda automática. O histórico das rodadas anteriores permanece nos documentos versionados e nos commits.
 
-| Etapa | Resultado esperado | Critério de passagem |
+## Objetivo permanente
+
+Avaliação e contexto → interpretação e prioridades → Plano de Ação → macro/meso/micro e sessões propostas → verificação → auditoria do treinador → execução e resposta → revisão. A Central deve apoiar planejamento e periodização e, progressivamente, integrar carteira e planilhas.
+
+## Situação atual
+
+- Piloto de cadastro, objetivo e revisão implementado; avaliação/prescrição ainda não implementadas no aplicativo.
+- CAS-002 v0.4 apresenta perfil com lacunas, intenção candidata e alternativas calculadas; nenhuma dose selecionada.
+- DEC-SES-001 registra coexistência de demandas funcionais e adaptações, sem transformar exemplos em regras.
+- Fontes com profundidade de leitura explícita; verificador e gerador não implementados. Os 89 cenários não são 89 testes aprovados do motor.
+- Logística de planilhas estudada parcialmente, com ponte manual e backup antes da renovação; nenhuma integração automática instalada.
+
+## Próxima entrega única
+
+Consolidar o CAS-002 em uma proposta integrada para uma rodada de auditoria: demandas/desfechos, intenção, papel no ciclo, sessões candidatas, fontes, dose/tempo, observações e alternativas. Reaproveitar a direção já confirmada; não pedir ao treinador que adivinhe fatos de um caso fictício. Lacunas pertinentes continuam explícitas.
+
+Critério de saída: o treinador consegue revisar o conjunto e registrar manter/ajustar/rejeitar por escopo com justificativa. Não exige objetivo exclusivo, bateria completa, leitura integral da biblioteca ou dose universal. Esta entrega ainda não foi executada por atualizar o roteiro.
+
+## Sequência após essa entrega
+
+| Etapa | Resultado | Evidência de passagem |
 |---|---|---|
-| 1. Organizar a base no GitHub | Código, documentação e exemplos fictícios navegáveis | Conteúdo publicado conferido; arquivos iniciais e histórico remoto preservados |
-| 2. Auditar casos com o treinador | CAS-001 mantém suas lacunas; CAS-002 oferece novo contexto fictício completo e proposta concreta | Cada parâmetro escolhido tem justificativa, escopo e responsável; pendências não aparecem como aprovadas |
-| 3. Delimitar o primeiro verificador | Especificação de um conjunto pequeno de regras aprovadas, suas entradas e saídas | Mapas e dependências explícitos; controles positivos, negativos e de dados ausentes definidos |
-| 4. Implementar e testar em modo sombra | Comparação entre saídas do software e decisões esperadas em fixtures | Testes executados e revisados; erros e limites conhecidos; nenhuma escrita operacional automática |
-| 5. Experimentar o planejamento assistido | Propostas de plano individual, revisáveis antes da execução | Avaliação pertinente, objetivo/contexto, rastreabilidade e auditoria do treinador |
-| 6. Ampliar dashboard e integrações | Visão da carteira e apoio às planilhas individuais | Contratos metodológicos e de dados estáveis; estratégia explícita para versões, backup e publicação |
+| Auditar o recorte | Escolhas profissionais concretas, limites e pendências | Decisão registrada sobre a proposta inteira; nenhuma aprovação inferida |
+| Especificar e implementar o primeiro verificador | Informações necessárias, unidades, volume/tempo e relações do recorte | Testes sobre o código efetivamente usado; positivos, negativos e ausências; cobertura declarada |
+| Propor planejamento assistido | Dados pertinentes ligados a prioridades e proposta explicável | Revisão profissional; distinção entre gerado, aprovado e realizado |
+| Fechar acompanhamento | Execução e resposta relacionadas à proposta | Revisão de sessão/ciclo rastreável |
+| Ampliar carteira e apoio às planilhas | Pendências, avaliação, plano e evolução por pessoa | Caminho de dados por versão conferido e utilidade prática observada |
 
-## Ponto atual
+Não é necessário fechar todas as capacidades para experimentar um recorte. Não iniciar escrita/renovação em planilhas com base apenas neste roteiro.
 
-O piloto de cadastro/objetivo/revisão existe. A cascata de prescrição está documentada e demonstrada com um caso fictício. Os 89 cenários não são 89 testes aprovados do produto. O motor de prescrição não existe nesta versão.
-
-A organização inicial no GitHub foi publicada e conferida. A auditoria documental e a resposta do treinador levaram ao CAS-001 v0.4 e REV-CAS-001 v0.3: D-01 pede ajustar o ponto de partida para contexto e readaptação observada. Frequência, exercícios, doses e duração continuam sem aprovação; a etapa 2 prossegue por esse raciocínio.
-
-## Decisões que não podem ser presumidas
-
-A ordem das capacidades e a progressão dependem da pessoa e da finalidade. O calendário não comprova adaptação. Equipamentos são meios: ACESSO é o ambiente padrão, e disponibilidade específica importa quando houver exceção ou treino fora dela. Cinco semanas na aba Montagem descrevem uma janela de operação, não uma lei de periodização.
-
-A Central poderá propor ajuste da sessão e revisão do macro. Ambas exigem justificativa e decisão do treinador no respectivo escopo.
-
-
-## Mapa de entradas disponível
-
-MAP-CTX-001 v0.1 relaciona 34 itens, suas fontes/coberturas e seis decisões. Leitura de estrutura e registros previstos não equivale à coleta completa da pessoa nem a integração. O próximo passo é aproveitar relatos existentes para um resumo de contexto revisável, perguntar só pelas lacunas pertinentes e conferir os localizadores dependentes da versão do modelo.
-
-
-## Resumo aplicado disponível
-
-RES-CTX-001 aplica o mapa ao caso sintético e separa informação conhecida, contexto ausente, perguntas condicionais e retorno da sessão. As 15 conferências de representação não executam o motor. Próxima revisão: suficiência do contexto para cada decisão e seleção profissional de tarefas/dose e critérios de observação, sem inventar respostas do caso ou exigir todos os campos de todos os alunos.
-
-## Proposta contextualizada disponível
-
-[CAS-002](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.4.md) demonstra um novo caso inteiramente fictício: contexto, avaliação, prioridades, duas sessões de readaptação, volume declarado, tempo e respostas alternativas simuladas. Não completa artificialmente os dados ausentes do CAS-001. Foram reproduzidas 33 contas; seis variantes são expectativas documentais sem execução contra motor. O catálogo TEST-001 permanece com 89 cenários.
-
-Próximo passo: auditoria do treinador sobre tarefas, dose, tempo e critérios de progressão, registrando manter/ajustar/rejeitar com justificativa por escopo. Depois, delimitar o primeiro verificador das regras aprovadas. Nenhum motor ou plano operacional foi implantado.
-
-
-## Primeiro passo da revisão concluído
-
-CAS-002 v0.2 organiza perfil e lacunas, incorpora a direção recente do treinador e fontes selecionadas. Os números v0.1 são cenário de comparação não selecionado, com conferência histórica própria. Não houve aprovação de dose ou simulação promovida a execução. A próxima entrega é comparar alternativas de dose/organização e viabilidade, conforme AUD-006; a avaliação profissional da proposta concreta continua pendente.
-
-
-## Segundo passo: alternativas calculadas
-
-CAS-002 v0.3 compara A/B/C com fontes dirigidas e contagem de tempo/volume; nenhum método ou número foi escolhido como regra. Próximo passo efetivo: auditoria profissional das alternativas concretas e dos custos. Não iniciar verificador antes de delimitar os critérios desse recorte; não exigir leitura integral de toda a biblioteca para conferir cálculos.
-
-
-## Intenção antes da montagem
-
-CAS-002 v0.4 confere o princípio nas fontes e aplica ficha de intenção candidata, sem promover a concordância geral do treinador a aprovação do caso. A/B/C continuam intactos e disponíveis. Próxima decisão: intenção e prioridade dos componentes; depois montagem, dose e observação, com liberdade para outra combinação justificada.
+[Revisão atual da logística — AUD-007](docs/audits/AUD-007_Revisao_Logistica_Gestor_Treinador_Programador_v0.1.md) · [Caso atual](docs/validation/CAS-002_Readaptacao_Contextualizada_v0.4.md) · [Guia](docs/README.md)
