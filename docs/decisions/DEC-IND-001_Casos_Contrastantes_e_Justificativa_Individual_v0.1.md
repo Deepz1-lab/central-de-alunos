@@ -80,6 +80,64 @@ O AV-003 já define as entidades necessárias. Abaixo está uma aplicação docu
 
 Uma decisão manual futura e uma sugestão futura do algoritmo devem poder responder a essas mesmas perguntas. Esta matriz de rastreio não determina a dose e não substitui evidência científica da regra usada.
 
+### 5.1 Auditoria aplicada ao IND-02 — treinador, gestor e programador
+
+**22/10/2026 — análise documental feita pela Central; não é revisão de profissionais independentes.** A pergunta delimitada é: há justificativa para considerar trabalho resistido inicial compatível com a condição atual, sem impor uma fase fraca somente porque houve interrupção?
+
+| Perspectiva | Resultado da auditoria |
+|---|---|
+| Treinador | No cenário, objetivo, histórico e execução atual sustentam considerar essa direção. A calibração descrita não contém números de carga, esforço ou tolerância à sessão completa; não sustenta escolher uma dose específica. Ausência de dor nas tarefas examinadas não comprova ausência de sintomas em toda atividade |
+| Gestor | Duas janelas de até 60 minutos são condições disponíveis. Ainda é preciso confirmar a distribuição escolhida, tarefas, tempo de orientação, recuperação e compatibilidade com a rotina pertinente. A estrutura ACESSO é padrão; não abrir inventário individual de equipamentos sem exceção relevante |
+| Programador | Histórico relatado, execução observada e resposta posterior são entradas diferentes. Não copiar classificações entre elas, preencher ausências ou transformar a frase “já treinava” em três séries. Vincular cada conclusão à tarefa, ocasião, fonte e versão que a sustentaram |
+
+**Alternativas comparadas:** (a) adaptação leve e duração fixa para todo retorno: rejeitada como padrão porque ignora a condição atual; (b) restaurar automaticamente o treino anterior: rejeitada porque histórico não comprova tolerância atual; (c) proposta inicial calibrada, com observação e revisão: direção recomendada neste cenário, ainda sem dose aprovada. Essas são alternativas nossas; não são três protocolos acadêmicos comparados experimentalmente aqui.
+
+**Saída candidata preenchida para auditoria:**
+
+> IND-02: considerar trabalho resistido inicial voltado à hipertrofia e regularidade, usando a reprodução atual dos ajustes e da execução como evidência limitada às tarefas examinadas. Não impor redução por calendário nem restaurar o plano anterior automaticamente. Antes de fechar a sessão, explicitar exercícios/variantes, dose e esforço, intervalos, distribuição e critérios observáveis por tarefa; completar o contexto que possa mudar essas escolhas. A resposta à sessão completa continua desconhecida. Registrar o realizado e o retorno pertinente antes de justificar mudanças posteriores. Aprovação profissional: PENDENTE.
+
+Essa saída encerra a decisão sobre a **direção a considerar**, não a prescrição nem a autorização de treino. A falta de resposta a uma sessão ainda não realizada não impede, por si só, formular a primeira proposta; impede alegar tolerância já demonstrada ou progressão baseada nela. Não registrar esse texto no cadastro ou na planilha de aluno real.
+
+### 5.2 R-IND-001 v0.1 — regra candidata de suficiência para proposta inicial
+
+**Estado: RASCUNHO; autoria: PROPOSTA_CENTRAL; aprovação profissional e técnica: PENDENTES, sem revisor designado.** Identificador documental local, sem registro implantado no software. O contrato usa AV-003 §6; não é uma regra numérica de prescrição e não atende ainda ao contrato completo de geração de doses.
+
+| Elemento do contrato | Definição delimitada |
+|---|---|
+| Pergunta/finalidade | Que evidências permitem justificar a direção inicial para um adulto que retorna à musculação, e quais lacunas impedem concluir sobre a tarefa ou a dose? |
+| Contexto incluído | Planejamento individual supervisionado, objetivo/contexto em revisão e avaliação pertinente disponíveis para exame profissional. O IND-02 é aplicação sintética, não população validada |
+| Fora do alcance | Diagnóstico, liberação clínica, dose para dor/reabilitação, classificação automática de nível, prazo obrigatório de adaptação, prescrição de potência/força máxima ou outras capacidades por sequência fixa |
+| Entradas a examinar por uso | Objetivo e prioridades atuais; histórico/interrupção e relato de resposta anterior, se conhecido; sintomas/restrições pertinentes; condições da avaliação e critérios de execução/calibração por tarefa; disponibilidade, rotina/atividades e ambiente pertinentes. Conferir as fontes existentes de MAP-CTX-001 antes de recolher novamente |
+| Evidência admissível | Origem, ocasião e escopo explícitos; relato não vira observação. Qualidade segundo VAL/AV-003 por objeto + finalidade. Medidas NAO_AUDITADO ou com dependências insuficientes não viram base numérica validada. A aplicação sintética conserva sua natureza e não valida dados reais |
+| Informação ausente | Explicitar qual conclusão depende dela e o que precisa ser esclarecido. Não exigir todos os 34 itens de MAP-CTX-001 para todo uso, nem uma bateria universal; também não ignorar lacuna relevante só porque a execução parece boa |
+| Informação conflitante | Preservar versões e suspender a conclusão dependente até revisão. Não escolher automaticamente a fonte mais recente, a maioria ou o relato mais favorável |
+| Evidência atual suficiente para esta direção | Oferecer justificativa candidata e alternativas para auditoria, limitada às tarefas/condições examinadas. Isso não preenche a dose ou aprova execução |
+| Dificuldade atual de execução | Sinalizar a necessidade de rever ensino, variante, organização ou exposição pertinente; não impor fase fraca a toda a pessoa nem uma redução percentual automática |
+| Sintoma/restrição pertinente | Solicitar revisão profissional da tarefa e de suas dependências, com registro do achado e decisão. Não diagnosticar, tratar automaticamente ou liberar o restante por exclusão. Registros independentes permanecem preservados |
+| Saída documental | Pergunta; evidências e limitações; conclusão que pode ser considerada; alternativas; pendências ligadas a usos; observação/revisão; versão e aprovação. São elementos do registro, não novos estados VAL ou novos códigos do motor |
+| Dose e ciclos | Frequência, séries, repetições, carga/esforço, intervalos, velocidade quando pertinente, distribuição e progressão permanecem a especificar em proposta própria. Não herdar o 3/3/3/3/2/2 do CAS-002 nem números da aula 33 |
+| Alertas e revisão | Histórico usado como dose; inferência de ausência de dor; generalização da calibração; resposta inexistente usada para progredir; tempo inviável; contexto relevante ausente. Explicar o efeito e a decisão pendente, sem inventar corte clínico ou gravidade universal |
+| Mudanças posteriores | Alteração de avaliação, tarefa, objetivo, sintomas, rotina ou resposta exige revisar conclusões dependentes, preservando histórico e dados independentes. Rever sessão, micro/meso/macro conforme o alcance da mudança; nenhum nível muda automaticamente |
+
+**Fontes por afirmação:** M3 (§7.1, especialmente 9:28–11:26 e 31:35–34:49) orienta examinar experiência e condição atual; B1–B3 (§7) apoiam princípios e diferenças individuais, com leitura localizada anterior. A1 ([ACSM 2026](https://pubmed.ncbi.nlm.nih.gov/41843416/), resumo reconferido nesta etapa) relaciona variáveis resistidas e adaptações em adultos saudáveis; não valida este fluxo de decisão nem define dose individual de retorno. A2 ([Ibrahim et al., 2024](https://pubmed.ncbi.nlm.nih.gov/38665139/), resumo reconferido) registra limitações de validade/aplicação da autorregulação entre sessões; não fornece nosso limiar de prontidão. Entradas, saídas, bloqueios por dependência e alternativas são **desenho da Central**, não algoritmo validado pelos autores. Não houve nova leitura integral de livros ou de vídeos nesta etapa.
+
+### 5.3 Casos de aceitação da R-IND-001 — expectativas documentais
+
+Cada linha é uma variação sintética independente para futura verificação. **Estado de execução: NAO_EXECUTADO contra motor em todas as oito linhas.** A leitura de coerência abaixo não demonstra que o software implemente a regra nem mede resposta fisiológica. Não acrescenta cenários executados ao TEST-001.
+
+| Caso | Condição do exemplo | Expectativa a verificar |
+|---|---|---|
+| RI-01 | IND-02 conforme descrito | Permitir considerar a direção justificada; manter dose, resposta completa e aprovação abertas |
+| RI-02 | Mesmo IND-02, sem observação atual de execução | Não concluir condição atual pelo histórico; explicitar observação pertinente faltante, sem impor automaticamente fase fraca |
+| RI-03 | Mesmo IND-02, mas execução atual perde os critérios da tarefa | Rever a proposta daquela tarefa/condições; não converter experiência em autorização para ignorar o achado |
+| RI-04 | Mesmo IND-02, relato anterior e atual de sintoma divergem sem esclarecimento | Registrar o conflito e solicitar revisão da conclusão afetada; não registrar “sem dor” por seleção da versão favorável |
+| RI-05 | Mesmo IND-02, resposta posterior ainda não disponível | Proposta inicial pode ser analisada; recuperação favorável, tolerância completa e progressão por resposta não podem ser afirmadas |
+| RI-06 | Mesmos dados pertinentes, nome do método muda de seriado para pares | O rótulo não escolhe dose ou aprovação; efeitos concretos de tempo, execução e recuperação precisam de análise própria |
+| RI-07 | Mesmas tarefas, mas orçamento apresentado excede a disponibilidade | Rever viabilidade/distribuição; não reduzir intervalos automaticamente para caber nem invalidar avaliação independente |
+| RI-08 | Muda somente o identificador fictício, mantendo evidências e contexto | Manter a mesma conclusão justificada e pendências, com rastreio ao identificador correto; individualização não exige diferença artificial |
+
+**Critérios para aprovação documental:** o treinador deve revisar pertinência das entradas, direção, alternativas e critérios de observação; a revisão técnica deve conferir origem/versões, conflitos, ausências, escopo e expectativas. As concordâncias ou alterações precisam ser registradas por escopo; a autorização de elaboração não foi convertida em aprovação deste conteúdo. Antes de uso em software, definir contrato técnico e verificação executável próprios; antes de gerar doses, completar a fundamentação e os parâmetros de AV-003 §6. Mesmo uma regra aprovada não aprova automaticamente a sessão de uma pessoa.
+
 ## 6. Conferência humana da individualização
 
 | Pergunta de revisão | Conclusão nesta análise documental |
@@ -152,6 +210,6 @@ A tentativa inicial da [aula 33](https://www.youtube.com/watch?v=_AmEut4pqCU) fa
 
 O núcleo de individualização já possui perguntas e entidades nos MDs; faltava aplicá-los de modo comparativo e impedir que a demonstração de contas parecesse validação de uma ficha universal. Este documento entrega seis situações, três contrastes e um registro de decisão preenchido, preservando a dose e a aprovação ainda abertas.
 
-O próximo passo é o treinador auditar essas justificativas e indicar onde sua conduta seria diferente. Depois, selecionar uma decisão delimitada e suficientemente fundamentada para especificar a primeira regra de proposta assistida. Cada futura regra precisará das condições/fontes/limites de AV-003 §6 e de testes próprios; estas narrativas não viram automaticamente uma tabela “se X, prescreva Y”.
+A primeira decisão foi delimitada nos §§5.1–5.3: direção inicial do IND-02 e rascunho R-IND-001 sobre suficiência da informação, com oito expectativas documentais. O próximo passo é o treinador auditar essa decisão concreta, indicar onde sua conduta difere e revisar o alcance da regra candidata. A etapa seguinte poderá detalhar uma proposta de dose inicial, com fontes e parâmetros próprios, após essa revisão. A regra continua RASCUNHO; não foi implementada nem transformou as narrativas em uma tabela “se X, prescreva Y”.
 
 Nenhum laudo, planilha, prescrição, cadastro, script, gatilho, automação, backup ou fonte sincronizada foi alterado. Não foram publicadas páginas dos livros nem criados dados nominais de alunos. A entrega permanece documental, sem instalação de regras no programa.
