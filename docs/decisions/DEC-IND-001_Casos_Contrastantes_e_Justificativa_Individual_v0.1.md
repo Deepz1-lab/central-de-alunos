@@ -138,6 +138,10 @@ Cada linha é uma variação sintética independente para futura verificação. 
 
 **Critérios para aprovação documental:** o treinador deve revisar pertinência das entradas, direção, alternativas e critérios de observação; a revisão técnica deve conferir origem/versões, conflitos, ausências, escopo e expectativas. As concordâncias ou alterações precisam ser registradas por escopo; a autorização de elaboração não foi convertida em aprovação deste conteúdo. Antes de uso em software, definir contrato técnico e verificação executável próprios; antes de gerar doses, completar a fundamentação e os parâmetros de AV-003 §6. Mesmo uma regra aprovada não aprova automaticamente a sessão de uma pessoa.
 
+### 5.4 Proposta numérica para revisão
+
+[PROP-IND-02 v0.1](../validation/PROP-IND-02_Dose_Inicial_v0.1.md) detalha uma opção de componente resistido inicial: cinco exercícios seriados, três séries por exercício, 8–12 repetições, cerca de 3 RIR estimadas e 120 s de referência, com calibração, contagem, tempo e revisão explícitos. São escolhas PROPOSTA_CENTRAL sob hipóteses adicionais declaradas; não acrescentam avaliações ao IND-02 original, não validam a regra e não constituem aprovação dos parâmetros. Cardio, flexibilidade, equilíbrio/postural e ciclos mantêm suas dependências próprias. A proposta foi preparada para a próxima auditoria, sem implantação.
+
 ## 6. Conferência humana da individualização
 
 | Pergunta de revisão | Conclusão nesta análise documental |
@@ -210,6 +214,6 @@ A tentativa inicial da [aula 33](https://www.youtube.com/watch?v=_AmEut4pqCU) fa
 
 O núcleo de individualização já possui perguntas e entidades nos MDs; faltava aplicá-los de modo comparativo e impedir que a demonstração de contas parecesse validação de uma ficha universal. Este documento entrega seis situações, três contrastes e um registro de decisão preenchido, preservando a dose e a aprovação ainda abertas.
 
-A primeira decisão foi delimitada nos §§5.1–5.3: direção inicial do IND-02 e rascunho R-IND-001 sobre suficiência da informação, com oito expectativas documentais. O próximo passo é o treinador auditar essa decisão concreta, indicar onde sua conduta difere e revisar o alcance da regra candidata. A etapa seguinte poderá detalhar uma proposta de dose inicial, com fontes e parâmetros próprios, após essa revisão. A regra continua RASCUNHO; não foi implementada nem transformou as narrativas em uma tabela “se X, prescreva Y”.
+A primeira decisão foi delimitada nos §§5.1–5.3: direção inicial do IND-02 e rascunho R-IND-001 sobre suficiência da informação, com oito expectativas documentais. O §5.4 encaminha uma proposta numérica para auditoria específica. O próximo passo é o treinador revisar direção, condições adicionais, dose e alcance, registrando concordâncias ou mudanças por escopo. A elaboração da proposta não foi convertida em aprovação. A regra continua RASCUNHO; não foi implementada nem transformou as narrativas em uma tabela “se X, prescreva Y”.
 
 Nenhum laudo, planilha, prescrição, cadastro, script, gatilho, automação, backup ou fonte sincronizada foi alterado. Não foram publicadas páginas dos livros nem criados dados nominais de alunos. A entrega permanece documental, sem instalação de regras no programa.
